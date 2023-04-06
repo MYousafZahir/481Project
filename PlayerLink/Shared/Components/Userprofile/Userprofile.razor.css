@@ -1,0 +1,33 @@
+img {
+  float: left;
+}
+#username-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.8628px;
+  line-height: 30px;
+  margin-left: 1em;
+
+  /* White */
+  color: #8e9297;
+}
+
+#text-info {
+  float: right;
+}
+
+#discriminator {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.8826px;
+  line-height: 30px;
+  letter-spacing: -0.045em;
+
+  /* Dark Mode/Gray 9 */
+  color: #c7c9cb;
+}
+#user-profile {
+  background-color: #292b2f;
+}

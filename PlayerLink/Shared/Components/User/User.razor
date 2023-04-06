@@ -1,0 +1,24 @@
+<div>
+    <div class="d-inline-flex flex-row" id="user-profile">
+        <div class="container user-info">
+            <div id="text-info">
+                <span id="username-text">
+                    
+                    <img src="img/ProfilePicture.svg" alt="">
+                    @* <img src="@Status" alt=""> *@
+                    masdmasdamsdkamskdmaskdkasmdkasmd
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Username { get; set; } = "Name";
+    [Parameter] public string Status { get; set; } = "/img/online.svg";
+    void ChangeStatus()
+    {
+        @* implement *@
+    }
+}

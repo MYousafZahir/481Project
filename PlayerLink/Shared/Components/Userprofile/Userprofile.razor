@@ -1,0 +1,17 @@
+<div>
+    <div class="d-inline-flex flex-row" id="user-profile">
+        <div class="container-sm container-fluid user-info">
+            <img src="/img/ProfilePicture-2.png" alt="This wrong" class="float-left img-fluid" id="profile-pic">
+            <div id="text-info">
+                <p id="username-text" >@Username</p>
+                <p id="discriminator" >@UserID</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Username { get; set; } = "Name";
+    [Parameter] public string UserID {get; set; } = "#";
+}
