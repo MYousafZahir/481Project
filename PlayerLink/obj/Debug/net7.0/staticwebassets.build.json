@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "grX98iX9LIWWMreGhqnoGpA8l4jjHQETf13a7dKt6wE=",
+  "Hash": "3WJIp1D3w9tD7yDujR+icFSI5R4ZTGX7/J7e1RwmShI=",
   "Source": "PlayerLink",
   "BasePath": "_content/PlayerLink",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PlayerLink/wwwroot",
       "Source": "PlayerLink",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/PlayerLink.styles.css",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/PlayerLink.styles.css",
       "SourceId": "PlayerLink",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "PlayerLink.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/PlayerLink.styles.css"
+      "OriginalItemSpec": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/PlayerLink.styles.css"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css",
       "SourceId": "PlayerLink",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "PlayerLink.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css"
+      "OriginalItemSpec": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/README.md",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/site.css",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/site.css",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/favicon.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/favicon.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/favicon.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/img/favicon.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Filter.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Filter.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/Filter.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/img/Filter.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/online.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/online.svg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/img/online.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Path.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Path.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/Path.svg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/img/Path.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Plus.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Plus.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/Plus.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/img/Plus.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-2.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-2.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-2.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-3.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-3.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-3.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-4.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-4.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-4.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-4.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-5.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-5.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-5.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-5.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-6.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-6.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-6.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-6.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-7.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-7.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-7.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-7.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-8.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-8.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture-8.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-8.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/ProfilePicture.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Search.png",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Search.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/Search.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/img/Search.png"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/unoccupied-user.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/unoccupied-user.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/unoccupied-user.svg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/img/unoccupied-user.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/user.svg",
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/user.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
       "BasePath": "_content/PlayerLink",
       "RelativePath": "img/user.svg",
       "AssetKind": "All",

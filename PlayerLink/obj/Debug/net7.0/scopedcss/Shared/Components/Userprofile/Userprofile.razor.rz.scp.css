@@ -1,33 +1,43 @@
 img[b-kbd1kndd2m] {
   float: left;
+  padding: 5px;
+  size: 0%;
+  height: auto;
+  max-width: 25%;
 }
 #username-text[b-kbd1kndd2m] {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 24.8628px;
+  font-size: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5px;
   line-height: 30px;
-  margin-left: 1em;
-
   /* White */
   color: #8e9297;
+  width: 150px; /* You can adjust this value or use a percentage */
+  display: block; /* Changed from inline-block */
 }
 
 #text-info[b-kbd1kndd2m] {
-  float: right;
+  margin-left: -10px;
 }
 
 #discriminator[b-kbd1kndd2m] {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24.8826px;
-  line-height: 30px;
+  font-size: 1em;
+  line-height: 10px;
   letter-spacing: -0.045em;
 
   /* Dark Mode/Gray 9 */
   color: #c7c9cb;
+  display: block; /* Add this line */
 }
 #user-profile[b-kbd1kndd2m] {
   background-color: #292b2f;
+  width: 225px; /* width of container*/
 }

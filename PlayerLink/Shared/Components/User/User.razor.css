@@ -9,19 +9,21 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 24.8628px;
-  line-height: 30px;
-  margin-left: 1em;
+  font-size: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-
+  margin-left: 5px;
+  line-height: 30px;
   /* White */
   color: #8e9297;
+  width: 150px; /* You can adjust this value or use a percentage */
+  display: inline-block; /* Add this line to apply max-width correctly */
 }
 
 #text-info {
   float: right;
+  margin-left: -10px;
 }
 
 #discriminator {
@@ -37,4 +39,5 @@ img {
 }
 #user-profile {
   background-color: #292b2f;
+  width: 225px; /* width of container*/
 }

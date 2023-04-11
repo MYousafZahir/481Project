@@ -9,73 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlayerLink
 build_property.RootNamespace = PlayerLink
-build_property.ProjectDir = /Users/ericmao/Documents/Blazor/PlayerLink/
+build_property.ProjectDir = /Users/ericmao/Documents/GitHub/481Project/PlayerLink/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ericmao/Documents/Blazor/PlayerLink
+build_property.MSBuildProjectDirectory = /Users/ericmao/Documents/GitHub/481Project/PlayerLink
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/App.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Components/Counter.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Pages/FetchData.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Friendlist/Friendlist.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9GcmllbmRsaXN0L0ZyaWVuZGxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Pages/Index.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Shared/SurveyPrompt.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/_Imports.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Components/Lobby/Lobby.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobby/Lobby.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieS9Mb2JieS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rgmdzi42qm
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Components/Lobbybutton/Lobbybutton.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobbybutton/Lobbybutton.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieWJ1dHRvbi9Mb2JieWJ1dHRvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ojejqrf09c
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Components/Lobbyfilter/Lobbyfilter.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobbyfilter/Lobbyfilter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieWZpbHRlci9Mb2JieWZpbHRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-vdkrg40bt8
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Components/Lobbysearch/Lobbysearch.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobbysearch/Lobbysearch.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieXNlYXJjaC9Mb2JieXNlYXJjaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-g2ge94nwtm
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Shared/Components/User/User.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/Components/User/User.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvVXNlci9Vc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-7dl1p34hli
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Shared/Components/Userprofile/Userprofile.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/Components/Userprofile/Userprofile.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvVXNlcnByb2ZpbGUvVXNlcnByb2ZpbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kbd1kndd2m
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Shared/MainLayout.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-l3481v9u0q
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Shared/NavMenu.razor]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dkf0drnwoc
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Pages/Error.cshtml]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/Blazor/PlayerLink/Pages/_Host.cshtml]
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
