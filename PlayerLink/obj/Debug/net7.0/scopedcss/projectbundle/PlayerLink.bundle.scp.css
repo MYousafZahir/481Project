@@ -1,3 +1,9 @@
+/* _content/PlayerLink/Components/Friendlist/Friendlist.razor.rz.scp.css */
+.friend-list[b-ggxsunf0kz] {
+  margin: 0;
+  padding: 0;
+  background-color: #292b2f;
+}
 /* _content/PlayerLink/Components/Lobby/Lobby.razor.rz.scp.css */
 #lobby-container[b-rgmdzi42qm] {
   box-sizing: border-box;
@@ -71,7 +77,7 @@ img[b-7dl1p34hli] {
   color: #c7c9cb;
 }
 #user-profile[b-7dl1p34hli] {
-  background-color: #292b2f;
+
   width: 225px; /* width of container*/
 }
 /* _content/PlayerLink/Shared/Components/Userprofile/Userprofile.razor.rz.scp.css */

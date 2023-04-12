@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QQ9jRlYBe0L/08mxB8F+fssCuh3ZQPuFt1T2pdKhQ4E=",
+  "Hash": "WKIrlTTQ+hrZLlQLFXqJ+vzfYumvgmCcGwWvh577+Tc=",
   "Source": "PlayerLink",
   "BasePath": "_content/PlayerLink",
   "Mode": "Default",
@@ -374,6 +374,23 @@
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-2.png"
     },
     {
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.svg",
+      "SourceId": "PlayerLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
+      "BasePath": "_content/PlayerLink",
+      "RelativePath": "img/ProfilePicture-2.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/ProfilePicture-2.svg"
+    },
+    {
       "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.png",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
@@ -389,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/ProfilePicture-3.png"
+    },
+    {
+      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.svg",
+      "SourceId": "PlayerLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
+      "BasePath": "_content/PlayerLink",
+      "RelativePath": "img/ProfilePicture-3.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/ProfilePicture-3.svg"
     },
     {
       "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-4.png",

@@ -1,7 +1,15 @@
-<div class="friend-list d-flex flex-column">
-    <div class="users">
-        
+@using PlayerLink.Shared.Components.User
+@inject PlayerLink.Services.UserDataService UserDataService
+<div>
+    <div class="friend-list d-inline-flex flex-column">
+        @foreach (var friend in UserDataService.Users)
+        {
+            <div class="user-item">
+                <User user="@friend"/>
+            </div>
+        }
     </div>
+
 </div>
 
 @code {

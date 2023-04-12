@@ -1,10 +1,11 @@
+@using UserModel = PlayerLink.Models.User;
 <div>
     <div class="d-inline-flex flex-row" id="user-profile">
         <div class="container user-info">
             <div id="text-info">
                 <img src="img/ProfilePicture-1.svg" alt="">
-                <span id="username-text">@Username</span>
-                <span id="discriminator">@UserID</span>
+                <span id="username-text">@user.Username</span>
+                <span id="discriminator">@user.UserID</span>
             </div>
 
         </div>
@@ -13,6 +14,5 @@
 
 
 @code {
-    [Parameter] public string Username { get; set; } = "Name";
-    [Parameter] public string UserID {get; set; } = "#";
+    [Parameter] public UserModel user { get; set; } = new UserModel();
 }

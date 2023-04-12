@@ -73,8 +73,16 @@
       "PackagePath": "staticwebassets/img/ProfilePicture-2.png"
     },
     {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-2.svg"
+    },
+    {
       "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-3.png"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-3.svg"
     },
     {
       "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-4.png",

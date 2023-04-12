@@ -28,7 +28,7 @@ namespace PlayerLink.Services {
                 {
                     Username = "Bob",
                     UserID = "0002",
-                    ProfilePicture = "img/ProfilePicture-1.svg",
+                    ProfilePicture = "img/ProfilePicture-2.svg",
                     Status = "Offline",
                     Description = "Hi, I'm Bob!",
                     Tags = new List<string> { "tag1", "tag4", "tag5" }
@@ -37,7 +37,7 @@ namespace PlayerLink.Services {
                 {
                     Username = "Charlie",
                     UserID = "0003",
-                    ProfilePicture = "img/ProfilePicture-1.svg",
+                    ProfilePicture = "img/ProfilePicture-3.svg",
                     Status = "Away",
                     Description = "Hey, I'm Charlie!",
                     Tags = new List<string> { "tag2", "tag4", "tag6" }
