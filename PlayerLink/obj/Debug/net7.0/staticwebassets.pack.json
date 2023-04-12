@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets/img/Plus.png"
     },
     {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-1.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-1.svg"
+    },
+    {
       "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-2.png"
     },
