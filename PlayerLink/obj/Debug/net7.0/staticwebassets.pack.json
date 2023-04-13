@@ -1,151 +1,163 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PlayerLink.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PlayerLink.bundle.scp.css"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css",
+      "PackagePath": "staticwebassets/PlayerLink.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "PackagePath": "staticwebassets\\css\\open-iconic"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
-      "PackagePath": "staticwebassets\\css\\open-iconic"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\README.md",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
-      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\Filter.svg",
-      "PackagePath": "staticwebassets\\img\\Filter.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Filter.svg",
+      "PackagePath": "staticwebassets/img/Filter.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\Path.svg",
-      "PackagePath": "staticwebassets\\img\\Path.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Path.svg",
+      "PackagePath": "staticwebassets/img/Path.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\Plus.png",
-      "PackagePath": "staticwebassets\\img\\Plus.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Plus.png",
+      "PackagePath": "staticwebassets/img/Plus.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-1.svg",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-1.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-1.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-1.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-2.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-2.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-2.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-2.svg",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-2.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-2.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-3.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-3.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-3.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-3.svg",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-3.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-3.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-4.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-4.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-4.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-4.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-5.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-5.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-5.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-5.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-6.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-6.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-6.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-6.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-7.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-7.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-7.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-7.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture-8.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture-8.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-8.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture-8.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture.png",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.png",
+      "PackagePath": "staticwebassets/img/ProfilePicture.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\ProfilePicture.svg",
-      "PackagePath": "staticwebassets\\img\\ProfilePicture.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\Search.png",
-      "PackagePath": "staticwebassets\\img\\Search.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Search.png",
+      "PackagePath": "staticwebassets/img/Search.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\favicon.png",
-      "PackagePath": "staticwebassets\\img\\favicon.png"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/favicon.png",
+      "PackagePath": "staticwebassets/img/favicon.png"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\online.svg",
-      "PackagePath": "staticwebassets\\img\\online.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/lock.svg",
+      "PackagePath": "staticwebassets/img/lock.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\unoccupied-user.svg",
-      "PackagePath": "staticwebassets\\img\\unoccupied-user.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/logo.svg",
+      "PackagePath": "staticwebassets/img/logo.svg"
     },
     {
-      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\user.svg",
-      "PackagePath": "staticwebassets\\img\\user.svg"
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
+      "PackagePath": "staticwebassets/img/online.svg"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/unoccupied-user.svg",
+      "PackagePath": "staticwebassets/img/unoccupied-user.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/user.svg",
+      "PackagePath": "staticwebassets/img/user.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/username-user.svg",
+      "PackagePath": "staticwebassets/img/username-user.svg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.PlayerLink.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.PlayerLink.props",
       "PackagePath": "build\\PlayerLink.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.PlayerLink.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.PlayerLink.props",
       "PackagePath": "buildMultiTargeting\\PlayerLink.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.PlayerLink.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.PlayerLink.props",
       "PackagePath": "buildTransitive\\PlayerLink.props"
     }
   ],
