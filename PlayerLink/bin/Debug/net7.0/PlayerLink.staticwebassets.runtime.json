@@ -1,1 +1,309 @@
-{"ContentRoots":["/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/","/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/"],"Root":{"Children":{"css":{"Children":{"bootstrap":{"Children":{"bootstrap.min.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/bootstrap/bootstrap.min.css"},"Patterns":null},"bootstrap.min.css.map":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/bootstrap/bootstrap.min.css.map"},"Patterns":null}},"Asset":null,"Patterns":null},"open-iconic":{"Children":{"FONT-LICENSE":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/FONT-LICENSE"},"Patterns":null},"font":{"Children":{"css":{"Children":{"open-iconic-bootstrap.min.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/css/open-iconic-bootstrap.min.css"},"Patterns":null}},"Asset":null,"Patterns":null},"fonts":{"Children":{"open-iconic.eot":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/fonts/open-iconic.eot"},"Patterns":null},"open-iconic.otf":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/fonts/open-iconic.otf"},"Patterns":null},"open-iconic.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/fonts/open-iconic.svg"},"Patterns":null},"open-iconic.ttf":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/fonts/open-iconic.ttf"},"Patterns":null},"open-iconic.woff":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/font/fonts/open-iconic.woff"},"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":null},"ICON-LICENSE":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/ICON-LICENSE"},"Patterns":null},"README.md":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/open-iconic/README.md"},"Patterns":null}},"Asset":null,"Patterns":null},"site.css":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"css/site.css"},"Patterns":null}},"Asset":null,"Patterns":null},"img":{"Children":{"favicon.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/favicon.png"},"Patterns":null},"Filter.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/Filter.svg"},"Patterns":null},"lock.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/lock.svg"},"Patterns":null},"logo.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/logo.svg"},"Patterns":null},"online.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/online.svg"},"Patterns":null},"Path.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/Path.svg"},"Patterns":null},"Plus.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/Plus.png"},"Patterns":null},"ProfilePicture-1.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-1.svg"},"Patterns":null},"ProfilePicture-2.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-2.png"},"Patterns":null},"ProfilePicture-2.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-2.svg"},"Patterns":null},"ProfilePicture-3.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-3.png"},"Patterns":null},"ProfilePicture-3.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-3.svg"},"Patterns":null},"ProfilePicture-4.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-4.png"},"Patterns":null},"ProfilePicture-5.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-5.png"},"Patterns":null},"ProfilePicture-6.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-6.png"},"Patterns":null},"ProfilePicture-7.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-7.png"},"Patterns":null},"ProfilePicture-8.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture-8.png"},"Patterns":null},"ProfilePicture.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture.png"},"Patterns":null},"ProfilePicture.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/ProfilePicture.svg"},"Patterns":null},"Search.png":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/Search.png"},"Patterns":null},"unoccupied-user.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/unoccupied-user.svg"},"Patterns":null},"user.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/user.svg"},"Patterns":null},"username-user.svg":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"img/username-user.svg"},"Patterns":null}},"Asset":null,"Patterns":null},"PlayerLink.styles.css":{"Children":null,"Asset":{"ContentRootIndex":1,"SubPath":"PlayerLink.styles.css"},"Patterns":null}},"Asset":null,"Patterns":[{"ContentRootIndex":0,"Pattern":"**","Depth":0}]}}
+{
+  "ContentRoots": [
+    "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
+    "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/bundle/"
+  ],
+  "Root": {
+    "Children": {
+      "css": {
+        "Children": {
+          "bootstrap": {
+            "Children": {
+              "bootstrap.min.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "css/bootstrap/bootstrap.min.css"
+                },
+                "Patterns": null
+              },
+              "bootstrap.min.css.map": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "css/bootstrap/bootstrap.min.css.map"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "open-iconic": {
+            "Children": {
+              "FONT-LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "css/open-iconic/FONT-LICENSE"
+                },
+                "Patterns": null
+              },
+              "font": {
+                "Children": {
+                  "css": {
+                    "Children": {
+                      "open-iconic-bootstrap.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "fonts": {
+                    "Children": {
+                      "open-iconic.eot": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.eot"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.otf": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.otf"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.svg": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.svg"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.ttf": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.ttf"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.woff": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 0,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.woff"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "ICON-LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "css/open-iconic/ICON-LICENSE"
+                },
+                "Patterns": null
+              },
+              "README.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "css/open-iconic/README.md"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "site.css": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "css/site.css" },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "img": {
+        "Children": {
+          "favicon.png": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/favicon.png" },
+            "Patterns": null
+          },
+          "Filter.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/Filter.svg" },
+            "Patterns": null
+          },
+          "lock.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/lock.svg" },
+            "Patterns": null
+          },
+          "logo.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/logo.svg" },
+            "Patterns": null
+          },
+          "online.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/online.svg" },
+            "Patterns": null
+          },
+          "Path.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/Path.svg" },
+            "Patterns": null
+          },
+          "Plus.png": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/Plus.png" },
+            "Patterns": null
+          },
+          "ProfilePicture-1.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-1.svg"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-2.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-2.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-2.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-2.svg"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-3.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-3.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-3.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-3.svg"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-4.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-4.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-5.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-5.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-6.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-6.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-7.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-7.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture-8.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture-8.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture.png"
+            },
+            "Patterns": null
+          },
+          "ProfilePicture.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/ProfilePicture.svg"
+            },
+            "Patterns": null
+          },
+          "Search.png": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/Search.png" },
+            "Patterns": null
+          },
+          "unoccupied-user.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/unoccupied-user.svg"
+            },
+            "Patterns": null
+          },
+          "user.svg": {
+            "Children": null,
+            "Asset": { "ContentRootIndex": 0, "SubPath": "img/user.svg" },
+            "Patterns": null
+          },
+          "username-user.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "img/username-user.svg"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "PlayerLink.styles.css": {
+        "Children": null,
+        "Asset": { "ContentRootIndex": 1, "SubPath": "PlayerLink.styles.css" },
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [{ "ContentRootIndex": 0, "Pattern": "**", "Depth": 0 }]
+  }
+}
