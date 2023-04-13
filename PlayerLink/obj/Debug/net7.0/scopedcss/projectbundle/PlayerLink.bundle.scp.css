@@ -13,6 +13,10 @@ i[b-ojejqrf09c] {
   color: black;
   margin-right: 0.25em;
 }
+#lobby-button[b-ojejqrf09c] {
+  font-family: "Montserrat";
+  font-style: normal;
+}
 /* _content/PlayerLink/Components/Lobbyfilter/Lobbyfilter.razor.rz.scp.css */
 button[b-vdkrg40bt8] {
   border-radius: 12px;
@@ -20,6 +24,11 @@ button[b-vdkrg40bt8] {
 i[b-vdkrg40bt8] {
   color: black;
   margin-right: 0.5em;
+}
+#lobby-button[b-vdkrg40bt8] {
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 /* _content/PlayerLink/Components/Lobbysearch/Lobbysearch.razor.rz.scp.css */
 input[b-g2ge94nwtm] {
@@ -38,6 +47,24 @@ img[b-g2ge94nwtm] {
   height: 25px;
   font-size: 14px; /* Adjust the font size as needed */
   padding: 0 5px; /* Adjust the padding as needed */
+}
+/* _content/PlayerLink/Pages/index.razor.rz.scp.css */
+#search[b-4p99nw6x63] {
+  column-gap: 1.5em;
+}
+#create-lobby-button[b-4p99nw6x63] {
+  margin-right: 4vw;
+}
+#search-header[b-4p99nw6x63] {
+  padding-top: 10vh;
+  padding-bottom: 6vh;
+}
+
+.main[b-4p99nw6x63] {
+  margin-left: 7vw;
+}
+.lobbies[b-4p99nw6x63] {
+  margin-right: 10vw;
 }
 /* _content/PlayerLink/Shared/Components/User/User.razor.rz.scp.css */
 img[b-7dl1p34hli] {

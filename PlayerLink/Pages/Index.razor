@@ -9,19 +9,34 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
-<div class="d-flex justify-content-between">
-    <div class="d-flex">
-        <Lobbysearch />
-        <Lobbyfilter />
+<div class="main">
+    <div class="d-flex justify-content-between" id="search-header">
+        <div class="d-flex" id ="search">
+            <Lobbysearch />
+            <Lobbyfilter />
+        </div>
+        <div id="create-lobby-button">
+            <Lobbybutton />
+        </div>
     </div>
-    <div class="">
-        <Lobbybutton />
+
+    <div>
+        <div>
+            <h3>Overwatch</h3>
+            <div class="lobbies">
+                <Lobby NumPlayers="3" MissingPlayers="2"/>
+                <Lobby NumPlayers="2" MissingPlayers="2"/>  
+            </div>
+
+        </div>
+
+
     </div>
 </div>
 
 
-Welcome to your new app.
+@code {
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+}
+
 

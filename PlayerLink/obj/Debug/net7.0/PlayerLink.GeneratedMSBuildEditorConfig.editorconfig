@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,6 +55,10 @@ build_metadata.AdditionalFiles.CssScope = b-vdkrg40bt8
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobbysearch/Lobbysearch.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieXNlYXJjaC9Mb2JieXNlYXJjaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-g2ge94nwtm
+
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4p99nw6x63
 
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/Components/User/User.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NvbXBvbmVudHMvVXNlci9Vc2VyLnJhem9y
