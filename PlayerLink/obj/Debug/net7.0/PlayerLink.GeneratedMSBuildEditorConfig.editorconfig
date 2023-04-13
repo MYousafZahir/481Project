@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Setup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2V0dXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Shared/BlankLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0JsYW5rTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,15 +45,6 @@ build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/_Imports.razor]
-[C:/Users/Yousaf/OneDrive/Documents/CPSC 481/481Project/PlayerLink/Pages/Setup.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dXAucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yousaf/OneDrive/Documents/CPSC 481/481Project/PlayerLink/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yousaf/OneDrive/Documents/CPSC 481/481Project/PlayerLink/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -76,10 +75,6 @@ build_metadata.AdditionalFiles.CssScope = b-gvlt8b9rfh
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Login/Usernamefield/Usernamefield.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2dpbi9Vc2VybmFtZWZpZWxkL1VzZXJuYW1lZmllbGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-659i8rc6wh
-
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-4p99nw6x63
 
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
