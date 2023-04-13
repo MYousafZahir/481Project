@@ -38,6 +38,7 @@ img {
   display: block; /* Add this line */
 }
 #user-profile {
-  background-color: #292b2f;
-  width: 225px; /* width of container*/
+  background-color: #292B2F;
+
+  width: 250px;
 }

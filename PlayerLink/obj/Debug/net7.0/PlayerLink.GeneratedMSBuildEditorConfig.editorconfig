@@ -44,10 +44,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Friendlist/Friendlist.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9GcmllbmRsaXN0L0ZyaWVuZGxpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ggxsunf0kz
-
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Lobby/Lobby.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieS9Mb2JieS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rgmdzi42qm

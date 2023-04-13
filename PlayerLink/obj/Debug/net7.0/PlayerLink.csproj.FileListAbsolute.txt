@@ -74,4 +74,3 @@
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/PlayerLink.pdb
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/PlayerLink.genruntimeconfig.cache
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/ref/PlayerLink.dll
-/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Components/Friendlist/Friendlist.razor.rz.scp.css

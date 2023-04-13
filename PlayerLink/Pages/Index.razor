@@ -5,7 +5,8 @@
 @using PlayerLink.Components.Lobbybutton
 @using PlayerLink.Components.Lobbyfilter
 @using PlayerLink.Components.Lobbysearch
-@using PlayerLink.Components.Friendlist
+
+
 @inject PlayerLink.Services.UserDataService UserDataService
 
 <PageTitle>Index</PageTitle>
@@ -15,13 +16,4 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
-
-<User user="@UserDataService.Users[0]"/>
-<Userprofile user="@UserDataService.Users[1]"/>
-<Lobby NumPlayers="3" MissingPlayers="2"/>
-<Lobbybutton/>
-<Lobbyfilter/>
-<Lobbysearch/>
-<Friendlist/>
-
 
