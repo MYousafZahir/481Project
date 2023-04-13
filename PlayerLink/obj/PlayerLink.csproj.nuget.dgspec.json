@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ericmao/Documents/Blazor/PlayerLink/PlayerLink.csproj": {}
+    "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj": {}
   },
   "projects": {
-    "/Users/ericmao/Documents/Blazor/PlayerLink/PlayerLink.csproj": {
+    "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ericmao/Documents/Blazor/PlayerLink/PlayerLink.csproj",
+        "projectUniqueName": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj",
         "projectName": "PlayerLink",
-        "projectPath": "/Users/ericmao/Documents/Blazor/PlayerLink/PlayerLink.csproj",
+        "projectPath": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj",
         "packagesPath": "/Users/ericmao/.nuget/packages/",
-        "outputPath": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/",
+        "outputPath": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ericmao/.nuget/NuGet/NuGet.Config"

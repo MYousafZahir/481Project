@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80+QwyLovDnmnDJWRQKyuVYpyZbiFNWCSua3jtu5F4tKx3L44DzC7Dca0xTcbawrj6RYhVYeyjxExQJk1hgWUg==",
+  "dgSpecHash": "ZvBzCMZluRCZuymLI9TBPQTuwP7DGm9EzCX1j20gwfDqbCh96AC6fn2KD22QC/5QgNX7RcW3WqVs8mA4oUZ4zg==",
   "success": true,
-  "projectFilePath": "/Users/ericmao/Documents/Blazor/PlayerLink/PlayerLink.csproj",
+  "projectFilePath": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

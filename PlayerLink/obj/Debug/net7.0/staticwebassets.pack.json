@@ -1,123 +1,135 @@
 {
   "Files": [
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/projectbundle/PlayerLink.bundle.scp.css",
       "PackagePath": "staticwebassets/PlayerLink.bundle.scp.css"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/FONT-LICENSE",
       "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/ICON-LICENSE",
       "PackagePath": "staticwebassets/css/open-iconic"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/README.md",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/README.md",
       "PackagePath": "staticwebassets/css/open-iconic/README.md"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/css/site.css",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Filter.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Filter.svg",
       "PackagePath": "staticwebassets/img/Filter.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Path.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Path.svg",
       "PackagePath": "staticwebassets/img/Path.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Plus.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Plus.png",
       "PackagePath": "staticwebassets/img/Plus.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-2.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-1.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-1.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-2.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-3.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-2.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-2.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-3.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-4.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-3.svg",
+      "PackagePath": "staticwebassets/img/ProfilePicture-3.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-4.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-4.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-5.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-5.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-5.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-6.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-6.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-6.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-7.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-7.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-7.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture-8.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture-8.png",
       "PackagePath": "staticwebassets/img/ProfilePicture-8.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.png",
       "PackagePath": "staticwebassets/img/ProfilePicture.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/ProfilePicture.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/ProfilePicture.svg",
       "PackagePath": "staticwebassets/img/ProfilePicture.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/Search.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/Search.png",
       "PackagePath": "staticwebassets/img/Search.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/favicon.png",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/favicon.png",
       "PackagePath": "staticwebassets/img/favicon.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/online.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
       "PackagePath": "staticwebassets/img/online.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/unoccupied-user.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/unoccupied-user.svg",
       "PackagePath": "staticwebassets/img/unoccupied-user.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/Blazor/PlayerLink/wwwroot/img/user.svg",
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/user.svg",
       "PackagePath": "staticwebassets/img/user.svg"
     },
     {
