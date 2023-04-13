@@ -28,7 +28,16 @@ input[b-g2ge94nwtm] {
 
 img[b-g2ge94nwtm] {
   margin-left: 0.5em;
-  
+}
+.shrink-input[b-g2ge94nwtm] {
+  padding: 5px 10px; /* Adjust the padding as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.shrink-input input[b-g2ge94nwtm] {
+  height: 25px;
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 0 5px; /* Adjust the padding as needed */
 }
 /* _content/PlayerLink/Shared/Components/User/User.razor.rz.scp.css */
 img[b-7dl1p34hli] {
