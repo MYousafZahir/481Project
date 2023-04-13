@@ -74,3 +74,41 @@
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/PlayerLink.pdb
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/PlayerLink.genruntimeconfig.cache
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/ref/PlayerLink.dll
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\appsettings.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.staticwebassets.runtime.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.exe
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.deps.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.runtimeconfig.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.dll
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\bin\Debug\net7.0\PlayerLink.pdb
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.csproj.AssemblyReference.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.AssemblyInfoInputs.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.AssemblyInfo.cs
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.csproj.CoreCompileInputs.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.RazorAssemblyInfo.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.RazorAssemblyInfo.cs
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets\msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets\msbuild.build.PlayerLink.props
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PlayerLink.props
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PlayerLink.props
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Components\Lobbybutton\Lobbybutton.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Components\Lobbyfilter\Lobbyfilter.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Components\Lobbysearch\Lobbysearch.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Components\Lobby\Lobby.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Shared\Components\Userprofile\Userprofile.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Shared\Components\User\User.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\bundle\PlayerLink.styles.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\scopedcss\projectbundle\PlayerLink.bundle.scp.css
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.dll
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\refint\PlayerLink.dll
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.pdb
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\PlayerLink.genruntimeconfig.cache
+C:\Users\Yousaf\OneDrive\Documents\CPSC 481\481Project\PlayerLink\obj\Debug\net7.0\ref\PlayerLink.dll

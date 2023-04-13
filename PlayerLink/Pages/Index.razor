@@ -6,6 +6,7 @@
 @using PlayerLink.Components.Lobbyfilter
 @using PlayerLink.Components.Lobbysearch
 @inject PlayerLink.Services.UserDataService UserDataService
+@inject NavigationManager NavigationManager
 
 <PageTitle>Index</PageTitle>
 
@@ -20,8 +21,11 @@
     </div>
 </div>
 
+<button @onclick="NavigateToAnotherPage">Setup Account</button>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
+@code {
+    private void NavigateToAnotherPage()
+    {
+        NavigationManager.NavigateTo("/setup");
+    }
+}

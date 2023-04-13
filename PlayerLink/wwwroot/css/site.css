@@ -4,6 +4,41 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(200px * 4 + 10px * 4); /* Width of 4 buttons and 3 gaps */
+}
+
+.grid-button-wrapper {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    width: 150px; /* Modify the width to your desired size */
+    height: 150px; /* Make the height equal to the width to create a square */
+    line-height: 50px; /* Center the content vertically */
+    text-align: center; /* Center the content horizontally */
+    transition: background-color 0.3s;
+}
+
+.grid-button.orange {
+    background-color: orange;
+}
+
+
 h1:focus {
     outline: none;
 }
