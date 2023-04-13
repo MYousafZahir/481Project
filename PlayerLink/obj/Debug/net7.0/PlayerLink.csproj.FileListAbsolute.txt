@@ -75,3 +75,7 @@
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/PlayerLink.genruntimeconfig.cache
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/ref/PlayerLink.dll
 /Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Pages/index.razor.rz.scp.css
+/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Pages/Login.razor.rz.scp.css
+/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Components/Login/Passwordfield/Passwordfield.razor.rz.scp.css
+/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Components/Login/Usernamefield/Usernamefield.razor.rz.scp.css
+/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/Debug/net7.0/scopedcss/Components/Login/Loginbutton/Loginbutton.razor.rz.scp.css

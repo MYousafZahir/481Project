@@ -121,6 +121,14 @@
       "PackagePath": "staticwebassets/img/favicon.png"
     },
     {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/lock.svg",
+      "PackagePath": "staticwebassets/img/lock.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/logo.svg",
+      "PackagePath": "staticwebassets/img/logo.svg"
+    },
+    {
       "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
       "PackagePath": "staticwebassets/img/online.svg"
     },
@@ -131,6 +139,10 @@
     {
       "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/user.svg",
       "PackagePath": "staticwebassets/img/user.svg"
+    },
+    {
+      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/username-user.svg",
+      "PackagePath": "staticwebassets/img/username-user.svg"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",
