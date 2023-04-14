@@ -8,24 +8,31 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/ericmao/.nuget/packages/": {}
+    "C:\\Users\\Yousaf\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj",
+      "projectUniqueName": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\PlayerLink.csproj",
       "projectName": "PlayerLink",
-      "projectPath": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/PlayerLink.csproj",
-      "packagesPath": "/Users/ericmao/.nuget/packages/",
-      "outputPath": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/obj/",
+      "projectPath": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\PlayerLink.csproj",
+      "packagesPath": "C:\\Users\\Yousaf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ericmao/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Yousaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -62,7 +69,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

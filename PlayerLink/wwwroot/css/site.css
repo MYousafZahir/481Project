@@ -7,7 +7,7 @@ html, body {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    width: calc(200px * 4 + 10px * 4); /* Width of 4 buttons and 3 gaps */
+    width: calc(200px * 4 + 10px * 4); 
 }
 
 .grid-button-wrapper {
@@ -27,11 +27,45 @@ html, body {
     border: 1px solid #ccc;
     cursor: pointer;
     outline: none;
-    width: 150px; /* Modify the width to your desired size */
-    height: 150px; /* Make the height equal to the width to create a square */
-    line-height: 50px; /* Center the content vertically */
-    text-align: center; /* Center the content horizontally */
+    width: 150px; 
+    height: 150px; 
+    line-height: 50px; 
+    text-align: center; 
     transition: background-color 0.3s;
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(60vh - 4rem); 
+    position: relative;
+}
+
+.square-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-square,
+.image-square {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc; /* Add a border to make the white square visible */
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Add this line to prevent the image from repeating */
+}
+
+.white-square {
+    background-color: white;
+}
+
+.image-square {
+    background-image: url('/img/ProfilePicture-5.png');
 }
 
 .continue-button-wrapper {
@@ -53,6 +87,12 @@ html, body {
 
 .continue-button:hover {
 background-color: #333;
+}
+
+.tab{
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 10px;
 }
 
 
