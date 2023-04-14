@@ -32,101 +32,12 @@ img[b-g2ge94nwtm] {
   font-size: 14px; /* Adjust the font size as needed */
   padding: 0 5px; /* Adjust the padding as needed */
 }
-/* _content/PlayerLink/Components/Login/Loginbutton/Loginbutton.razor.rz.scp.css */
-.btn-login[b-suhmc5bosg] {
-  background-color: #030000;
-  color: #fa9600;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 20px;
-  letter-spacing: 0px;
-  text-align: center;
-  width: 263px;
-}
-/* _content/PlayerLink/Components/Login/Passwordfield/Passwordfield.razor.rz.scp.css */
-.main[b-gvlt8b9rfh] {
-  border: 1px solid #000;
-}
-/* _content/PlayerLink/Components/Login/Usernamefield/Usernamefield.razor.rz.scp.css */
-.main[b-659i8rc6wh] {
-  border: 1px solid #000;
-}
-/* _content/PlayerLink/Pages/Login.razor.rz.scp.css */
-.title[b-pu3ztdpf8g] {
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 100px;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
-.form-group[b-pu3ztdpf8g] {
-  margin: 1em 0 0.5em 0;
-}
-
-.submit-button[b-pu3ztdpf8g] {
-  margin: 2em 0 2em 0;
-}
-
-#forgot[b-pu3ztdpf8g] {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0px;
-}
-
-#setup[b-pu3ztdpf8g] {
-  font-family: Tienne;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-}
-/* _content/PlayerLink/Shared/Components/User/User.razor.rz.scp.css */
-img[b-7dl1p34hli] {
-  float: left;
-  padding: 5px;
-  size: 0%;
-  height: auto;
-  max-width: 25%;
-}
-#username-text[b-7dl1p34hli] {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 5px;
-  line-height: 30px;
-  /* White */
-  color: #8e9297;
-  width: 150px; /* You can adjust this value or use a percentage */
-  display: inline-block; /* Add this line to apply max-width correctly */
-}
-
-#text-info[b-7dl1p34hli] {
-  float: right;
-  margin-left: -10px;
-}
-
-#discriminator[b-7dl1p34hli] {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24.8826px;
-  line-height: 30px;
-  letter-spacing: -0.045em;
-
-  /* Dark Mode/Gray 9 */
-  color: #c7c9cb;
-}
-#user-profile[b-7dl1p34hli] {
-  width: 225px; /* width of container*/
+/* _content/PlayerLink/Components/Lobby/Lobby.razor.rz.scp.css */
+#lobby-container[b-rgmdzi42qm] {
+  box-sizing: border-box;
+  border-radius: 16.2449px;
+  border: 4.06122px solid #000000;
+  padding: 1em;
 }
 /* _content/PlayerLink/Shared/Components/Userprofile/Userprofile.razor.rz.scp.css */
 img[b-kbd1kndd2m] {
@@ -169,7 +80,7 @@ img[b-kbd1kndd2m] {
   display: block; /* Add this line */
 }
 #user-profile[b-kbd1kndd2m] {
-  background-color: #292b2f;
+  background-color: #292B2F;
 
   width: 250px;
 }
@@ -214,6 +125,7 @@ img[b-7dl1p34hli] {
   color: #c7c9cb;
 }
 #user-profile[b-7dl1p34hli] {
+
   width: 225px; /* width of container*/
 }
 /* _content/PlayerLink/Shared/MainLayout.razor.rz.scp.css */
@@ -241,7 +153,7 @@ main[b-l3481v9u0q] {
   background-color: #2f3136;
 }
 
-.top-row[b-l3481v9u0q] a,
+.top-row[b-l3481v9u0q]  a,
 .top-row .btn-link[b-l3481v9u0q] {
   white-space: nowrap;
   margin-left: 1.5rem;
@@ -325,7 +237,7 @@ main[b-l3481v9u0q] {
   padding-bottom: 1rem;
 }
 
-.nav-item[b-dkf0drnwoc] a {
+.nav-item[b-dkf0drnwoc]  a {
   color: #d7d7d7;
   border-radius: 4px;
   height: 3rem;
@@ -334,12 +246,12 @@ main[b-l3481v9u0q] {
   line-height: 3rem;
 }
 
-.nav-item[b-dkf0drnwoc] a.active {
+.nav-item[b-dkf0drnwoc]  a.active {
   background-color: rgba(255, 255, 255, 0.25);
   color: white;
 }
 
-.nav-item[b-dkf0drnwoc] a:hover {
+.nav-item[b-dkf0drnwoc]  a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }

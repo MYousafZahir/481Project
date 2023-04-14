@@ -121,16 +121,8 @@
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },
     {
-      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/lock.svg",
-      "PackagePath": "staticwebassets/img/lock.svg"
-    },
-    {
-      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/logo.svg",
-      "PackagePath": "staticwebassets/img/logo.svg"
-    },
-    {
-      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
-      "PackagePath": "staticwebassets/img/online.svg"
+      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\online.svg",
+      "PackagePath": "staticwebassets\\img\\online.svg"
     },
     {
       "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\unoccupied-user.svg",
@@ -141,11 +133,7 @@
       "PackagePath": "staticwebassets\\img\\user.svg"
     },
     {
-      "Id": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/username-user.svg",
-      "PackagePath": "staticwebassets/img/username-user.svg"
-    },
-    {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xfHkvs+XiZLCvl1UYCRVDOru/tgRNM3lan+9fKB2H9M=",
+  "Hash": "CKs2FYlul4arkUZyzc4jh92Qk7QoEUgjjvauJs9GvRA=",
   "Source": "PlayerLink",
   "BasePath": "_content/PlayerLink",
   "Mode": "Default",
@@ -289,41 +289,7 @@
       "OriginalItemSpec": "wwwroot\\img\\Filter.svg"
     },
     {
-      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/lock.svg",
-      "SourceId": "PlayerLink",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
-      "BasePath": "_content/PlayerLink",
-      "RelativePath": "img/lock.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/lock.svg"
-    },
-    {
-      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/logo.svg",
-      "SourceId": "PlayerLink",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
-      "BasePath": "_content/PlayerLink",
-      "RelativePath": "img/logo.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/logo.svg"
-    },
-    {
-      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/online.svg",
+      "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\online.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\",
@@ -626,24 +592,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/user.svg"
-    },
-    {
-      "Identity": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/img/username-user.svg",
-      "SourceId": "PlayerLink",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ericmao/Documents/GitHub/481Project/PlayerLink/wwwroot/",
-      "BasePath": "_content/PlayerLink",
-      "RelativePath": "img/username-user.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/username-user.svg"
+      "OriginalItemSpec": "wwwroot\\img\\user.svg"
     }
   ]
 }
