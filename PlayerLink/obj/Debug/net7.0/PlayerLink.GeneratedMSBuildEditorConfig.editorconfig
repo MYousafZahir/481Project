@@ -60,18 +60,6 @@ build_metadata.AdditionalFiles.CssScope = b-vdkrg40bt8
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2JieXNlYXJjaC9Mb2JieXNlYXJjaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-g2ge94nwtm
 
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Login/Loginbutton/Loginbutton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2dpbi9Mb2dpbmJ1dHRvbi9Mb2dpbmJ1dHRvbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-suhmc5bosg
-
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Login/Passwordfield/Passwordfield.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2dpbi9QYXNzd29yZGZpZWxkL1Bhc3N3b3JkZmllbGQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-gvlt8b9rfh
-
-[/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Components/Login/Usernamefield/Usernamefield.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Mb2dpbi9Vc2VybmFtZWZpZWxkL1VzZXJuYW1lZmllbGQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-659i8rc6wh
-
 [/Users/ericmao/Documents/GitHub/481Project/PlayerLink/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4p99nw6x63

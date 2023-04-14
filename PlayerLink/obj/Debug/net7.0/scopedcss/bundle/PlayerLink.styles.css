@@ -39,26 +39,6 @@ img[b-g2ge94nwtm] {
   font-size: 14px; /* Adjust the font size as needed */
   padding: 0 5px; /* Adjust the padding as needed */
 }
-/* _content/PlayerLink/Components/Login/Loginbutton/Loginbutton.razor.rz.scp.css */
-.btn-login[b-suhmc5bosg] {
-  background-color: #030000;
-  color: #fa9600;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 20px;
-  letter-spacing: 0px;
-  text-align: center;
-  width: 263px;
-}
-/* _content/PlayerLink/Components/Login/Passwordfield/Passwordfield.razor.rz.scp.css */
-.main[b-gvlt8b9rfh] {
-  border: 1px solid #000;
-}
-/* _content/PlayerLink/Components/Login/Usernamefield/Usernamefield.razor.rz.scp.css */
-.main[b-659i8rc6wh] {
-  border: 1px solid #000;
-}
 /* _content/PlayerLink/Pages/index.razor.rz.scp.css */
 #search[b-4p99nw6x63] {
   column-gap: 1.5em;
@@ -76,39 +56,6 @@ img[b-g2ge94nwtm] {
 }
 .lobbies[b-4p99nw6x63] {
   margin-right: 10vw;
-}
-/* _content/PlayerLink/Pages/Login.razor.rz.scp.css */
-.title[b-pu3ztdpf8g] {
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 100px;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
-.form-group[b-pu3ztdpf8g] {
-  margin: 1em 0 0.5em 0;
-}
-
-.submit-button[b-pu3ztdpf8g] {
-  margin: 2em 0 2em 0;
-}
-
-#forgot[b-pu3ztdpf8g] {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0px;
-}
-
-#setup[b-pu3ztdpf8g] {
-  font-family: Tienne;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
 }
 /* _content/PlayerLink/Shared/Components/User/User.razor.rz.scp.css */
 img[b-7dl1p34hli] {
