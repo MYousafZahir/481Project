@@ -1,0 +1,91 @@
+@page "/setup2"
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Setup Account</PageTitle>
+
+<h1>Account Setup</h1>
+<h4 class="tab"> Step 2 of 3</h4>
+
+<div class="d-flex justify-content-between">
+    <div class="d-flex">
+        <Lobbysearch />
+        <Lobbyfilter />
+    </div>
+    <div class="">
+        <Lobbybutton />
+    </div>
+</div>
+
+<div class="grid-container-wrapper">
+    <div class="grid-container">
+        @for (int i = 0; i < 16; i++)
+        {
+            int buttonIndex = i;
+            string genreText = GetGenreText(buttonIndex);
+            <div class="grid-button-wrapper">
+                <button class="@buttonClasses[buttonIndex]" @onclick="() => ToggleButtonColor(buttonIndex)">
+                    <div class="genre-text">@genreText</div>
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+@if (orangeButtonCount == 3)
+{
+    <div class="continue-button-wrapper">
+        <button class="continue-button" @onclick="NavigateToSetup3">Continue</button>
+    </div>
+}
+
+@code {
+    private string[] buttonClasses = Enumerable.Repeat("grid-button", 16).ToArray();
+    [Inject] NavigationManager NavigationManager { get; set; }
+    private int orangeButtonCount = 0;
+
+    private void ToggleButtonColor(int index)
+    {
+        if (buttonClasses[index].Contains("orange"))
+        {
+            buttonClasses[index] = "grid-button";
+            orangeButtonCount--;
+        }
+        else
+        {
+            if (orangeButtonCount < 3)
+            {
+                buttonClasses[index] = "grid-button orange";
+                orangeButtonCount++;
+            }
+        }
+    }
+
+    private string GetGenreText(int index)
+    {
+        switch (index)
+        {
+            case 0: return "RPG";
+            case 1: return "FPS";
+            case 2: return "Adventure";
+            case 3: return "Racing";
+            case 4: return "Strategy";
+            case 5: return "Puzzle";
+            case 6: return "Sports";
+            case 7: return "Fighting";
+            case 8: return "Simulation";
+            case 9: return "Platform";
+            case 10: return "Action";
+            case 11: return "MMO";
+            case 12: return "Horror";
+            case 13: return "Stealth";
+            case 14: return "Battle Royale";
+            case 15: return "Sandbox";
+            default: return "";
+        }
+    }
+
+    private void NavigateToSetup3()
+    {
+        NavigationManager.NavigateTo("/setup3");
+    }
+}

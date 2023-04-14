@@ -1,0 +1,45 @@
+@page "/setup1"
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Setup Account</PageTitle>
+
+<h1>Account Setup</h1>
+<h4 class="tab">Step 1 of 3</h4>
+
+<div class="content-wrapper">
+    <div class="square-container">
+        <button class="@squareClass" @onclick="ToggleSquareContent"></button>
+    </div>
+</div>
+
+@if (showContinueButton)
+{
+    <div class="continue-button-wrapper">
+        <button class="continue-button" @onclick="NavigateToSetup2">Continue</button>
+    </div>
+}
+
+@code {
+    private string squareClass = "white-square";
+    private bool showContinueButton = false;
+
+    [Inject] NavigationManager NavigationManager { get; set; }
+    private void ToggleSquareContent()
+    {
+        if (squareClass == "white-square")
+        {
+            squareClass = "image-square";
+            showContinueButton = true;
+        }
+        else
+        {
+            squareClass = "white-square";
+            showContinueButton = false;
+        }
+    }
+
+    private void NavigateToSetup2()
+    {
+        NavigationManager.NavigateTo("/setup2");
+    }
+}

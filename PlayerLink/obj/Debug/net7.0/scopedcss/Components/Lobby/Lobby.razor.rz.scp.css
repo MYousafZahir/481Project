@@ -4,3 +4,7 @@
   border: 4.06122px solid #000000;
   padding: 1em;
 }
+#lobby-container:hover[b-rgmdzi42qm] {
+  /* give hyperlink border */
+  border: 4.06122px solid #0000ff;
+}

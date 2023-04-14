@@ -1,7 +1,44 @@
 <div>
-    <button type="button" class="btn btn-light d-flex align-items-center" id="lobby-button">
-
+    <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#create-lobby-modal" id="lobby-button">
         <span> <i class="bi bi-plus-lg"></i> Create Lobby</span>
     </button>
+</div>
 
+<div class="modal fade" id="create-lobby-modal" tabindex="-1" aria-labelledby="create-lobby-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="create-lobby-modalLabel">Create Lobby</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="game">Game</label>
+            <input type="text" class="form-control" id="game" placeholder="Enter game name">
+          </div>
+          <div class="form-group">
+            <label for="lobby-name">Lobby Name</label>
+            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name">
+          </div>
+          <div class="form-group">
+            <label for="desired-tags">Desired Tags</label>
+            <textarea class="form-control" id="desired-tags" rows="3" placeholder="Enter desired tags"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="undesired-tags">Undesired Tags</label>
+            <textarea class="form-control" id="undesired-tags" rows="3" placeholder="Enter undesired tags"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="describe-yourself">Describe Yourself</label>
+            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Lobby</button>
+      </div>
+    </div>
+  </div>
 </div>
