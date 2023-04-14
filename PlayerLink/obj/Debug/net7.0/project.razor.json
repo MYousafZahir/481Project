@@ -422,7 +422,806 @@
         }
       },
       {
-        "HashCode": 90867113,
+        "HashCode": -1765540322,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.App",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.App",
+          "Common.TypeNamespace": "PlayerLink",
+          "Common.TypeNameIdentifier": "App"
+        }
+      },
+      {
+        "HashCode": -1768246962,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.App",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.App",
+          "Common.TypeNamespace": "PlayerLink",
+          "Common.TypeNameIdentifier": "App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1630775569,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Counter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Counter",
+          "Common.TypeNamespace": "PlayerLink.Components",
+          "Common.TypeNameIdentifier": "Counter"
+        }
+      },
+      {
+        "HashCode": -1520834361,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Counter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Counter",
+          "Common.TypeNamespace": "PlayerLink.Components",
+          "Common.TypeNameIdentifier": "Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1291310893,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobby.Lobby",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobby"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NumPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "NumPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MissingPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MissingPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
+          "Common.TypeNameIdentifier": "Lobby"
+        }
+      },
+      {
+        "HashCode": 1011154835,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobby.Lobby",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobby.Lobby"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NumPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "NumPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MissingPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MissingPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
+          "Common.TypeNameIdentifier": "Lobby",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 578579917,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobbyfilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
+          "Common.TypeNameIdentifier": "Lobbyfilter"
+        }
+      },
+      {
+        "HashCode": 175958227,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
+          "Common.TypeNameIdentifier": "Lobbyfilter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1609476273,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobbybutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
+          "Common.TypeNameIdentifier": "Lobbybutton"
+        }
+      },
+      {
+        "HashCode": -2047398557,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobbybutton.Lobbybutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
+          "Common.TypeNameIdentifier": "Lobbybutton",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1709892749,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbysearch.Lobbysearch",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobbysearch"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbysearch.Lobbysearch",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbysearch",
+          "Common.TypeNameIdentifier": "Lobbysearch"
+        }
+      },
+      {
+        "HashCode": 561185319,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbysearch.Lobbysearch",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobbysearch.Lobbysearch"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbysearch.Lobbysearch",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbysearch",
+          "Common.TypeNameIdentifier": "Lobbysearch",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -813123442,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Passwordfield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Passwordfield",
+          "Common.TypeNameIdentifier": "Passwordfield"
+        }
+      },
+      {
+        "HashCode": 1991879864,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Login.Passwordfield.Passwordfield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Passwordfield",
+          "Common.TypeNameIdentifier": "Passwordfield",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -648892253,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Usernamefield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
+          "Common.TypeNameIdentifier": "Usernamefield"
+        }
+      },
+      {
+        "HashCode": -1061601849,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Login.Usernamefield.Usernamefield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
+          "Common.TypeNameIdentifier": "Usernamefield",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1367008503,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Loginbutton.Loginbutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Loginbutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Loginbutton.Loginbutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Loginbutton",
+          "Common.TypeNameIdentifier": "Loginbutton"
+        }
+      },
+      {
+        "HashCode": 121041754,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Loginbutton.Loginbutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Login.Loginbutton.Loginbutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Loginbutton.Loginbutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Loginbutton",
+          "Common.TypeNameIdentifier": "Loginbutton",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -722142240,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.SurveyPrompt",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.SurveyPrompt",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -1493599689,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.SurveyPrompt",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.SurveyPrompt",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1020330621,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.Components.User.User",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "User"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "user",
+            "TypeName": "PlayerLink.Models.User",
+            "Metadata": {
+              "Common.PropertyName": "user",
+              "Common.GloballyQualifiedTypeName": "global::PlayerLink.Models.User"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.Components.User.User",
+          "Common.TypeNamespace": "PlayerLink.Shared.Components.User",
+          "Common.TypeNameIdentifier": "User"
+        }
+      },
+      {
+        "HashCode": -1449871030,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.Components.User.User",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.Components.User.User"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "user",
+            "TypeName": "PlayerLink.Models.User",
+            "Metadata": {
+              "Common.PropertyName": "user",
+              "Common.GloballyQualifiedTypeName": "global::PlayerLink.Models.User"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.Components.User.User",
+          "Common.TypeNamespace": "PlayerLink.Shared.Components.User",
+          "Common.TypeNameIdentifier": "User",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1540075575,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.Components.Userprofile.Userprofile",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Userprofile"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "user",
+            "TypeName": "PlayerLink.Models.User",
+            "Metadata": {
+              "Common.PropertyName": "user",
+              "Common.GloballyQualifiedTypeName": "global::PlayerLink.Models.User"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.Components.Userprofile.Userprofile",
+          "Common.TypeNamespace": "PlayerLink.Shared.Components.Userprofile",
+          "Common.TypeNameIdentifier": "Userprofile"
+        }
+      },
+      {
+        "HashCode": -1514995489,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.Components.Userprofile.Userprofile",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.Components.Userprofile.Userprofile"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "user",
+            "TypeName": "PlayerLink.Models.User",
+            "Metadata": {
+              "Common.PropertyName": "user",
+              "Common.GloballyQualifiedTypeName": "global::PlayerLink.Models.User"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.Components.Userprofile.Userprofile",
+          "Common.TypeNamespace": "PlayerLink.Shared.Components.Userprofile",
+          "Common.TypeNameIdentifier": "Userprofile",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -825739096,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.MainLayout",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.MainLayout",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "MainLayout"
+        }
+      },
+      {
+        "HashCode": -1755712836,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.MainLayout",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.MainLayout",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1336582354,
+        "Kind": "Components.ChildContent",
+        "Name": "PlayerLink.Shared.MainLayout.Body",
+        "AssemblyName": "PlayerLink",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "PlayerLink.Shared.MainLayout.Body",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1329880551,
+        "Kind": "Components.ChildContent",
+        "Name": "PlayerLink.Shared.MainLayout.Body",
+        "AssemblyName": "PlayerLink",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "PlayerLink.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "PlayerLink.Shared.MainLayout.Body",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1226880966,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.NavMenu",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.NavMenu",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "NavMenu"
+        }
+      },
+      {
+        "HashCode": -1131239546,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.NavMenu",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.NavMenu",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1412310761,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.BlankLayout",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlankLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.BlankLayout",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "BlankLayout"
+        }
+      },
+      {
+        "HashCode": 1723459670,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Shared.BlankLayout",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Shared.BlankLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Shared.BlankLayout",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "BlankLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 560510305,
+        "Kind": "Components.ChildContent",
+        "Name": "PlayerLink.Shared.BlankLayout.Body",
+        "AssemblyName": "PlayerLink",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "BlankLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "PlayerLink.Shared.BlankLayout.Body",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "BlankLayout",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1378949317,
+        "Kind": "Components.ChildContent",
+        "Name": "PlayerLink.Shared.BlankLayout.Body",
+        "AssemblyName": "PlayerLink",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "PlayerLink.Shared.BlankLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "PlayerLink.Shared.BlankLayout.Body",
+          "Common.TypeNamespace": "PlayerLink.Shared",
+          "Common.TypeNameIdentifier": "BlankLayout",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 242258084,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
