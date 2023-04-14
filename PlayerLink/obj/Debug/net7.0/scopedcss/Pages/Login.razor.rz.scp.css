@@ -14,3 +14,19 @@
 .submit-button[b-pu3ztdpf8g] {
   margin: 2em 0 2em 0;
 }
+
+#forgot[b-pu3ztdpf8g] {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+#setup[b-pu3ztdpf8g] {
+  font-family: Tienne;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
