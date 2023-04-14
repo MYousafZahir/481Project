@@ -3,6 +3,7 @@
 @using PlayerLink.Components.Login.Passwordfield
 @using PlayerLink.Components.Login.Usernamefield
 @using PlayerLink.Components.Login.Loginbutton
+@inject NavigationManager NavigationManager
 
 <div class="d-flex flex-column align-items-center justify-content-center">
     <div class="header d-flex flex-column align-items-center">
@@ -22,7 +23,7 @@
             <Passwordfield />
         </div>
         <div class="submit-button">
-            <Loginbutton />
+            <Loginbutton OnClick="RedirectToAnotherPage"/>
         </div>
     </form>
     <div>
@@ -35,7 +36,13 @@
                 New to Playerlink? 
                 <a href="">Register</a>
             </div>
-            
         </div>
     </div>
 </div>  
+
+@code {
+    private void RedirectToAnotherPage()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

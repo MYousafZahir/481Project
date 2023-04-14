@@ -1,1 +1,7 @@
-<button type="submit" class="btn btn-login">LOGIN</button>
+
+@* remove the preventDefault, so that actual authentication can occur. *@
+<button @onclick="OnClick" @onclick:preventDefault type="submit" class="btn btn-login">LOGIN</button>
+
+@code {
+    [Parameter] public EventCallback OnClick { get; set; }
+}
