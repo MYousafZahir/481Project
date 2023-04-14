@@ -386,43 +386,6 @@
         }
       },
       {
-        "HashCode": -648892253,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Usernamefield"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
-          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
-          "Common.TypeNameIdentifier": "Usernamefield"
-        }
-      },
-      {
-        "HashCode": -1061601849,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PlayerLink.Components.Login.Usernamefield.Usernamefield"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
-          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
-          "Common.TypeNameIdentifier": "Usernamefield",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -813123442,
         "Kind": "Components.Component",
         "Name": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
@@ -456,6 +419,43 @@
           "Common.TypeName": "PlayerLink.Components.Login.Passwordfield.Passwordfield",
           "Common.TypeNamespace": "PlayerLink.Components.Login.Passwordfield",
           "Common.TypeNameIdentifier": "Passwordfield",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -648892253,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Usernamefield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
+          "Common.TypeNameIdentifier": "Usernamefield"
+        }
+      },
+      {
+        "HashCode": -1061601849,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Login.Usernamefield.Usernamefield"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Login.Usernamefield.Usernamefield",
+          "Common.TypeNamespace": "PlayerLink.Components.Login.Usernamefield",
+          "Common.TypeNameIdentifier": "Usernamefield",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
