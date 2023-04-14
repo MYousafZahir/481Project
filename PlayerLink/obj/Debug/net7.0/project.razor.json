@@ -87,43 +87,6 @@
         }
       },
       {
-        "HashCode": -858113369,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Pages.Index",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Pages.Index",
-          "Common.TypeNamespace": "PlayerLink.Pages",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": 214883962,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Pages.Index",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PlayerLink.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Pages.Index",
-          "Common.TypeNamespace": "PlayerLink.Pages",
-          "Common.TypeNameIdentifier": "Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -2106713654,
         "Kind": "Components.Component",
         "Name": "PlayerLink.Pages.Login",
@@ -157,6 +120,43 @@
           "Common.TypeName": "PlayerLink.Pages.Login",
           "Common.TypeNamespace": "PlayerLink.Pages",
           "Common.TypeNameIdentifier": "Login",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -858113369,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Pages.Index",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Pages.Index",
+          "Common.TypeNamespace": "PlayerLink.Pages",
+          "Common.TypeNameIdentifier": "Index"
+        }
+      },
+      {
+        "HashCode": 214883962,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Pages.Index",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Pages.Index",
+          "Common.TypeNamespace": "PlayerLink.Pages",
+          "Common.TypeNameIdentifier": "Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -231,157 +231,6 @@
           "Common.TypeName": "PlayerLink.Components.Counter",
           "Common.TypeNamespace": "PlayerLink.Components",
           "Common.TypeNameIdentifier": "Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 158187274,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobby.Lobby",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Lobby"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "NumPlayers",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "NumPlayers",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MissingPlayers",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "MissingPlayers",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
-          "Common.TypeNameIdentifier": "Lobby"
-        }
-      },
-      {
-        "HashCode": 330302913,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobby.Lobby",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PlayerLink.Components.Lobby.Lobby"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "NumPlayers",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "NumPlayers",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MissingPlayers",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "MissingPlayers",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
-          "Common.TypeNameIdentifier": "Lobby",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 512803478,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Lobbybutton"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
-          "Common.TypeNameIdentifier": "Lobbybutton"
-        }
-      },
-      {
-        "HashCode": -1690569123,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PlayerLink.Components.Lobbybutton.Lobbybutton"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
-          "Common.TypeNameIdentifier": "Lobbybutton",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1058706563,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Lobbyfilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
-          "Common.TypeNameIdentifier": "Lobbyfilter"
-        }
-      },
-      {
-        "HashCode": -260005401,
-        "Kind": "Components.Component",
-        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
-        "AssemblyName": "PlayerLink",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
-          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
-          "Common.TypeNameIdentifier": "Lobbyfilter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -554,6 +403,157 @@
           "Common.TypeName": "PlayerLink.Components.Login.Loginbutton.Loginbutton",
           "Common.TypeNamespace": "PlayerLink.Components.Login.Loginbutton",
           "Common.TypeNameIdentifier": "Loginbutton",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 158187274,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobby.Lobby",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobby"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NumPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "NumPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MissingPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MissingPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
+          "Common.TypeNameIdentifier": "Lobby"
+        }
+      },
+      {
+        "HashCode": 330302913,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobby.Lobby",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobby.Lobby"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NumPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "NumPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MissingPlayers",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MissingPlayers",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobby.Lobby",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobby",
+          "Common.TypeNameIdentifier": "Lobby",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1058706563,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobbyfilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
+          "Common.TypeNameIdentifier": "Lobbyfilter"
+        }
+      },
+      {
+        "HashCode": -260005401,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbyfilter.Lobbyfilter",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbyfilter",
+          "Common.TypeNameIdentifier": "Lobbyfilter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 512803478,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lobbybutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
+          "Common.TypeNameIdentifier": "Lobbybutton"
+        }
+      },
+      {
+        "HashCode": -1690569123,
+        "Kind": "Components.Component",
+        "Name": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+        "AssemblyName": "PlayerLink",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PlayerLink.Components.Lobbybutton.Lobbybutton"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PlayerLink.Components.Lobbybutton.Lobbybutton",
+          "Common.TypeNamespace": "PlayerLink.Components.Lobbybutton",
+          "Common.TypeNameIdentifier": "Lobbybutton",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
