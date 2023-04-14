@@ -89,6 +89,33 @@ html, body {
 background-color: #333;
 }
 
+.searchbar-wrapper {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.display-image {
+    max-width: 300px;
+    max-height: 500px;
+    margin: 0 10px;
+}
+
+
 .tab{
     margin-top: 10px;
     margin-left: 80px;

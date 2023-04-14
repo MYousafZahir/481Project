@@ -1,0 +1,61 @@
+@page "/setup3"
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Setup Account</PageTitle>
+
+<h1>Account Setup</h1>
+<h4 class="tab">Step 3 of 3</h4>
+
+<div class="searchbar-wrapper">
+    <input @bind="searchText" @oninput="SearchTextChanged" placeholder="Search..." />
+</div>
+
+<div class="image-container">
+    @if (showImage1)
+    {
+        <img src="/img/cyberpunk.bmp" alt="Cyberpunk" class="display-image" />
+    }
+    @if (showImage2)
+    {
+        <img src="/img/tomb.bmp" alt="Image 2" class="display-image" />
+    }
+    @if (showImage3)
+    {
+        <img src="/img/valorant.bmp" alt="Image 3" class="display-image" />
+    }
+</div>
+
+@if (showContinueButton)
+{
+    <div class="continue-button-wrapper">
+        <button class="continue-button">Continue</button>
+    </div>
+}
+
+@code {
+    private string searchText = "";
+    private bool showImage1 = false;
+    private bool showImage2 = false;
+    private bool showImage3 = false;
+    private bool showContinueButton = false;
+
+    private void SearchTextChanged(ChangeEventArgs e)
+    {
+        searchText = e.Value.ToString();
+
+        if (searchText.Contains("cyberpunk"))
+        {
+            showImage1 = true;
+        }
+        if (searchText.Contains("tomb"))
+        {
+            showImage2 = true;
+        }
+        if (searchText.Contains("valorant"))
+        {
+            showImage3 = true;
+        }
+
+        showContinueButton = showImage1 && showImage2 && showImage3;
+    }
+}

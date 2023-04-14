@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\img\\Search.png"
     },
     {
+      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\cyberpunk.bmp",
+      "PackagePath": "staticwebassets\\img\\cyberpunk.bmp"
+    },
+    {
       "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\favicon.png",
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },
@@ -133,6 +137,10 @@
       "PackagePath": "staticwebassets\\img\\online.svg"
     },
     {
+      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\tomb.bmp",
+      "PackagePath": "staticwebassets\\img\\tomb.bmp"
+    },
+    {
       "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\unoccupied-user.svg",
       "PackagePath": "staticwebassets\\img\\unoccupied-user.svg"
     },
@@ -143,6 +151,10 @@
     {
       "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\username-user.svg",
       "PackagePath": "staticwebassets\\img\\username-user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\valorant.bmp",
+      "PackagePath": "staticwebassets\\img\\valorant.bmp"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PlayerLink.Microsoft.AspNetCore.StaticWebAssets.props",

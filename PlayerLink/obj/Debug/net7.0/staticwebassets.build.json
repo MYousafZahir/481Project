@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ijcknYAEFxiUZKVOW+vIJFJJ5TDCrfSHZa6jIx8joK8=",
+  "Hash": "mCMkDFeP+272Lipi4YgOx6vphUW34mlzhph3CkmNfyg=",
   "Source": "PlayerLink",
   "BasePath": "_content/PlayerLink",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\cyberpunk.bmp",
+      "SourceId": "PlayerLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\",
+      "BasePath": "_content/PlayerLink",
+      "RelativePath": "img/cyberpunk.bmp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cyberpunk.bmp"
     },
     {
       "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\favicon.png",
@@ -595,6 +612,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Search.png"
     },
     {
+      "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\tomb.bmp",
+      "SourceId": "PlayerLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\",
+      "BasePath": "_content/PlayerLink",
+      "RelativePath": "img/tomb.bmp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\tomb.bmp"
+    },
+    {
       "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\unoccupied-user.svg",
       "SourceId": "PlayerLink",
       "SourceType": "Discovered",
@@ -644,6 +678,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\username-user.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\img\\valorant.bmp",
+      "SourceId": "PlayerLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yousaf\\OneDrive\\Documents\\CPSC 481\\481Project\\PlayerLink\\wwwroot\\",
+      "BasePath": "_content/PlayerLink",
+      "RelativePath": "img/valorant.bmp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\valorant.bmp"
     }
   ]
 }
