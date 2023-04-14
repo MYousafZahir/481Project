@@ -1,1 +1,41 @@
 @page "/login"
+@layout BlankLayout
+@using PlayerLink.Components.Login.Passwordfield
+@using PlayerLink.Components.Login.Usernamefield
+@using PlayerLink.Components.Login.Loginbutton
+
+<div class="d-flex flex-column align-items-center justify-content-center">
+    <div class="header d-flex flex-column align-items-center">
+        <div class="title">
+            <h1>Player Link</h1>
+        </div>
+        <div class="logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+    </div>
+
+    <form action="" class="d-flex flex-column align-items-center">
+        <div class="form-group">
+            <Usernamefield />
+        </div>
+        <div class="form-group">
+            <Passwordfield />
+        </div>
+        <div class="submit-button">
+            <Loginbutton />
+        </div>
+    </form>
+    <div>
+        <div class="d-flex flex-column align-items-end forgot">
+            <a href="">Forgot Username?</a>
+            <a href="">Forgot Password?</a>
+        </div>
+        <div>
+            <div class="d-flex flex-column align-items-center setup">
+                New to Playerlink? 
+                <a href="">Register</a>
+            </div>
+            
+        </div>
+    </div>
+</div>  
