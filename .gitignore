@@ -1,0 +1,46 @@
+# .gitignore for Blazor Server application
+
+# Build output, obj and bin folders
+**/bin/
+**/obj/
+
+# Visual Studio / VS Code temporary and user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# User-specific settings
+*.DotSettings.user
+*.sln.DotSettings.user
+
+# NuGet packages
+packages/
+**/*.nupkg
+
+# ASP.NET Core temporary files
+*.csproj.user
+*.pubxml.user
+
+# Ignore local launch settings
+Properties/launchSettings.json
+
+# Logs
+*.log
+
+# Generated files
+*.db
+*.jfm
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore the node_modules folder if using client-side libraries
+node_modules/
+
+# Ignore the .env file if using environment variables
+.env
