@@ -6,6 +6,25 @@
 <h1>Account Setup</h1>
 <h4 class="tab">Step 3 of 3</h4>
 
+<style>
+    .searchbar-wrapper input {
+        background-color: black;
+        color: white;
+        border-radius: 100px;
+        border: none;
+        padding: 8px 12px;
+    }
+
+        .searchbar-wrapper input::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+
+        .searchbar-wrapper input:focus {
+            outline: none;
+        }
+</style>
+
 <div class="searchbar-wrapper">
     <input @bind="searchText" @oninput="SearchTextChanged" placeholder="Search..." />
 </div>
@@ -58,4 +77,5 @@
 
         showContinueButton = showImage1 && showImage2 && showImage3;
     }
+
 }

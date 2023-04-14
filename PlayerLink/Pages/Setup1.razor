@@ -15,7 +15,7 @@
 @if (showContinueButton)
 {
     <div class="continue-button-wrapper">
-        <button class="continue-button">Continue</button>
+        <button class="continue-button" @onclick="NavigateToSetup2">Continue</button>
     </div>
 }
 
@@ -23,6 +23,7 @@
     private string squareClass = "white-square";
     private bool showContinueButton = false;
 
+    [Inject] NavigationManager NavigationManager { get; set; }
     private void ToggleSquareContent()
     {
         if (squareClass == "white-square")
@@ -35,5 +36,10 @@
             squareClass = "white-square";
             showContinueButton = false;
         }
+    }
+
+    private void NavigateToSetup2()
+    {
+        NavigationManager.NavigateTo("/setup2");
     }
 }
