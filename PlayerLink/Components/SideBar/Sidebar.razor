@@ -1,0 +1,53 @@
+@using PlayerLink.Shared.Components.User
+@using PlayerLink.Shared.Components.Userprofile
+@inject PlayerLink.Services.UserDataService UserDataService
+<div class = "Sidebar">
+    <div class = "title">
+        <img src="/img/head.svg" style = "justify-content: left; padding-left: 1rem;">
+        <p style = "padding-top: 1.5rem; padding-left: 1rem"> Lobby Members</p>
+    </div>
+    <hr class = "divider">
+    <ul style = "padding-top: 1rem;">
+        <Userprofile user ="UserDataService.Users[0]"/>
+    </ul>
+    <div class = "options">
+        <div class = "voice">
+            <button @onclick = "ToggleMute"> 
+                @if (muted) {
+                    <img src="/img/MuteIcon.svg" /> 
+                } else {
+                    <img src="/img/MicrophoneIcon.svg" /> 
+                }
+            </button>
+            <button @onclick = "ToggleDeafen">
+                @if (deafened) {
+                    <img src="/img/DeafenIcon.svg" /> 
+                } else {
+                    <img src="/img/headphoneIcon.svg" /> 
+                }
+            </button>
+        </div>
+        <button style = "padding-bottom: 1rem;">
+            <img src="/img/Invite_Button.svg" /> 
+        </button>
+        <button>
+            <img src="/img/Leave_Button.svg" /> 
+        </button>
+    </div>
+</div>
+
+
+@code {
+    private bool muted = false;
+    private bool deafened = false;
+    //private bool isHost = false;
+
+    private void ToggleMute()
+    {
+        muted = !muted;
+    }
+    private void ToggleDeafen()
+    {
+        deafened = !deafened;
+    }
+}
