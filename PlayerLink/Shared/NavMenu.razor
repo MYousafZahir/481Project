@@ -1,5 +1,6 @@
 ﻿@using PlayerLink.Shared.Components.User
 @using PlayerLink.Shared.Components.Userprofile
+@using PlayerLink.Components.Friendlistbutton
 @inject PlayerLink.Services.UserDataService UserDataService
 <div class="top-row navbar navbar-dark">
     <div>
@@ -13,7 +14,8 @@
 <div class="@NavMenuCssClass nav-scrollable side-bar" @onclick="ToggleNavMenu">
     <div class="d-flex flex-row justify-content-between header">
         <span>Friends</span>
-        <i class="bi bi-plus"></i>
+        <Friendlistbutton/> 
+
     </div>
     <div class="d-flex search-friend">
         <input placeholder="Search friends" type="text" name="lobby-search" id="lobby-search" class="form-control">
