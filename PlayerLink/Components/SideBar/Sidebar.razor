@@ -7,8 +7,11 @@
         <p style = "padding-top: 1.5rem; padding-left: 1rem"> Lobby Members</p>
     </div>
     <hr class = "divider">
-    <ul style = "padding-top: 1rem;">
-        <Userprofile user ="UserDataService.Users[0]"/>
+    <ul style = "padding-top: 1rem; padding-left: 0;">
+        @if (UserDataService.GetUserByUsername(username) != null){
+            var user = UserDataService.GetUserByUsername(username);
+            <Userprofile user = "@user"/>
+        }
     </ul>
     <div class = "options">
         <div class = "voice">
@@ -42,7 +45,23 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="input-group">
+            <input type="text" class="form-control" id="text-field" placeholder="Search friends name" @bind-value="@toSearch" @oninput = "SearchFriends"/>
+        </div>
+        @if (UserDataService.GetUserByUsername(username) != null){
+            var c_user = UserDataService.GetUserByUsername(username);
+            @foreach (var name in c_user.Friends)
+            {
+                var friend = UserDataService.GetUserByUsername(name);
+                if (friend.Username.Contains(toSearch, StringComparison.OrdinalIgnoreCase)){
+                    <div class="friend-item px-3">
+                        <button class="btn btn-primary" style = "float: right;" 
+                            onclick="this.style.backgroundColor = 'green'; this.innerText = 'Invited';">Invite</button>
+                        <User user ="@friend"/>
+                    </div>
+                }
+            }
+        }
       </div>
     </div>
   </div>
@@ -72,7 +91,14 @@
     private bool muted = false;
     private bool deafened = false;
     //private bool isHost = false;
-
+    private string username = "Alice";
+    string btnClass = "btn btn-success";
+    private string toSearch = "";
+    private void SearchFriends(ChangeEventArgs args)
+    {
+        toSearch = args.Value.ToString();
+        StateHasChanged();
+    }
     private void ToggleMute()
     {
         muted = !muted;

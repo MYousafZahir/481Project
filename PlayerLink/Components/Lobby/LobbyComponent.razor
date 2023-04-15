@@ -1,0 +1,68 @@
+@using PlayerLink.Models
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+
+<div @onclick="ShowModal">
+    <div class="d-flex flex-row" id="lobby-container">
+        @foreach (string user in Images)
+        {
+            <div>
+                <img src="@user" />
+            </div>
+        }
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" @ref="modalElement">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@LobbyData.LobbyName</h5>
+                <button type="button" class="btn-close" @onclick="HideModal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Add any content you want to display in the modal here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Lobby LobbyData { get; set; }
+    private ElementReference modalElement;
+
+    public List<string> Images { get; set; } = new List<string>();
+
+    protected override void OnParametersSet()
+    {
+        CreateImages();
+    }
+
+    private void CreateImages()
+    {
+        Images.Clear();
+        for (int i = 0; i < LobbyData.NumPlayers + LobbyData.MissingPlayers; i++)
+        {
+            if (i < LobbyData.NumPlayers)
+            {
+                Images.Add("/img/user.svg");
+            }
+            else
+            {
+                Images.Add("/img/unoccupied-user.svg");
+            }
+        }
+    }
+
+    public async Task ShowModal()
+    {
+        await JSRuntime.InvokeVoidAsync("ShowModal", modalElement);
+    }
+
+    private async Task HideModal()
+    {
+        await JSRuntime.InvokeVoidAsync("HideModal", modalElement);
+    }
+
+}
