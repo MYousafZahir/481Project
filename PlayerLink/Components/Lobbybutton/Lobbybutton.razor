@@ -1,5 +1,7 @@
 @inject PlayerLink.Services.LobbyDataService LobbyDataService
+@inject IJSRuntime JSRuntime
 @using LobbyModel = PlayerLink.Models.Lobby
+@using Microsoft.JSInterop
 <div>
     <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#create-lobby-modal" id="lobby-button">
         <span> <i class="bi bi-plus-lg"></i> Create Lobby</span>
@@ -17,11 +19,11 @@
         <form>
           <div class="form-group">
             <label for="game">Game</label>
-            <input type="text" class="form-control" id="game" placeholder="Enter game name">
+            <input type="text" class="form-control" id="game" placeholder="Enter game name" @bind="@Game">
           </div>
           <div class="form-group">
             <label for="lobby-name">Lobby Name</label>
-            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@Game">
+            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@LobbyName">
           </div>
           <div class="form-group">
             <label for="desired-tags">Desired Tags</label>
@@ -52,23 +54,27 @@
     private string UndesiredTagsInput { get; set; } = "";
     private string DescribeYourself { get; set; } = "";
 
-    private void CreateLobby()
+    private async void CreateLobby()
+{
+    List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+    List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+
+    LobbyModel newLobby = new LobbyModel
     {
-        List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
-        List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+        LobbyID = LobbyDataService.Lobbies.Count + 1,
+        Game = Game,
+        LobbyName = LobbyName,
+        DesiredTags = desiredTags,
+        UndesiredTags = undesiredTags,
+        DescribeYourself = DescribeYourself
+    };
 
-        LobbyModel newLobby = new LobbyModel
-        {
-            LobbyID = LobbyDataService.Lobbies.Count + 1,
-            Game = Game,
-            LobbyName = LobbyName,
-            DesiredTags = desiredTags,
-            UndesiredTags = undesiredTags,
-            DescribeYourself = DescribeYourself
-        };
+    LobbyDataService.AddLobby(newLobby);
+    await JSRuntime.InvokeVoidAsync("eval", "bootstrap.Modal.getInstance(document.getElementById('create-lobby-modal')).hide();");
+}
 
-        LobbyDataService.AddLobby(newLobby);
-    }
+
+
 }
 
 

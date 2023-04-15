@@ -11,10 +11,14 @@ namespace PlayerLink.Services
         {
             Lobbies = CreateSampleLobbies();
         }
-        public void AddLobby(Lobby newLobby)
+        public event Action OnLobbyAdded;
+
+        public void AddLobby(Lobby lobby)
         {
-            Lobbies.Add(newLobby);
+            Lobbies.Add(lobby);
+            OnLobbyAdded?.Invoke();
         }
+
 
         private List<Lobby> CreateSampleLobbies()
         {
@@ -55,5 +59,6 @@ namespace PlayerLink.Services
                 }
             };
         }
+        
     }
 }

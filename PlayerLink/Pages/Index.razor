@@ -38,5 +38,20 @@
 </div>
 
 @code {
+    protected override void OnInitialized()
+    {
+        LobbyDataService.OnLobbyAdded += UpdateLobbies;
+    }
 
+    private void UpdateLobbies()
+    {
+        InvokeAsync(() => StateHasChanged());
+    }
+
+
+    public void Dispose()
+    {
+        LobbyDataService.OnLobbyAdded -= UpdateLobbies;
+    }
 }
+
