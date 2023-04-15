@@ -479,3 +479,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 PlayerLink/obj/Debug/net7.0/project.razor.json
+.DS_Store
