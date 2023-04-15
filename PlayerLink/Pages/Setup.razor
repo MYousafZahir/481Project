@@ -1,5 +1,7 @@
 @page "/setup"
 @layout BlankLayout
+@inject NavigationManager Navigation
+
 
 @using Microsoft.AspNetCore.Components.Web
 
@@ -47,7 +49,7 @@
 <div class="page-header">PLAYER LINK</div>
 <h1>Make An Account</h1>
 <div class="form-container">
-    <form>
+    <form @onsubmit="OnFormSubmit">
         <div class="form-group">
             <label for="email">Email:</label>
             <input @oninput="CheckFormCompletion" type="email" id="email" class="form-control" @bind="Email" required />
@@ -97,4 +99,14 @@
     {
         AllFieldsFilled = !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(Password) && Month > 0 && Day > 0 && Year > 0;
     }
+
+    private async Task OnFormSubmit()
+    {
+        if (AllFieldsFilled)
+        {
+            await Task.Delay(100); // Add a small delay for a smoother transition (optional)
+            Navigation.NavigateTo("/setup1");
+        }
+    }
+
 }
