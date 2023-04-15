@@ -6,12 +6,13 @@
 @using PlayerLink.Components.Lobbyfilter
 @using PlayerLink.Components.Lobbysearch
 @inject PlayerLink.Services.UserDataService UserDataService
+@inject PlayerLink.Services.LobbyDataService LobbyDataService
 
 <PageTitle>Index</PageTitle>
 
 <div class="main">
     <div class="d-flex justify-content-between" id="search-header">
-        <div class="d-flex" id ="search">
+        <div class="d-flex" id="search">
             <Lobbysearch />
             <Lobbyfilter />
         </div>
@@ -21,22 +22,21 @@
     </div>
 
     <div>
-        <div>
-            <h3>Overwatch</h3>
-            <div class="lobbies">
-                <Lobby NumPlayers="3" MissingPlayers="2"/>
-                <Lobby NumPlayers="2" MissingPlayers="2"/>  
+        @foreach (var gameGroup in LobbyDataService.Lobbies.GroupBy(l => l.Game))
+        {
+            <div>
+                <h3>@gameGroup.Key</h3>
+                <div class="lobbies">
+                    @foreach (var lobby in gameGroup)
+                    {
+                        <Lobby NumPlayers="lobby.NumPlayers" MissingPlayers="lobby.MissingPlayers" />
+                    }
+                </div>
             </div>
-
-        </div>
-
-
+        }
     </div>
 </div>
-
 
 @code {
 
 }
-
-

@@ -1,3 +1,5 @@
+@inject PlayerLink.Services.LobbyDataService LobbyDataService
+@using LobbyModel = PlayerLink.Models.Lobby
 <div>
     <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#create-lobby-modal" id="lobby-button">
         <span> <i class="bi bi-plus-lg"></i> Create Lobby</span>
@@ -19,26 +21,54 @@
           </div>
           <div class="form-group">
             <label for="lobby-name">Lobby Name</label>
-            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name">
+            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@Game">
           </div>
           <div class="form-group">
             <label for="desired-tags">Desired Tags</label>
-            <textarea class="form-control" id="desired-tags" rows="3" placeholder="Enter desired tags"></textarea>
+            <textarea class="form-control" id="desired-tags" rows="3" placeholder="Enter desired tags" @bind="@DesiredTagsInput"></textarea>
           </div>
           <div class="form-group">
             <label for="undesired-tags">Undesired Tags</label>
-            <textarea class="form-control" id="undesired-tags" rows="3" placeholder="Enter undesired tags"></textarea>
+            <textarea class="form-control" id="undesired-tags" rows="3" placeholder="Enter undesired tags" @bind="@UndesiredTagsInput"></textarea>
           </div>
           <div class="form-group">
             <label for="describe-yourself">Describe Yourself</label>
-            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself"></textarea>
+            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself" @bind="@DescribeYourself"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create Lobby</button>
+        <button type="button" class="btn btn-primary" @onclick="CreateLobby">Create Lobby</button>
       </div>
     </div>
   </div>
 </div>
+
+@code {
+    private string Game { get; set; } = "";
+    private string LobbyName { get; set; } = "";
+    private string DesiredTagsInput { get; set; } = "";
+    private string UndesiredTagsInput { get; set; } = "";
+    private string DescribeYourself { get; set; } = "";
+
+    private void CreateLobby()
+    {
+        List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+        List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+
+        LobbyModel newLobby = new LobbyModel
+        {
+            LobbyID = LobbyDataService.Lobbies.Count + 1,
+            Game = Game,
+            LobbyName = LobbyName,
+            DesiredTags = desiredTags,
+            UndesiredTags = undesiredTags,
+            DescribeYourself = DescribeYourself
+        };
+
+        LobbyDataService.AddLobby(newLobby);
+    }
+}
+
+
