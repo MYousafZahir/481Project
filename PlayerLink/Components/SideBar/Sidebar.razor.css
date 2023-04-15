@@ -13,9 +13,9 @@ html,body
     top: 0;
     position: absolute;
     justify-content: left;
-    width: 20vw;
+    width: 250px;
     height: 100vh;
-    background-color: #2F3136;
+    background-color: #292B2F;
 }
 
 .title {
@@ -39,7 +39,7 @@ html,body
 }
 
 button {
-    background-color: #2F3136;
+    background-color: #292B2F;
     border: none !important;
 }
 .options {
