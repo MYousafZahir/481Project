@@ -1,10 +1,10 @@
-
+@using PlayerLink.Components.Usergrid
 <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#friendsModal" style="color: #B9BBBE;">
     <i class="bi bi-plus"></i>
 </button>
 
 <div class="modal fade" data-bs-backdrop="false" id="friendsModal" tabindex="-1" aria-labelledby="friendsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="friendsModalLabel">Friends</h5>
@@ -13,30 +13,15 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="game">Game</label>
-            <input type="text" class="form-control" id="game" placeholder="Enter game name">
-          </div>
-          <div class="form-group">
-            <label for="lobby-name">Lobby Name</label>
-            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name">
-          </div>
-          <div class="form-group">
-            <label for="desired-tags">Desired Tags</label>
-            <textarea class="form-control" id="desired-tags" rows="3" placeholder="Enter desired tags"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="undesired-tags">Undesired Tags</label>
-            <textarea class="form-control" id="undesired-tags" rows="3" placeholder="Enter undesired tags"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="describe-yourself">Describe Yourself</label>
-            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself"></textarea>
+            <input type="text" class="form-control" id="friend" placeholder="Search Friends">
           </div>
         </form>
+        <h2>Request</h2>
+        <Usergrid/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create Lobby</button>
+
       </div>
     </div>
   </div>
