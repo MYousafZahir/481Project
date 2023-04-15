@@ -1,0 +1,56 @@
+<div class="chat-field">
+
+    <div class="messages align-items-end">
+        @foreach (var message in messages)
+        {
+            @if (string.Equals(message.sender, username))
+            {
+                <div class="message-sender">
+                    <div class = "username"> @message.sender</div>
+                    <div class="message-text">
+                        @message.newMessage
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="message-reciever">
+                    <div class = "username"> @message.sender</div>
+                    <div class="message-text">
+                        @message.newMessage
+                    </div>
+                </div>
+            }
+            <div style = "width:80wv; height: 10px;">  </div>
+        }
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" id="text-field" placeholder="Enter a message" @bind-value="@message.newMessage" @onkeydown = "Enter"/>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" @onclick="SendMessage">Send</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    List<(string newMessage, string sender)> messages = new List<(string newMessage, string sender)>();
+    (string newMessage, string sender) message;
+    private string username = "Alice";
+    void SendMessage(){
+        if (!string.IsNullOrEmpty(message.newMessage))
+        {
+            message.sender = username;
+            messages.Add(message);
+            message.sender = "bob";
+            message.newMessage = "hello";
+            messages.Add(message);
+            message.newMessage = string.Empty;
+            message.sender = string.Empty;
+        }
+    }
+    void Enter(KeyboardEventArgs e) {
+        if(e.Code == "Enter"){
+            SendMessage();
+        }
+    }
+}

@@ -27,13 +27,44 @@
                 }
             </button>
         </div>
-        <button style = "padding-bottom: 1rem;">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#invite" style = "padding-bottom: 1rem;">
             <img src="/img/Invite_Button.svg" /> 
         </button>
-        <button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#confirm">
             <img src="/img/Leave_Button.svg" /> 
         </button>
     </div>
+<div class="modal fade" id="invite" tabindex="-1" role = "dialog" aria-labelledby="invite-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="padding-left: 20%;">
+        <h5 class="modal-title mx-auto" id="invite-modalLabel">Invite Friends </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="confirm" tabindex="-1"  aria-labelledby="confirm-modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header"  style="padding-left: 5%;">
+        <h5 class="modal-title mx-auto" id="confirm-modalLabel" style = "Montserrat;font-size: 1.2rem;"> ARE YOU SURE YOU WANT TO LEAVE THE LOBBY? </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p style = "color: #4c4c4c; font-family: Montserrat;font-size: 1.2rem;">
+            Leaving the lobby means you will no longer have access to the voice chat unless you rejoin the lobby </p>
+      </div>
+       <div class = "mx-auto">
+        <button type="button" class="btn btn-secondary" style = "background-color: green; margin-bottom: 2rem;">YES</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style = "background-color: red; margin-left: 4rem; margin-bottom: 2rem;">NO</button>
+      </div> 
+    </div>
+  </div>
+</div>
 </div>
 
 
