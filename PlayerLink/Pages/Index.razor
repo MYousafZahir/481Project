@@ -29,7 +29,7 @@
                 <div class="lobbies">
                     @foreach (var lobby in gameGroup)
                     {
-                        <Lobby NumPlayers="lobby.NumPlayers" MissingPlayers="lobby.MissingPlayers" />
+                        <LobbyComponent LobbyData="lobby" />
                     }
                 </div>
             </div>
