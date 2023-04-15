@@ -5,8 +5,26 @@
 
 <PageTitle>Setup Account</PageTitle>
 
-<h1>Account Setup</h1>
-<h4 class="tab">Step 1 of 3</h4>
+<!-- Add PLAYER LINK in top left -->
+<div style="position: absolute; top: 10px; left: 10px; font-size: 50px; font-family: 'Montserrat', sans-serif;">
+    PLAYER LINK
+</div>
+
+<!-- Vertically lower "Account Setup" -->
+<div style="text-align: center; padding-top: 80px;">
+    <h1>Account Setup</h1>
+</div>
+
+<!-- Place "Step 3 of 3" below "Account Setup" -->
+<div style="position: absolute; top: 130px; left: 50px;">
+    <h4 class="tab">Step 1 of 3</h4>
+</div>
+
+<!-- Instruction Text-->
+<div style="position: absolute; top: 180px; left: 100px;">
+    <h5 class="tab">Please select a profile picture</h5>
+</div>
+
 
 <div class="content-wrapper">
     <div class="square-container">
@@ -16,7 +34,7 @@
 
 @if (showContinueButton)
 {
-    <div class="continue-button-wrapper">
+    <div class="continue-button-wrapper2">
         <button class="continue-button" @onclick="NavigateToSetup2">Continue</button>
     </div>
 }

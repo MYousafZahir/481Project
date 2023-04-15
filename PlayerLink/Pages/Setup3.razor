@@ -5,8 +5,25 @@
 
 <PageTitle>Setup Account</PageTitle>
 
-<h1>Account Setup</h1>
-<h4 class="tab">Step 3 of 3</h4>
+<!-- Add PLAYER LINK in top left -->
+<div style="position: absolute; top: 10px; left: 10px; font-size: 50px; font-family: 'Montserrat', sans-serif;">
+    PLAYER LINK
+</div>
+
+<!-- Vertically lower "Account Setup" -->
+<div style="text-align: center; padding-top: 80px;">
+    <h1>Account Setup</h1>
+</div>
+
+<!-- Place "Step 3 of 3" below "Account Setup" -->
+<div style="position: absolute; top: 130px; left: 50px;">
+    <h4 class="tab">Step 3 of 3</h4>
+</div>
+
+<!-- Instruction Text-->
+<div style="position: absolute; top: 180px; left: 100px;">
+    <h5 class="tab">Please select your top 3 favorite games</h5>
+</div>
 
 <style>
     .searchbar-wrapper input {
@@ -48,8 +65,9 @@
 
 @if (showContinueButton)
 {
-    <div class="continue-button-wrapper">
-        <button class="continue-button">Continue</button>
+    <div class="continue-button-wrapper2" style="text-align: center;">
+        <!-- Add navigation to index page on button click -->
+        <button class="continue-button" @onclick="NavigateToIndex">Continue</button>
     </div>
 }
 
@@ -59,6 +77,8 @@
     private bool showImage2 = false;
     private bool showImage3 = false;
     private bool showContinueButton = false;
+
+    [Inject] NavigationManager NavigationManager { get; set; }
 
     private void SearchTextChanged(ChangeEventArgs e)
     {
@@ -80,4 +100,8 @@
         showContinueButton = showImage1 && showImage2 && showImage3;
     }
 
+    private void NavigateToIndex()
+    {
+        NavigationManager.NavigateTo("");
+    }
 }

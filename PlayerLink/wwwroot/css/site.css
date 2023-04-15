@@ -8,6 +8,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     width: calc(200px * 4 + 10px * 4); 
+    margin-top: 80px;
 }
 
 .grid-button-wrapper {
@@ -74,6 +75,12 @@ html, body {
     margin-top: 1rem;
 }
 
+.continue-button-wrapper2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10rem;
+}
+
 .continue-button {
     background-color: black;
     color: orange;
@@ -106,7 +113,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 8rem;
 }
 
 .display-image {
