@@ -1,0 +1,22 @@
+@using UserModel = PlayerLink.Models.User;
+
+<div>
+    <div class="d-inline-flex flex-row" id="user-profile">
+        <div class="user-info user-container">
+            <div id="text-info">
+                <img src="img/ProfilePicture-1.svg" alt="">
+                <div class="username-container">
+                    <span id="username-text">@user.Username</span>
+                </div>
+            </div>
+            <div class="accept-reject-buttons">
+                <button class="btn btn-success btn-sm">Accept</button>
+                <button class="btn btn-danger btn-sm">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public UserModel user { get; set; } = new UserModel();
+}

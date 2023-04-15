@@ -1,0 +1,7 @@
+.user-container {
+  display: flex;
+  align-items: center;
+}
+#friend-request {
+  padding-top: 0.5em;
+}
