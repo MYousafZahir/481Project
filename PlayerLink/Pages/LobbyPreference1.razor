@@ -1,0 +1,389 @@
+@layout BlankLayout
+
+@* <!-- MyComponent.razor -->
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    input {
+        margin-right: 8px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        width: 400px;
+        height: 200px; /* Set fixed height */
+        overflow-y: auto; /* Add scrollbar if needed */
+        margin-top: 16px;
+    }
+
+    .tagBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .tagWrapper {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .tagBoxText {
+        margin: 0;
+    }
+</style>
+
+<div class="container">
+    <h3>Tag Input</h3>
+
+    <div class="input-container">
+        <!-- Handle Enter key up event -->
+        <input @bind="tagInput" type="text" placeholder="Enter tag..." @onkeyup="HandleKeyUp" />
+        <button @onclick="HandleSubmit">Submit</button>
+    </div>
+
+    <!-- Display saved tags as boxes -->
+    <div class="tag-container">
+        @foreach (var tag in tags)
+        {
+            <div class="tagWrapper">
+                <div class="tagBox">
+                    <p class="tagBoxText">@tag</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private string tagInput;
+    private List<string> tags = new List<string>();
+
+    private void HandleSubmit()
+    {
+        if (!string.IsNullOrEmpty(tagInput))
+        {
+            // Add the tag to the list of saved tags
+            tags.Add(tagInput);
+            // Clear the input for the next tag
+            tagInput = string.Empty;
+        }
+    }
+
+    private void HandleKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            // Trigger HandleSubmit when Enter key is released
+            HandleSubmit();
+        }
+    }
+} *@
+
+@page "/LobbyPreference1"
+<div class="container">
+    <h3 class="title">Lobby Trait Preferences</h3>
+    <p class="subheading">Please enter the traits you are looking for in a user in the search bar below, traits can be things such as rank, hobbies, game mode, or goals for the lobby. Example tags: Aggressive, Fast, Novice, etc. This way, you can be better matched with a lobby.</p>
+    <div class="tag-container-desired">
+        <div class="tag-input-container">
+            <span class="tag-input-label">Desired Traits</span>
+            <div class="tag-input-box">
+                <input type="text" @bind="tagInput" @onkeyup="HandleKeyUp" placeholder="Enter desired trait(s)" />
+                @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+            </div>
+        </div>
+        <div class="tags">
+            @foreach (var tag in tags)
+            {
+                <div class="desired_tag">
+                    <span class="tag-value">@tag</span>
+                    <span class="tag-remove" @onclick="() => RemoveTag(tag)">x</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="tag-container-undesired">
+        <div class="tag-input-container">
+            <span class="tag-input-label">Undesired Traits</span>
+            <div class="tag-input-box">
+                <input type="text" @bind="undesiredTagInput" @onkeyup="HandleUndesiredKeyUp" placeholder="Enter undesired trait(s)" />
+                @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+            </div>
+        </div>
+        <div class="tags">
+            @foreach (var tag in undesiredTags)
+            {
+                <div class="undesired_tag">
+                    <span class="tag-value">@tag</span>
+                    <span class="tag-remove" @onclick="() => RemoveUndesiredTag(tag)">x</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="tag-container-your">
+        <div class="tag-input-container">
+            <span class="tag-input-label">Your Traits</span>
+            <div class="tag-input-box">
+                <input type="text" @bind="yourTagInput" @onkeyup="HandleYourKeyUp" placeholder="Enter your desired trait(s)" />
+                @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+            </div>
+        </div>
+        <div class="tags">
+            @foreach (var tag in yourTags)
+            {
+                <div class="your_tag">
+                    <span class="tag-value">@tag</span>
+                    <span class="tag-remove" @onclick="() => RemoveYourTag(tag)">x</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .subheading {
+        color: grey;
+        width: 500px;
+        height: 200px;        
+    }
+
+    .tag-container-desired {
+        width: 300px;
+        height: 800px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tag-container-undesired {
+        width: 300px;
+        height: 800px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tag-container-your {
+        width: 300px;
+        height: 800px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tag-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .tag-input-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .tag-input-label {
+        margin-right: 5px;
+    }
+
+    input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desired_tag {
+        background-color: rgb(46, 207, 40);
+        color: #333333;
+        border-radius: 4px;
+        padding: 5px 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .undesired_tag {
+        background-color: #ff4444;
+        color: #333;
+        border-radius: 4px;
+        padding: 5px 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .your_tag {
+        background-color: orange;
+        color: #333;
+        border-radius: 4px;
+        padding: 5px 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tag-value {
+        margin-right: 5px;
+    }
+
+    .tag-remove {
+        cursor: pointer;
+    }
+
+    .search-button {
+        margin-left: 10px;
+    }
+</style>
+
+
+
+
+
+
+@code {
+    private string tagInput = string.Empty;
+    private string undesiredTagInput = string.Empty;
+    private string yourTagInput = string.Empty;
+    private List<string> tags = new List<string>();
+    private List<string> undesiredTags = new List<string>();
+    private List<string> yourTags = new List<string>();
+
+    private void HandleSubmit()
+    {
+        if (!string.IsNullOrEmpty(tagInput))
+        {
+            // Add the tag to the list of saved tags
+            tags.Add(tagInput);
+            // Clear the input for the next tag
+            tagInput = string.Empty;
+        }
+    }
+
+    private void HandleKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            // Trigger HandleSubmit when Enter key is released
+            HandleSubmit();
+        }
+    }
+
+    private void HandleUndesiredKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(undesiredTagInput))
+        {
+            undesiredTags.Add(undesiredTagInput);
+            undesiredTagInput = string.Empty;
+        }
+    }
+
+    private void HandleYourKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(yourTagInput))
+        {
+        yourTags.Add(yourTagInput);
+        yourTagInput = string.Empty;
+        }
+    }
+
+    
+
+    private void RemoveTag(string tag)
+    {
+        // Remove the tag from the list of saved tags
+        tags.Remove(tag);
+    }
+
+    private void RemoveUndesiredTag(string tag)
+    {
+        undesiredTags.Remove(tag);
+    }
+
+    private void RemoveYourTag(string tag)
+    {
+        yourTags.Remove(tag);
+    }
+
+    
+
+}
