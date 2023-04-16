@@ -18,7 +18,6 @@ namespace PlayerLink.Services
         public void AddLobby(Lobby lobby)
         {
             Lobbies.Add(lobby);
-            lobby.UpdateMissingPlayers();
             OnLobbyAdded?.Invoke();
         }
 

@@ -9,3 +9,8 @@
   /* give hyperlink border */
   border: 4.06122px solid #0000ff;
 }
+
+.user-item {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
