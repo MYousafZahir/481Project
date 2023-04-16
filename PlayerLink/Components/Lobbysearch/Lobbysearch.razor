@@ -17,7 +17,15 @@
         await Task.Delay(5); // Simulating an async call, remove this line if using actual async data fetching
 
         if (string.IsNullOrEmpty(value))
+        {
             return GameDataService.Games;
-        return GameDataService.Games.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+        }
+        else
+        {
+            return GameDataService.Games
+                .Where(x => x.StartsWith(value, StringComparison.InvariantCultureIgnoreCase))
+                .OrderBy(x => x)
+                .ToList();
+        }
     }
 }
