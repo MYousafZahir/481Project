@@ -121,3 +121,85 @@ div span {
   background-color: #2f3136;
   width: 250px;
 }
+
+.modal {
+  z-index: 1050;
+}
+
+.modal-content {
+  color: #333; /* Change the color value as needed */
+}
+.modal-body h2 {
+  padding: 0.25em 0 0 0;
+  text-decoration: underline;
+}
+
+.modal-body {
+  height: 80vh;
+  max-height: 80vh; overflow-y: auto;
+}
+
+.chat-field {
+  width: 80vw;
+  border-radius: 5px;
+  border: 1px solid #2F3136;
+  overflow: auto;
+  height : calc(99vh - 24px);
+  position: absolute;
+  bottom: 0;
+}
+.message-text {
+  border-radius: 20px;
+  background-color: rgb(147, 147, 237);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  margin: 0.2rem;
+}
+
+.username {
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #474747;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+}
+
+.message-reciever {
+  float:right;
+}
+
+.chat-field{
+  border: none;
+}
+
+.messages {
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+
+.joinReq {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.tags {
+  color: white;
+  background-color: #343434;
+  border-radius: 30px; 
+  display: inline-block;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}

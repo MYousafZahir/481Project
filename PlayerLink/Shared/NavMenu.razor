@@ -2,9 +2,14 @@
 @using PlayerLink.Shared.Components.Userprofile
 @using PlayerLink.Components.Friendlistbutton
 @inject PlayerLink.Services.UserDataService UserDataService
+@using MudBlazor
+
 <div class="top-row navbar navbar-dark">
     <div>
-        <Userprofile user="UserDataService.Users[0]"/>
+        @if(UserDataService.GetUserByUsername(username) != null){
+            var user = UserDataService.GetUserByUsername(username);
+        <Userprofile user="@user"/>
+        }
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,31 +26,112 @@
         <input placeholder="Search friends" type="text" name="lobby-search" id="lobby-search" class="form-control">
         <img src="/img/Path.svg" alt="" class="align-self-center">
     </div>
-
-    <nav class="flex-column">
-        @if (UserDataService.Users != null)
-        {
-            @foreach (var friend in UserDataService.Users)
+    <div class="flex-column">
+         @if (UserDataService.GetUserByUsername(username) != null){
+            var c_user = UserDataService.GetUserByUsername(username);
+            @foreach (var name in c_user.Friends)
             {
-                <div class="nav-item px-3">
-                    <User user="@friend"/>
+                var friend = UserDataService.GetUserByUsername(name);
+                <button type="button" data-bs-toggle="modal" data-bs-target="#chat-@friend.Username" style = "border:none;" @onclick="ToggleNavMenu">
+                    <div class="friend-item px-3">
+                        <User user ="@friend"/>
+                    </div>
+                </button>
+                <div class="modal fade" data-bs-backdrop="false" tabindex="-1" role="dialog" id="chat-@friend.Username">
+                    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">@friend.Username's Chat</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick = "Clear"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This is @friend.Username's chat.</p>
+                                    <div style = "height = 20px; margin-bottom: 30px;"></div>
+                                    <div class="messages align-items-end">
+                                        @foreach (var message in messages)
+                                        {
+                                            @if (string.Equals(message.sender, username))
+                                            {
+                                                <div class="message-sender">
+                                                    <div class = "username"> @message.sender</div>
+                                                    <div class="message-text">
+                                                        @message.newMessage
+                                                    </div>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="message-reciever">
+                                                    <div class = "username"> @message.sender</div>
+                                                    <div class="message-text">
+                                                        @message.newMessage
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div style = "height: 10px;">  </div>
+                                        }
+                                    </div>
+                                    <div class="input-group" style = "position:absolute; bottom: 3; width: 1120px">
+                                        <input type="text" class="form-control" id="text-field"  placeholder="Enter a message" @bind-value="@message.newMessage" @onkeyup = "Enter"/>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" @onclick="SendMessage">Send</button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             }
         }
-        else
-        {
-            <div>UserDataService.Users is null</div>
-        }
-    </nav>
+               
+    </div>
+
+
 </div>
+
+
 
 @code {
     private bool collapseNavMenu = true;
+    private List<(string newMessage, string sender)> messages = new List<(string newMessage, string sender)>();
+
+    private (string newMessage, string sender) message;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string username = "Alice";
+    IDictionary<string, List<(string, string)>> messageDictionary = new Dictionary<string, List<(string, string )>>();
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+    void RightClicked(MouseEventArgs args)
+    {
+        if (args.Button == 2)
+            Console.WriteLine("This is a right click");
+    }
+    public void Clear()
+    {
+        messages.Clear();
+    }
+    void SendMessage(){
+        if (!string.IsNullOrEmpty(message.newMessage))
+        {
+            message.sender = username;
+            messages.Add(message);
+            message.newMessage = string.Empty;
+            message.sender = string.Empty;
+        }
+    }
+    void Enter(KeyboardEventArgs e) {
+        if(e.Code == "Enter"){
+            SendMessage();
+        } if (e.Code == "Backquote"){
+            message.sender = "Bob";
+            message.newMessage = "Hello";
+            messages.Add(message);
+            message.newMessage = string.Empty;
+            message.sender = string.Empty;
+        }
     }
 }
