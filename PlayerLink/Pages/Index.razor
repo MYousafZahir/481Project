@@ -25,8 +25,12 @@
             <Lobbybutton />
         </div>
         <div id="filtered-lobbies-count">
-            <span>Filtered Lobbies: @filteredLobbyCount</span>
+            @if (searchPerformed)
+            {
+                <span>Number of Results @filteredLobbyCount</span>
+            }
         </div>
+
 
     </div>
 
@@ -60,6 +64,8 @@
 
 @code {
     private string currentSearchValue = "";
+    private bool searchPerformed = false;
+
 
     private int filteredLobbyCount => LobbyDataService.Lobbies
         .Where(l => l.Game.Contains(currentSearchValue, StringComparison.InvariantCultureIgnoreCase))
@@ -81,6 +87,7 @@
     private void HandleSearchValueChanged(string value)
     {
         currentSearchValue = value;
+        searchPerformed = true;
         Console.WriteLine($"Search Value: {currentSearchValue}");
         InvokeAsync(StateHasChanged);
     }
