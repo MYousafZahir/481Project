@@ -15,6 +15,8 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<UserDataService>();
 builder.Services.AddSingleton<LobbyDataService>();
 builder.Services.AddSingleton<FilterService>();
+builder.Services.AddSingleton<TagDataService>();
+builder.Services.AddSingleton<GameDataService>();
 builder.Services.AddMudServices();
 
 

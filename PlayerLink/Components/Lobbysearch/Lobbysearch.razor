@@ -2,23 +2,22 @@
 @using PlayerLink.Services
 @using System.Linq
 @inject FilterService FilterService
+@inject GameDataService GameDataService
 
 <div class="shrink-input">
-    <MudAutocomplete T="string" Label="Search Game" @bind-Value="searchValue" SearchFunc="@SearchTraits"
+    <MudAutocomplete T="string" Label="Search Game" @bind-Value="searchValue" SearchFunc="@SearchGames"
                      AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary" />
 </div>
 
 @code {
     private string searchValue;
 
-    private async Task<IEnumerable<string>> SearchTraits(string value)
+    private async Task<IEnumerable<string>> SearchGames(string value)
     {
-        var traits = new[] { FilterService.DesiredTraits, FilterService.UndesiredTraits, FilterService.YourTraits };
-
         await Task.Delay(5); // Simulating an async call, remove this line if using actual async data fetching
 
         if (string.IsNullOrEmpty(value))
-            return traits;
-        return traits.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+            return GameDataService.Games;
+        return GameDataService.Games.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
     }
 }
