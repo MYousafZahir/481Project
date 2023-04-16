@@ -2,25 +2,44 @@
 @layout BlankLayout
 @using PlayerLink.Components.SideBar
 @using PlayerLink.Components.Chatbox
+@using PlayerLink.Components
 
 <div>
-    <div class = "nav">
-        <Sidebar InPartyList="@inParty"/>
+    <div class="nav">
+        <Sidebar InPartyList="@inParty" OnUserClick="ShowUserPopup" />
     </div>
-    <div class= "header">
-        <h5 style="text-align: center;"> @lobbyName </h5>
+    <div class="header">
+        <h5 style="text-align: center;">@lobbyName</h5>
     </div>
-    <div class = "chat-box">
+    <div class="chat-box">
         <Chatbox OnAccept="AddToParty" />
     </div>
+    <UserPopup @ref="userPopup" OnClose="CloseUserPopup" OnKick="RemoveFromParty" />
 
 </div>
 
 @code {
     private string lobbyName = "Lobby Name";
-    private List<string> inParty = new List<string>() { "Alice"};
+    private List<string> inParty = new List<string>() { "Alice" };
+    private UserPopup userPopup;
+
     private void AddToParty(string name)
     {
         inParty.Add(name);
+    }
+
+    private void RemoveFromParty(string userName)
+    {
+        inParty.Remove(userName);
+    }
+
+    private void ShowUserPopup(string userName)
+    {
+        userPopup.Open(userName);
+    }
+
+    private void CloseUserPopup()
+    {
+        userPopup.Close();
     }
 }

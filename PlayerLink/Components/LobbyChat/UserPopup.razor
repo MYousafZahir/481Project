@@ -1,0 +1,61 @@
+@namespace PlayerLink.Components
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+
+<div class="user-popup" style="display: @(IsOpen ? "block" : "none")">
+    <div class="user-popup-content">
+        <button class="close-btn" @onclick="() => OnClose.InvokeAsync()">x</button>
+        <h3>@UserName</h3>
+        <div class="user-item">
+            <span>@UserName</span>
+            <button class="kick-btn" @onclick="() => HandleKickAsync()">Kick</button>
+            <button class="mute-btn">Mute</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .user-popup-content {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .user-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .kick-btn,
+    .mute-btn {
+        margin-left: 10px;
+    }
+</style>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter] public EventCallback<string> OnKick { get; set; }
+    [Parameter] public string UserName { get; set; }
+    private bool IsOpen { get; set; } = false;
+
+    public void Open(string userName)
+    {
+        UserName = userName;
+        IsOpen = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        IsOpen = false;
+        StateHasChanged();
+    }
+
+    protected async Task HandleKickAsync()
+    {
+        await OnKick.InvokeAsync(UserName);
+        Close();
+    }
+}

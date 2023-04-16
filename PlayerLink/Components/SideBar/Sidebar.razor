@@ -1,33 +1,37 @@
 @using PlayerLink.Shared.Components.User
 @using PlayerLink.Shared.Components.Userprofile
+@using Microsoft.AspNetCore.Components
 @inject PlayerLink.Services.UserDataService UserDataService
-<div class = "Sidebar">
-    <div class = "title">
-        <img src="/img/head.svg" style = "justify-content: left; padding-left: 1rem;">
-        <p style = "padding-top: 1.5rem; padding-left: 1rem"> Lobby Members</p>
+<div class="Sidebar">
+    <div class="title">
+        <img src="/img/head.svg" style="justify-content: left; padding-left: 1rem;">
+        <p style="padding-top: 1.5rem; padding-left: 1rem"> Lobby Members</p>
     </div>
-    <hr class = "divider">
-    <ul style = "padding-top: 1rem; padding-left: 0;">
-        @foreach(var name in InPartyList){
-        @if (UserDataService.GetUserByUsername(name) != null){
-            var user = UserDataService.GetUserByUsername(name);
-            <div style="display: flex; align-items: center;">
-                <div style="display: inline-block; width: 10rem;">
-                    <Userprofile user="@user" />
+    <hr class="divider">
+    <ul style="padding-top: 1rem; padding-left: 0;">
+        @foreach (var name in InPartyList)
+        {
+            @if (UserDataService.GetUserByUsername(name) != null)
+            {
+                var user = UserDataService.GetUserByUsername(name);
+                <div style="display: flex; align-items: center;" @onclick="() => OnUserClick.InvokeAsync(name)">
+                    <div style="display: inline-block; width: 10rem;">
+                        <Userprofile user="@user" />
+                    </div>
+                    <div style="display: inline-block;">
+                        <button style="width: 50px;" @onclick="ToggleTalk">
+                            @if (muted && string.Equals(name, username))
+                            {
+                                <img src="/img/Volume-off.svg" />
+                            }
+                            else if (showImage && string.Equals(name, username))
+                            {
+                                <img src="/img/talk.svg" />
+                            }
+                        </button>
+                    </div>
                 </div>
-                <div style="display: inline-block;">
-                <button style = "width: 50px;" @onclick="ToggleTalk" > 
-                @if (muted && string.Equals(name, username)){
-                    <img src="/img/Volume-off.svg" /> 
-                }
-                else if (showImage && string.Equals(name, username))
-                    {
-                    <img src="/img/talk.svg" />
-                }
-                </button>
-                </div>
-            </div>
-        }
+            }
         }
     </ul>
     <div class = "options">
@@ -112,6 +116,7 @@
     string btnClass = "btn btn-success";
     private string toSearch = "";
     private bool showImage = false;
+    [Parameter] public EventCallback<string> OnUserClick { get; set; } // Add this line
     [Parameter]
     public List<string> InPartyList { get; set; }
     private void SearchFriends(ChangeEventArgs args)
