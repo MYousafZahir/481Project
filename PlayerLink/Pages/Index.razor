@@ -13,7 +13,7 @@
 <div class="main">
     <div class="d-flex justify-content-between" id="search-header">
         <div class="d-flex" id="search">
-            <Lobbysearch />
+            <Lobbysearch OnSearchValueChanged="HandleSearchValueChanged" />
             <Lobbyfilter />
         </div>
         <div id="create-lobby-button">
@@ -22,22 +22,29 @@
     </div>
 
     <div>
-        @foreach (var gameGroup in LobbyDataService.Lobbies.GroupBy(l => l.Game))
+        @foreach (var gameGroup in LobbyDataService.Lobbies.Where(l => l.Game.Contains(currentSearchValue, StringComparison.InvariantCultureIgnoreCase)).GroupBy(l => l.Game))
         {
             <div>
                 <h3>@gameGroup.Key</h3>
                 <div class="lobbies">
-                    @foreach (var lobby in gameGroup)
+                    @{
+                        var filteredLobbies = gameGroup.ToList();
+                        Console.WriteLine($"Displaying {filteredLobbies.Count} lobbies for {gameGroup.Key}");
+                    }
+                    @foreach (var lobby in filteredLobbies)
                     {
                         <LobbyComponent LobbyData="lobby" />
                     }
                 </div>
             </div>
-        }
+}
+
     </div>
 </div>
 
 @code {
+    private string currentSearchValue = "";
+
     protected override void OnInitialized()
     {
         LobbyDataService.OnLobbyAdded += UpdateLobbies;
@@ -48,10 +55,16 @@
         InvokeAsync(() => StateHasChanged());
     }
 
+private void HandleSearchValueChanged(string value)
+{
+    currentSearchValue = value;
+    Console.WriteLine($"Search Value: {currentSearchValue}");
+    InvokeAsync(StateHasChanged);
+}
+
 
     public void Dispose()
     {
         LobbyDataService.OnLobbyAdded -= UpdateLobbies;
     }
 }
-

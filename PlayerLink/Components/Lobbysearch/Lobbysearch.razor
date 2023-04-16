@@ -1,15 +1,17 @@
 @using MudBlazor
 @using PlayerLink.Services
 @using System.Linq
-@inject FilterService FilterService
 @inject GameDataService GameDataService
 
 <div class="shrink-input">
-    <MudAutocomplete T="string" Label="Search Game" @bind-Value="searchValue" SearchFunc="@SearchGames"
-                     AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary" />
+    <MudAutocomplete T="string" Label="Search Game" Value="@searchValue" SearchFunc="@SearchGames"
+                     AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary" 
+                     ValueChanged="@(v => OnValueChanged(v))" />
 </div>
 
 @code {
+    [Parameter] public EventCallback<string> OnSearchValueChanged { get; set; }
+
     private string searchValue;
 
     private async Task<IEnumerable<string>> SearchGames(string value)
@@ -27,5 +29,11 @@
                 .OrderBy(x => x)
                 .ToList();
         }
+    }
+
+    private async Task OnValueChanged(string value)
+    {
+        searchValue = value;
+        await OnSearchValueChanged.InvokeAsync(value);
     }
 }
