@@ -1,5 +1,6 @@
 button {
   border-radius: 12px;
+  position: static;
 }
 i {
   color: black;
