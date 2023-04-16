@@ -5,6 +5,7 @@ using PlayerLink.Services;
 using MudBlazor.Services;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +14,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<UserDataService>();
 builder.Services.AddSingleton<LobbyDataService>();
+builder.Services.AddSingleton<FilterService>();
 builder.Services.AddMudServices();
 
 
