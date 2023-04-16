@@ -1,5 +1,6 @@
 @using PlayerLink.Models
 @using Microsoft.JSInterop
+@using PlayerLink.Components.Tag
 @inject IJSRuntime JSRuntime
 
 
@@ -25,7 +26,16 @@
                 <h6>Players:</h6>
                 @foreach (User user in LobbyData.Users)
                 {
-                    <PlayerLink.Shared.Components.User.User user="@user"/>
+                    <div>
+                        <PlayerLink.Shared.Components.User.User user="@user"/>
+                        <div class="d-flex">
+                            Traits:
+                            <span>
+                                @* display every matching tag (with enough space). Ask chatgpt how to find matching tags from here. *@
+                            </span>
+                        </div>
+                    </div>
+                    
                 }
             </div>
         </div>

@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using PlayerLink.Data;
 using PlayerLink.Services;
+using MudBlazor.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,10 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<UserDataService>();
 builder.Services.AddSingleton<LobbyDataService>();
+builder.Services.AddMudServices();
+
+
+
 
 var app = builder.Build();
 
