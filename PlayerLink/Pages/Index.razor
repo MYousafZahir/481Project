@@ -10,10 +10,12 @@
 @inject PlayerLink.Services.FilterService FilterService
 @inject IJSRuntime JSRuntime
 
-
 <PageTitle>Index</PageTitle>
 
 <div class="main">
+    @{
+        int filteredLobbiesCount = 0;
+    }
     <div class="d-flex justify-content-between" id="search-header">
         <div class="d-flex" id="search">
             <Lobbysearch OnSearchValueChanged="HandleSearchValueChanged" />
@@ -22,6 +24,14 @@
         <div id="create-lobby-button">
             <Lobbybutton />
         </div>
+        <div id="filtered-lobbies-count">
+            @if (searchPerformed)
+            {
+                <span>Number of Results @filteredLobbyCount</span>
+            }
+        </div>
+
+
     </div>
 
     <div>
@@ -37,7 +47,8 @@
                 <div class="lobbies">
                     @{
                         var filteredLobbies = gameGroup.ToList();
-                        
+                        filteredLobbiesCount += filteredLobbies.Count;
+
                         Console.WriteLine($"Displaying {filteredLobbies.Count} lobbies for {gameGroup.Key}");
                     }
                     @foreach (var lobby in filteredLobbies)
@@ -53,13 +64,20 @@
 
 @code {
     private string currentSearchValue = "";
+    private bool searchPerformed = false;
 
+
+    private int filteredLobbyCount => LobbyDataService.Lobbies
+        .Where(l => l.Game.Contains(currentSearchValue, StringComparison.InvariantCultureIgnoreCase))
+        .Where(l => FilterService.DesiredTraits == "" || l.DesiredTags.Any(dt => dt.Contains(FilterService.DesiredTraits, StringComparison.InvariantCultureIgnoreCase)))
+        .Where(l => FilterService.UndesiredTraits == "" || l.UndesiredTags.Any(ut => ut.Contains(FilterService.UndesiredTraits, StringComparison.InvariantCultureIgnoreCase)))
+        .Where(l => FilterService.YourTraits == "" || l.DescribeYourselfTags.Any(yt => yt.Contains(FilterService.YourTraits, StringComparison.InvariantCultureIgnoreCase)))
+        .Count();
     protected override void OnInitialized()
     {
         LobbyDataService.OnLobbyAdded += UpdateLobbies;
         FilterService.OnChange += UpdateLobbies;
     }
-
 
     private void UpdateLobbies()
     {
@@ -69,15 +87,14 @@
     private void HandleSearchValueChanged(string value)
     {
         currentSearchValue = value;
+        searchPerformed = true;
         Console.WriteLine($"Search Value: {currentSearchValue}");
         InvokeAsync(StateHasChanged);
     }
-
 
     public void Dispose()
     {
         LobbyDataService.OnLobbyAdded -= UpdateLobbies;
         FilterService.OnChange -= UpdateLobbies;
     }
-
 }
