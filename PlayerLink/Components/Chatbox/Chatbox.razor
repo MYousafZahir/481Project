@@ -1,5 +1,80 @@
-<div class="chat-field">
+@inject PlayerLink.Services.UserDataService UserDataService
+@using PlayerLink.Shared.Components.User
 
+<div class="chat-field">
+    @if(numRequests >= 1){
+        <button class = "joinReq" type="button" data-bs-toggle="modal" data-bs-target="#join" 
+        style = "position: absolute; top:0; margin-bottom: 20px; width: 80vw; background-color:orange;"> @numRequests New Join Request
+            Click to View
+        </button>
+    }
+    <div class="modal fade" id="join" tabindex="-1"  aria-labelledby="confirm-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header"  style="padding-left: 20%;">
+                <h5 class="modal-title mx-auto" id="confirm-modalLabel" style = "Montserrat;font-size: 1.2rem;"> Join Request From </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div style="display: flex;">
+            @if (currentRequest != 0){
+                <button class="modal-body" style="font-family: Montserrat; font-size: 10rem; float:left; border: none; background: none;" @onclick = "PrevReq">&lt;</button>
+            } else {
+                <div class="modal-body" style="color: grey; font-family: Montserrat; font-size: 10rem; float:left; border: none; background: none;">&lt;</div>
+            }
+            <div class="modal-body" style = "margin: auto;">
+                @if (requests.Count != 0){
+                    @if (UserDataService.GetUserByUsername(requests[currentRequest]) != null){
+                        var user = UserDataService.GetUserByUsername(requests[currentRequest]);
+                        <div class = "d-flex">
+                            <img src="@user.ProfilePicture" style="width: 15%; height: 15%;">
+                            <h2 style = "Montserrat;font-size: 2.5rem;">@user.Username</h2>
+                        </div>
+                    }
+                }
+                @{
+                    @if (requests.Count != 0){
+                        <h5 style = "color: #000000; font-family: Montserrat;font-size: 1.2rem;">
+                            Traits that match your criteria: </h5>
+                        var tags = UserDataService.GetUserByUsername(username).Tags;
+                        var notMatch = new List<string>();
+                        @foreach (var tag in UserDataService.GetUserByUsername(requests[currentRequest]).Tags){
+                            if (tags.Contains(tag)){
+                                <div class = "tags">@tag</div> 
+                            } else {
+                                notMatch.Add(tag);
+                            }
+                        }
+                        <h5 style = "color: #000000; font-family: Montserrat;font-size: 1.2rem;">
+                            Traits that don't match your criteria: </h5>
+                        @foreach (var not in notMatch)
+                            {
+                                <div class = "tags">@not</div> 
+                            }
+                    }
+                }
+            </div>
+            @if (currentRequest + 1 < numRequests){
+                <button class="modal-body" style="font-family: Montserrat; font-size: 10rem; float:left; border: none; background: none;" @onclick="NextReq">&gt;</button>
+            } else {
+                <div class="modal-body" style="color: grey; font-family: Montserrat; font-size: 10rem; float:left; border: none; background: none;">&gt; </div>
+            }
+            </div>
+            <div class = "mx-auto">
+                @if(numRequests > 1){
+                    <button type="button" class="btn btn-secondary" style = "background-color: green; margin-bottom: 2rem;" @onclick = "Accept">Accept</button>
+                } else {
+                    <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal" style = "background-color: green; margin-bottom: 2rem;" @onclick = "Accept">Accept</button>
+                }
+                @if(numRequests > 1){
+                    <button type="button" class="btn btn-primary" style = "background-color: red; margin-left: 4rem; margin-bottom: 2rem;" @onclick = "Reject">Reject</button>
+                } else {
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style = "background-color: red; margin-left: 4rem; margin-bottom: 2rem;" @onclick = "Reject">Reject</button>
+                }
+            </div> 
+            </div>
+        </div>
+    </div>
+    <div style = "height = 20px; margin-bottom: 30px;"></div>
     <div class="messages align-items-end">
         @foreach (var message in messages)
         {
@@ -24,8 +99,8 @@
             <div style = "width:80wv; height: 10px;">  </div>
         }
     </div>
-    <div class="input-group">
-        <input type="text" class="form-control" id="text-field" placeholder="Enter a message" @bind-value="@message.newMessage" @onkeydown = "Enter"/>
+    <div class="input-group" style = "position:absolute; bottom: 3">
+        <input type="text" class="form-control" id="text-field" placeholder="Enter a message" @bind-value="@message.newMessage" @onkeyup = "Enter"/>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" @onclick="SendMessage">Send</button>
         </div>
@@ -33,9 +108,40 @@
 </div>
 
 @code {
-    List<(string newMessage, string sender)> messages = new List<(string newMessage, string sender)>();
-    (string newMessage, string sender) message;
+    private List<(string newMessage, string sender)> messages = new List<(string newMessage, string sender)>();
+    private List<string> requests = new List<string>();
+    private (string newMessage, string sender) message;
     private string username = "Alice";
+    private int numRequests = 0;
+    private int currentRequest = 0;
+    [Parameter]
+    public EventCallback<string> OnAccept { get; set; }
+    private async Task Accept(){
+        await OnAccept.InvokeAsync(requests[currentRequest]);
+        requests.RemoveAt(currentRequest);
+        numRequests--;
+        if(currentRequest > 0){
+            currentRequest--;
+        }
+    }
+    void Reject(){
+        requests.RemoveAt(currentRequest);
+        numRequests--;
+    }
+    void AddRequest(string user){
+        requests.Add(user);
+        numRequests++;
+    }
+    void NextReq(){
+        if (currentRequest + 1 < numRequests){
+            currentRequest++;
+        }
+    }
+    void PrevReq(){
+        if (currentRequest != 0){
+            currentRequest--;
+        }
+    }
     void SendMessage(){
         if (!string.IsNullOrEmpty(message.newMessage))
         {
@@ -51,6 +157,9 @@
     void Enter(KeyboardEventArgs e) {
         if(e.Code == "Enter"){
             SendMessage();
+        } else if(e.Code == "Backquote") {
+            AddRequest("Bob");
+            AddRequest("Charlie");
         }
     }
 }

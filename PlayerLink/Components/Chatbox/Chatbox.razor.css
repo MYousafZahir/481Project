@@ -1,7 +1,11 @@
 .chat-field {
-    width: 70vw;
+    width: 80vw;
     border-radius: 5px;
     border: 1px solid #2F3136;
+    overflow: auto;
+    height : calc(99vh - 24px);
+    position: absolute;
+    bottom: 0;
 }
 .message-text {
     border-radius: 20px;
@@ -38,4 +42,23 @@
 
 .messages {
     overflow: auto;
+    height: calc(100% - 100px);
+}
+
+.joinReq {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.tags {
+    color: white;
+    background-color: #343434;
+    border-radius: 30px; 
+    display: inline-block;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }

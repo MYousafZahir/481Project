@@ -1,5 +1,18 @@
 .chat-box{
     position: absolute;
-    bottom: 3vh;
+    bottom: 0;
     left: 20vw;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    height: 24px;
+    background-color: #202225;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: lighter;
 }

@@ -8,9 +8,26 @@
     </div>
     <hr class = "divider">
     <ul style = "padding-top: 1rem; padding-left: 0;">
-        @if (UserDataService.GetUserByUsername(username) != null){
-            var user = UserDataService.GetUserByUsername(username);
-            <Userprofile user = "@user"/>
+        @foreach(var name in InPartyList){
+        @if (UserDataService.GetUserByUsername(name) != null){
+            var user = UserDataService.GetUserByUsername(name);
+            <div style="display: flex; align-items: center;">
+                <div style="display: inline-block; width: 10rem;">
+                    <Userprofile user="@user" />
+                </div>
+                <div style="display: inline-block;">
+                <button style = "width: 50px;" @onclick="ToggleTalk" > 
+                @if (muted && string.Equals(name, username)){
+                    <img src="/img/Volume-off.svg" /> 
+                }
+                else if (showImage && string.Equals(name, username))
+                    {
+                    <img src="/img/talk.svg" />
+                }
+                </button>
+                </div>
+            </div>
+        }
         }
     </ul>
     <div class = "options">
@@ -94,6 +111,9 @@
     private string username = "Alice";
     string btnClass = "btn btn-success";
     private string toSearch = "";
+    private bool showImage = false;
+    [Parameter]
+    public List<string> InPartyList { get; set; }
     private void SearchFriends(ChangeEventArgs args)
     {
         toSearch = args.Value.ToString();
@@ -102,6 +122,10 @@
     private void ToggleMute()
     {
         muted = !muted;
+    }
+    private void ToggleTalk()
+    {
+        showImage = !showImage;
     }
     private void ToggleDeafen()
     {

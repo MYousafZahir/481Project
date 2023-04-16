@@ -2,12 +2,25 @@
 @layout BlankLayout
 @using PlayerLink.Components.SideBar
 @using PlayerLink.Components.Chatbox
+
 <div>
     <div class = "nav">
-        <Sidebar />
+        <Sidebar InPartyList="@inParty"/>
+    </div>
+    <div class= "header">
+        <h5 style="text-align: center;"> @lobbyName </h5>
     </div>
     <div class = "chat-box">
-        <Chatbox />
+        <Chatbox OnAccept="AddToParty" />
     </div>
 
 </div>
+
+@code {
+    private string lobbyName = "Lobby Name";
+    private List<string> inParty = new List<string>() { "Alice"};
+    private void AddToParty(string name)
+    {
+        inParty.Add(name);
+    }
+}
