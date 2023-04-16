@@ -2,6 +2,7 @@
 @using PlayerLink.Services
 @using System.Linq
 @inject GameDataService GameDataService
+@inject TagDataService TagDataService
 
 <div class="shrink-input">
     <MudAutocomplete T="string" Label="Search Game" Value="@searchValue" SearchFunc="@SearchGames"
