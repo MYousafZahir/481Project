@@ -2,7 +2,7 @@ namespace PlayerLink.Models {
     public class Lobby
     {
         public int LobbyID { get; set; }
-        public int NumPlayers { get; set; } = 0;
+        public int NumPlayers => Users.Count;
         public int MissingPlayers { get; set; }
         public string Game { get; set; } = "";
         public string LobbyName { get; set; } = "";
