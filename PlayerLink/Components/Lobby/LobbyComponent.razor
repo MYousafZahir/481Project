@@ -28,15 +28,44 @@
                 {
                     <div>
                         <PlayerLink.Shared.Components.User.User user="@user"/>
-                        <div class="d-flex">
-                            Traits:
+                        <div class="d-flex traits">
+                        Traits:
                             <span>
-                                @* display every matching tag (with enough space). Ask chatgpt how to find matching tags from here. *@
+                            @foreach (var tag in @user.Tags)
+                            {
+                                <span id="tag"><Tag tagname="@tag"/></span>
+                            }
                             </span>
                         </div>
-                    </div>
-                    
+                    </div> 
                 }
+            </div>
+            <div class="modal-footer custom-modal-footer">
+                <div class="lobby-tags">
+                    <div class="d-flex tag-row">
+                        <strong>Desired</strong>
+                        @foreach (string tag in LobbyData.DesiredTags)
+                        {
+                            <span id="tag"><Tag tagname="@tag"/></span>
+                        }
+                    </div>
+                    <div class="d-flex tag-row">
+                        <strong>Undesired</strong>
+                        @foreach (string tag in LobbyData.UndesiredTags)
+                        {
+                            <span id="tag"><Tag tagname="@tag"/></span>
+                        }
+                    </div>
+                    <div class="d-flex tag-row">
+                        <strong>Owner Tags</strong>
+                        @foreach (string tag in LobbyData.DescribeYourselfTags)
+                        {
+                            <span id="tag"><Tag tagname="@tag"/></span>
+                        }
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -78,5 +107,4 @@
     {
         await JSRuntime.InvokeVoidAsync("HideModal", modalElement);
     }
-
 }

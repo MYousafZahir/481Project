@@ -1,6 +1,7 @@
 div {
   height: auto;
-  width: 5vw;
+  max-width: 8.5vw;
+  min-width: 5vw;
   border-radius: 999px;
   padding: 4px 8px 4px 8px;
   background-color: #343434;
@@ -13,4 +14,3 @@ div {
   font-weight: 500;
   font-size: 12px;
 }
-/* Ask chatgpt how to make font smaller when text is too long */

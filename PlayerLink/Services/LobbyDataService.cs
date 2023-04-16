@@ -37,7 +37,7 @@ namespace PlayerLink.Services
                     LobbyName = "Lobby Alpha",
                     DesiredTags = new List<string> { "Casual", "Friendly" },
                     UndesiredTags = new List<string> { "Competitive", "Toxic" },
-                    DescribeYourself = "A relaxed and friendly environment for casual players.",
+                    DescribeYourselfTags = new List<string> { "Relaxed", "FriendlyEnvironment", "CasualPlayers" },
                     Users = new List<User> { userAlice, userBob }
                 },
                 new Lobby
@@ -48,7 +48,7 @@ namespace PlayerLink.Services
                     LobbyName = "Lobby Beta",
                     DesiredTags = new List<string> { "Competitive", "Teamwork" },
                     UndesiredTags = new List<string> { "Trolling", "AFK" },
-                    DescribeYourself = "Focused on competitive gameplay and team coordination.",
+                    DescribeYourselfTags = new List<string> { "Focused", "CompetitiveGameplay", "TeamCoordination" },
                     Users = new List<User> { userAlice }
                 },
                 new Lobby
@@ -59,11 +59,11 @@ namespace PlayerLink.Services
                     LobbyName = "Lobby Gamma",
                     DesiredTags = new List<string> { "Strategy", "Competitive" },
                     UndesiredTags = new List<string> { "Solo", "Ragequit" },
-                    DescribeYourself = "I need a duo who is female.",
+                    DescribeYourselfTags = new List<string> { "DuoNeeded", "Female" },
                     Users = new List<User> { userCharlie }
                 }
             };
         }
-        
+
     }
 }

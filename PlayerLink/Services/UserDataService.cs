@@ -26,7 +26,7 @@ namespace PlayerLink.Services {
                     ProfilePicture = "img/ProfilePicture-1.svg",
                     Status = "Online",
                     Description = "Hello, I'm Alice!",
-                    Tags = new List<string> { "tag1", "tag2", "tag3" },
+                    Tags = new List<string> { "Friendly", "Casual", "Team player" },
                     Friends = new List<string> {"Bob", "Charlie"}
                 },
                 new User
@@ -36,7 +36,7 @@ namespace PlayerLink.Services {
                     ProfilePicture = "img/ProfilePicture-2.svg",
                     Status = "Offline",
                     Description = "Hi, I'm Bob!",
-                    Tags = new List<string> { "tag1", "tag4", "tag5" },
+                    Tags = new List<string> { "Competitive", "Strategy", "Communication" },
                     Friends = new List<string> {"Alice", "Charlie"}
                 },
                 new User
@@ -46,7 +46,7 @@ namespace PlayerLink.Services {
                     ProfilePicture = "img/ProfilePicture-3.svg",
                     Status = "Away",
                     Description = "Hey, I'm Charlie!",
-                    Tags = new List<string> { "tag2", "tag4", "tag6" },
+                    Tags = new List<string> { "Adaptive", "Quick learner", "Supportive" },
                     Friends = new List<string> {"Alice", "Bob"}
                 }
             };

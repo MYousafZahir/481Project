@@ -9,7 +9,7 @@ namespace PlayerLink.Models
         public string LobbyName { get; set; } = "";
         public List<string> DesiredTags { get; set; } = new List<string>();
         public List<string> UndesiredTags { get; set; } = new List<string>();
-        public string DescribeYourself { get; set; } = "";
+        public List<string> DescribeYourselfTags { get; set; } = new List<string>();
         public List<User> Users { get; set; } = new List<User>();
         public int MaxUsers { get; set; } = 5; // Set the maximum number of users allowed in a lobby
 

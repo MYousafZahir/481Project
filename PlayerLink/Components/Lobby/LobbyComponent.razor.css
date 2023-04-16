@@ -14,3 +14,9 @@
   margin-bottom: 10px;
   font-size: 1.1em;
 }
+#tag {
+  margin-left: 0.5em;
+}
+.custom-modal-footer {
+  display: block !important;
+}

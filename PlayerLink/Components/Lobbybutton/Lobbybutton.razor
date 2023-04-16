@@ -37,7 +37,7 @@
           </div>
           <div class="form-group">
             <label for="describe-yourself">Describe Yourself</label>
-            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself" @bind="@DescribeYourself"></textarea>
+            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="Describe yourself" @bind="@DescribeYourselfInput"></textarea>
           </div>
         </form>
       </div>
@@ -54,12 +54,13 @@
     private string LobbyName { get; set; } = "";
     private string DesiredTagsInput { get; set; } = "";
     private string UndesiredTagsInput { get; set; } = "";
-    private string DescribeYourself { get; set; } = "";
+    private string DescribeYourselfInput { get; set; } = "";
 
     private async void CreateLobby()
     {
         List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
         List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+        List<string> describeYourselfTags = DescribeYourselfInput.Split(',').Select(tag => tag.Trim()).ToList();
 
         // Get the current user (replace "currentUserUsername" with the actual username)
         User currentUser = UserDataService.GetUserByUsername("Alice");
@@ -71,7 +72,7 @@
             LobbyName = LobbyName,
             DesiredTags = desiredTags,
             UndesiredTags = undesiredTags,
-            DescribeYourself = DescribeYourself,
+            DescribeYourselfTags = describeYourselfTags,
             Users = new List<User> { currentUser } // Add the current user to the new lobby
         };
 
