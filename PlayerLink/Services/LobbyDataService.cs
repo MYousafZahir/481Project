@@ -33,7 +33,6 @@ namespace PlayerLink.Services
                 new Lobby
                 {
                     LobbyID = 1,
-                    NumPlayers = 2,
                     MaxUsers = 5,
                     Game = "Valorant",
                     LobbyName = "Lobby Alpha",
@@ -45,7 +44,6 @@ namespace PlayerLink.Services
                 new Lobby
                 {
                     LobbyID = 2,
-                    NumPlayers = 1,
                     MaxUsers = 5,
                     Game = "League of Legends",
                     LobbyName = "Lobby Beta",
@@ -57,7 +55,6 @@ namespace PlayerLink.Services
                 new Lobby
                 {
                     LobbyID = 3,
-                    NumPlayers = 1,
                     MaxUsers = 2,
                     Game = "League of Legends",
                     LobbyName = "Lobby Gamma",
