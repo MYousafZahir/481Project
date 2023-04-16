@@ -75,6 +75,17 @@ html, body {
     margin-top: 1rem;
 }
 
+.back-button {
+    background-color: black;
+    color: orange;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 .continue-button-wrapper2 {
     display: flex;
     justify-content: flex-end;

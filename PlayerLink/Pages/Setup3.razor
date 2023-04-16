@@ -25,6 +25,11 @@
     <h5 class="tab">Please select your top 3 favorite games</h5>
 </div>
 
+<!-- Add back button at the bottom left -->
+<div style="position: absolute; bottom: 60px; left: 25px;">
+    <button class="back-button" @onclick="NavigateToSetup">Back</button>
+</div>
+
 <style>
     .searchbar-wrapper input {
         background-color: black;
@@ -103,5 +108,10 @@
     private void NavigateToIndex()
     {
         NavigationManager.NavigateTo("");
+    }
+
+    private void NavigateToSetup()
+    {
+        NavigationManager.NavigateTo("/setup2");
     }
 }

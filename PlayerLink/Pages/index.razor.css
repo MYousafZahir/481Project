@@ -19,3 +19,7 @@
 .lobbies > div {
   margin-top: 100px; /* Adjust the padding value according to your needs */
 }
+#filtered-lobbies-count {
+  padding-bottom: 1em;
+  font-size: small;
+}

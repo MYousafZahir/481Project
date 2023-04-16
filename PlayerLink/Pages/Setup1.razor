@@ -25,7 +25,6 @@
     <h5 class="tab">Please select a profile picture</h5>
 </div>
 
-
 <div class="content-wrapper">
     <div class="square-container">
         <button class="@squareClass" @onclick="ToggleSquareContent"></button>
@@ -38,6 +37,11 @@
         <button class="continue-button" @onclick="NavigateToSetup2">Continue</button>
     </div>
 }
+
+<!-- Add back button at the bottom left -->
+<div style="position: absolute; bottom: 100px; left: 25px;">
+    <button class="back-button" @onclick="NavigateToSetup">Back</button>
+</div>
 
 @code {
     private string squareClass = "white-square";
@@ -61,5 +65,11 @@
     private void NavigateToSetup2()
     {
         NavigationManager.NavigateTo("/setup2");
+    }
+
+    // Add method for navigating to /setup
+    private void NavigateToSetup()
+    {
+        NavigationManager.NavigateTo("/setup");
     }
 }

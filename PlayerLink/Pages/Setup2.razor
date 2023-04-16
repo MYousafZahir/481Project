@@ -25,6 +25,12 @@
     <h5 class="tab">Please select your top 3 favorite genres</h5>
 </div>
 
+<!-- Add back button at the bottom left -->
+<div style="position: absolute; bottom: 0px; left: 25px;">
+    <button class="back-button" @onclick="NavigateToSetup">Back</button>
+</div>
+
+
 
 <div class="grid-container-wrapper">
     <div class="grid-container">
@@ -97,5 +103,10 @@
     private void NavigateToSetup3()
     {
         NavigationManager.NavigateTo("/setup3");
+    }
+
+    private void NavigateToSetup()
+    {
+        NavigationManager.NavigateTo("/setup1");
     }
 }

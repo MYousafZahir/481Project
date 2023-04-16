@@ -1,0 +1,188 @@
+@layout BlankLayout
+@page "/LobbyPreference2"
+@inject NavigationManager Navigation
+
+
+<!-- MyForm.razor -->
+@page "/myform"
+
+<div class="form-container">
+    <div class="title">
+        <h1>Set Game Prefences for Valorant</h1>
+    </div>
+
+    <div class="subheading1">
+        <h2>Rank</h2>
+    </div>
+
+    <div class="flex-container">
+        <div class="button-container">
+            <button @onclick="ChangeColorA" class="@buttonClassA">Level 1</button>
+            <button @onclick="ChangeColorB" class="@buttonClassB">Level 2</button>
+            <button @onclick="ChangeColorC" class="@buttonClassC">Level 3</button>
+        </div>
+    </div>
+
+    <div class="subheading2">
+        <h2>Server</h2>
+    </div>
+
+    <div class="flex-container">
+        <div class="checkbox-container">
+            <div class="checkbox-item">
+                <input type="checkbox" id="checkboxA" />
+                <label for="checkboxA" class="checkbox-label">Asia</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="checkboxB" />
+                <label for="checkboxB" class="checkbox-label">South America</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="checkboxC" />
+                <label for="checkboxC" class="checkbox-label">North America</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="checkboxD" />
+                <label for="checkboxD" class="checkbox-label">Europe</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="checkboxE" />
+                <label for="checkboxE" class="checkbox-label">Africa</label>
+            </div>
+        </div>
+    </div>
+    <button class="continue-button" @onclick="handleContinueButton">Continue</button>
+
+</div>
+
+<style>
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .subheading1 {
+        margin-top: 10vh;
+    }
+
+    .subheading2 {
+        margin-top: 10vh;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .checkbox-container label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .button-container button {
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .button-container button:hover {
+        background-color: lightblue;
+    }
+
+    .button-container button.button-a {
+        border-color: @buttonBorderColorA;
+        color: @buttonTextColorA;
+        background-color: @buttonColorA;
+    }
+
+    .button-container button.button-b {
+        border-color: @buttonBorderColorB;
+        color: @buttonTextColorB;
+        background-color: @buttonColorB;
+    }
+
+    .button-container button.button-c {
+        border-color: @buttonBorderColorC;
+        color: @buttonTextColorC;
+        background-color: @buttonColorC;
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .checkbox-label {
+        font-size: 18px;
+        flex-grow: 1;
+
+    }
+    
+    .continue-button {
+        float: right;
+        margin-top: auto;
+    }
+
+</style>
+
+@code {
+
+    private string buttonClassA = "button-a";
+    private string buttonClassB = "button-b";
+    private string buttonClassC = "button-c";
+    private string buttonColorA = "white";
+    private string buttonColorB = "white";
+    private string buttonColorC = "white";
+    private string buttonBorderColorA = "black";
+    private string buttonBorderColorB = "black";
+    private string buttonBorderColorC = "black";
+    private string buttonTextColorA = "black";
+    private string buttonTextColorB = "black";
+    private string buttonTextColorC = "black";
+
+    private void ChangeColorA()
+    {
+        buttonColorA = buttonColorA == "white" ? "lightblue" : "white";
+    }
+
+    private void ChangeColorB()
+    {
+        buttonColorB = buttonColorB == "white" ? "lightblue" : "white";
+    }
+
+    private void ChangeColorC()
+    {
+        buttonColorC = buttonColorC == "white" ? "lightblue" : "white";
+    }
+
+    private bool IsCheckedA { get; set; }
+    private bool IsCheckedB { get; set; }
+    private bool IsCheckedC { get; set; }
+    private bool IsCheckedD { get; set; }
+    private bool IsCheckedE { get; set; }
+
+    private void handleContinueButton() 
+    {
+        Navigation.NavigateTo("/lobbypreference3");
+
+    }
+}
