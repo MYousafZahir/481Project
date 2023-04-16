@@ -32,11 +32,22 @@
             @foreach (var name in c_user.Friends)
             {
                 var friend = UserDataService.GetUserByUsername(name);
-                <button type="button" data-bs-toggle="modal" data-bs-target="#chat-@friend.Username" style = "border:none;" @onclick="ToggleNavMenu">
-                    <div class="friend-item px-3">
-                        <User user ="@friend"/>
-                    </div>
-                </button>
+                <MudMenu ActivationEvent="@MouseEvent.RightClick" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.CenterLeft">
+                    <ActivatorContent>
+                        <div class="friend-item px-3">
+                            <User user ="@friend"/>
+                        </div>
+                    </ActivatorContent>
+                    <ChildContent> 
+                        <MudListItem>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#chat-@friend.Username" style = "border:none;" @onclick="ToggleNavMenu">
+                                  Chat
+                            </button>
+                        </MudListItem>
+                        <MudListItem @onclick= "(e)=>RemoveFriend(friend.Username)"> Remove Friend
+                        </MudListItem>
+                    </ChildContent>
+                </MudMenu>
                 <div class="modal fade" data-bs-backdrop="false" tabindex="-1" role="dialog" id="chat-@friend.Username">
                     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -96,11 +107,10 @@
     private List<(string newMessage, string sender)> messages = new List<(string newMessage, string sender)>();
 
     private (string newMessage, string sender) message;
-
+    private bool test = false;
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
     private string username = "Alice";
     IDictionary<string, List<(string, string)>> messageDictionary = new Dictionary<string, List<(string, string )>>();
-
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
@@ -133,5 +143,9 @@
             message.newMessage = string.Empty;
             message.sender = string.Empty;
         }
+    }
+
+    void RemoveFriend(String friend){
+        UserDataService.GetUserByUsername(username).Friends.Remove(friend);   
     }
 }

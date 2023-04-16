@@ -147,9 +147,6 @@
         {
             message.sender = username;
             messages.Add(message);
-            message.sender = "bob";
-            message.newMessage = "hello";
-            messages.Add(message);
             message.newMessage = string.Empty;
             message.sender = string.Empty;
         }
@@ -160,6 +157,12 @@
         } else if(e.Code == "Backquote") {
             AddRequest("Bob");
             AddRequest("Charlie");
+        } else if (e.Code == "AltLeft") {
+            message.sender = "bob";
+            message.newMessage = "hello";
+            messages.Add(message);
+            message.newMessage = string.Empty;
+            message.sender = string.Empty;
         }
     }
 }
