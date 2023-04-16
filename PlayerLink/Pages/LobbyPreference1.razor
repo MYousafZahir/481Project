@@ -1,8 +1,8 @@
 @layout BlankLayout
-
-
-
 @page "/LobbyPreference1"
+@inject NavigationManager Navigation
+
+
 <div class="container">
     <h3 class="title">Lobby Trait Preferences</h3>
     <p class="subheading">Please enter the traits you are looking for in a user in the search bar below, traits can be things such as rank, hobbies, game mode, or goals for the lobby. Example tags: Aggressive, Fast, Novice, etc. This way, you can be better matched with a lobby.</p>
@@ -10,16 +10,16 @@
         <div class="tag-input-container">
             <span class="tag-input-label">Desired Traits</span>
             <div class="tag-input-box">
-                <input type="text" @bind="tagInput" @onkeyup="HandleKeyUp" placeholder="Enter desired trait(s)" />
+                <input type="text" @bind="desiredTagInput" @onkeyup="HandleDesiredKeyUp" placeholder="Enter desired trait(s)" />
                 @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
             </div>
         </div>
         <div class="tags">
-            @foreach (var tag in tags)
+            @foreach (var tag in desiredTags)
             {
                 <div class="desired_tag">
                     <span class="tag-value">@tag</span>
-                    <span class="tag-remove" @onclick="() => RemoveTag(tag)">x</span>
+                    <span class="tag-remove" @onclick="() => RemoveDesiredTag(tag)">x</span>
                 </div>
             }
         </div>
@@ -62,6 +62,8 @@
             }
         </div>
     </div>
+    <button class="search-button" @onclick="handleSearchButton">Search</button>
+
 </div>
 
 <style>
@@ -81,6 +83,7 @@
         color: grey;
         width: 500px;
         height: 200px; 
+        margin-bottom: 0;
     }
 
     .tag-container-desired {
@@ -195,27 +198,34 @@
 
     .tag-remove {
         cursor: pointer;
+        color: black;
+        margin-bottom: 12px;
     }
 
     .search-button {
         margin-left: 10px;
+    }
+
+    .search-button {
+        margin-left: 1000px;
+
     }
 </style>
 
 
 
 
-
-
 @code {
-    private string tagInput = string.Empty;
+    private string desiredTagInput = string.Empty;
     private string undesiredTagInput = string.Empty;
     private string yourTagInput = string.Empty;
-    private List<string> tags = new List<string>();
+    @* private List<string> tags = new List<string>(); *@  // one list to combine all
+
+    private List<string> desiredTags = new List<string>();
     private List<string> undesiredTags = new List<string>();
     private List<string> yourTags = new List<string>();
 
-    private void HandleSubmit()
+    @* private void HandleSubmit()
     {
         if (!string.IsNullOrEmpty(tagInput))
         {
@@ -228,10 +238,19 @@
 
     private void HandleKeyUp(KeyboardEventArgs e)
     {
-        if (e.Key == "Enter")
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(tagInput))
         {
             // Trigger HandleSubmit when Enter key is released
             HandleSubmit();
+        }
+    } *@
+
+    private void HandleDesiredKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(desiredTagInput))
+        {
+            desiredTags.Add(desiredTagInput);
+            desiredTagInput = string.Empty;
         }
     }
 
@@ -248,17 +267,17 @@
     {
         if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(yourTagInput))
         {
-        yourTags.Add(yourTagInput);
-        yourTagInput = string.Empty;
+            yourTags.Add(yourTagInput);
+            yourTagInput = string.Empty;
         }
     }
 
     
 
-    private void RemoveTag(string tag)
+    private void RemoveDesiredTag(string tag)
     {
         // Remove the tag from the list of saved tags
-        tags.Remove(tag);
+        desiredTags.Remove(tag);
     }
 
     private void RemoveUndesiredTag(string tag)
@@ -269,6 +288,12 @@
     private void RemoveYourTag(string tag)
     {
         yourTags.Remove(tag);
+    }
+
+    private void handleSearchButton() 
+    {
+        Navigation.NavigateTo("/setup1");
+
     }
 
     
