@@ -7,6 +7,9 @@
 @using PlayerLink.Components.Lobbysearch
 @inject PlayerLink.Services.UserDataService UserDataService
 @inject PlayerLink.Services.LobbyDataService LobbyDataService
+@inject PlayerLink.Services.FilterService FilterService
+@inject IJSRuntime JSRuntime
+
 
 <PageTitle>Index</PageTitle>
 
@@ -22,13 +25,19 @@
     </div>
 
     <div>
-        @foreach (var gameGroup in LobbyDataService.Lobbies.Where(l => l.Game.Contains(currentSearchValue, StringComparison.InvariantCultureIgnoreCase)).GroupBy(l => l.Game))
+        @foreach (var gameGroup in LobbyDataService.Lobbies
+            .Where(l => l.Game.Contains(currentSearchValue, StringComparison.InvariantCultureIgnoreCase))
+            .Where(l => FilterService.DesiredTraits == "" || l.DesiredTags.Any(dt => dt.Contains(FilterService.DesiredTraits, StringComparison.InvariantCultureIgnoreCase)))
+            .Where(l => FilterService.UndesiredTraits == "" || l.UndesiredTags.Any(ut => ut.Contains(FilterService.UndesiredTraits, StringComparison.InvariantCultureIgnoreCase)))
+            .Where(l => FilterService.YourTraits == "" || l.DescribeYourselfTags.Any(yt => yt.Contains(FilterService.YourTraits, StringComparison.InvariantCultureIgnoreCase)))
+            .GroupBy(l => l.Game))
         {
             <div>
                 <h3>@gameGroup.Key</h3>
                 <div class="lobbies">
                     @{
                         var filteredLobbies = gameGroup.ToList();
+                        
                         Console.WriteLine($"Displaying {filteredLobbies.Count} lobbies for {gameGroup.Key}");
                     }
                     @foreach (var lobby in filteredLobbies)
@@ -37,9 +46,9 @@
                     }
                 </div>
             </div>
-}
-
+        }
     </div>
+
 </div>
 
 @code {
@@ -48,23 +57,27 @@
     protected override void OnInitialized()
     {
         LobbyDataService.OnLobbyAdded += UpdateLobbies;
+        FilterService.OnChange += UpdateLobbies;
     }
+
 
     private void UpdateLobbies()
     {
         InvokeAsync(() => StateHasChanged());
     }
 
-private void HandleSearchValueChanged(string value)
-{
-    currentSearchValue = value;
-    Console.WriteLine($"Search Value: {currentSearchValue}");
-    InvokeAsync(StateHasChanged);
-}
+    private void HandleSearchValueChanged(string value)
+    {
+        currentSearchValue = value;
+        Console.WriteLine($"Search Value: {currentSearchValue}");
+        InvokeAsync(StateHasChanged);
+    }
 
 
     public void Dispose()
     {
         LobbyDataService.OnLobbyAdded -= UpdateLobbies;
+        FilterService.OnChange -= UpdateLobbies;
     }
+
 }
