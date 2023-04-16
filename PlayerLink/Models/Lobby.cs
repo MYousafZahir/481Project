@@ -1,9 +1,10 @@
-namespace PlayerLink.Models {
+namespace PlayerLink.Models
+{
     public class Lobby
     {
         public int LobbyID { get; set; }
         public int NumPlayers => Users.Count;
-        public int MissingPlayers { get; set; }
+        public int MissingPlayers => MaxUsers - NumPlayers;
         public string Game { get; set; } = "";
         public string LobbyName { get; set; } = "";
         public List<string> DesiredTags { get; set; } = new List<string>();
@@ -22,15 +23,9 @@ namespace PlayerLink.Models {
             if (!IsFull())
             {
                 Users.Add(user);
-                UpdateMissingPlayers();
                 return true;
             }
             return false;
-        }
-
-        public void UpdateMissingPlayers()
-        {
-            MissingPlayers = MaxUsers - Users.Count;
         }
     }
 }
