@@ -22,7 +22,11 @@
                 <button type="button" class="btn-close" @onclick="HideModal"></button>
             </div>
             <div class="modal-body">
-                <!-- Add any content you want to display in the modal here -->
+                <h6>Players:</h6>
+                @foreach (User user in LobbyData.Users)
+                {
+                    <PlayerLink.Shared.Components.User.User user="@user"/>
+                }
             </div>
         </div>
     </div>

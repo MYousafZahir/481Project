@@ -10,6 +10,7 @@ namespace PlayerLink.Services {
         {
             Users = CreateSampleUsers();
         }
+        // CRITICAL, CHANGE THIS TO GETUSERBYID since we can have duplicate usernames? maybe?
         public User GetUserByUsername(string username){
             return Users.FirstOrDefault(u => u.Username == username);
         }

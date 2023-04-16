@@ -1,6 +1,8 @@
 @inject PlayerLink.Services.LobbyDataService LobbyDataService
+@inject PlayerLink.Services.UserDataService UserDataService
 @inject IJSRuntime JSRuntime
 @using LobbyModel = PlayerLink.Models.Lobby
+@using PlayerLink.Models
 @using Microsoft.JSInterop
 <div>
     <button type="button" class="btn btn-light d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#create-lobby-modal" id="lobby-button">
@@ -55,23 +57,27 @@
     private string DescribeYourself { get; set; } = "";
 
     private async void CreateLobby()
-{
-    List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
-    List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
-
-    LobbyModel newLobby = new LobbyModel
     {
-        LobbyID = LobbyDataService.Lobbies.Count + 1,
-        Game = Game,
-        LobbyName = LobbyName,
-        DesiredTags = desiredTags,
-        UndesiredTags = undesiredTags,
-        DescribeYourself = DescribeYourself
-    };
+        List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
+        List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
 
-    LobbyDataService.AddLobby(newLobby);
-    await JSRuntime.InvokeVoidAsync("eval", "bootstrap.Modal.getInstance(document.getElementById('create-lobby-modal')).hide();");
-}
+        // Get the current user (replace "currentUserUsername" with the actual username)
+        User currentUser = UserDataService.GetUserByUsername("Alice");
+
+        LobbyModel newLobby = new LobbyModel
+        {
+            LobbyID = LobbyDataService.Lobbies.Count + 1,
+            Game = Game,
+            LobbyName = LobbyName,
+            DesiredTags = desiredTags,
+            UndesiredTags = undesiredTags,
+            DescribeYourself = DescribeYourself,
+            Users = new List<User> { currentUser } // Add the current user to the new lobby
+        };
+
+        LobbyDataService.AddLobby(newLobby);
+        await JSRuntime.InvokeVoidAsync("eval", "bootstrap.Modal.getInstance(document.getElementById('create-lobby-modal')).hide();");
+    }
 
 
 
