@@ -16,7 +16,8 @@
   - [Step 6: Lobby Preference (1 out of 3)](#step-6-lobby-preference-1-out-of-3)
   - [Step 7: Lobby Preference (2 out of 3)](#step-7-lobby-preference-2-out-of-3)
   - [Step 8: Lobby Preference (3 out of 3)](#step-8-lobby-preference-3-out-of-3)
-  - [Available Scripts](#available-scripts)
+  - [Lobby - Create Lobby](#lobby---create-lobby)
+  - [Lobby - Join Lobby](#lobby---join-lobby)
     - [`npm start`](#npm-start)
     - [`npm test`](#npm-test)
     - [`npm run build`](#npm-run-build)
@@ -75,9 +76,8 @@ The `Make an Account` page is for the user to register a PlayerLink account. The
   - ``Month`` : must be between 1-12
   - `Day` : must be between 1-31
   - `Year` : must be a number between 1900-2099 
-```
-$ git clone https://github.com/gabrielawcislo/471_API_Project.git
-```
+
+
 Once the user fills out all of the four fields correctly, a `Create Account` button will become visible. The user can click the button and will be directed to the `Account Setup (1 out of 3)` page. 
 
 ## Step 3. Account Setup (1 out of 3)
@@ -100,7 +100,7 @@ Once the user has selected their top 3 favourite games, a `Continue` button will
 The `Lobby Preference (1 out of 3)` is for the user to get recommended lobbies based on the game they selected. The user can only select one game out of the three that are presented by clicking on them. Once a game is selected, the user can click on the `Continue` button which will direct them to the `Lobby Preference (1 out of 3)` page.
 
 ## Step 7: Lobby Preference (2 out of 3)
-The `Lobby Preference (1 out of 3)` is for the user to set game preferences for the game that they had selected. 
+The `Lobby Preference (2 out of 3)` is for the user to set game preferences for the game that they had selected. 
 The page presents the following:
 - `Rank` : Level of skill associated with lobbies, user can click on one or more of the the ranks "Level 1", "Level 2", "Level 3".
 - `Server`: Geographical location associated with lobbies, user can click on any of the presented options
@@ -108,14 +108,33 @@ The page presents the following:
 Once the user has selected the `Rank` and `Server` for the lobby recommendations that they want, they  can click `Continue` and will be directed to the `Lobby Preference (3 out of 3)` page.
 
 ## Step 8: Lobby Preference (3 out of 3)
-The `Lobby Preference (1 out of 3)` is for the user to set game preferences for the game that they had selected. 
+The `Lobby Preference (3 out of 3)` is for the user to set lobby trait preferences for the game that they had selected. 
 The page presents the following:
-- `Rank` : Level of skill associated with lobbies, user can click on one or more of the the ranks "Level 1", "Level 2", "Level 3".
-- `Server`: Geographical location associated with lobbies, user can click on any of the presented options
+- `Desired Traits` : Lobby traits the user is looking for
+- `Undesired Traits`: Traits that the user wants to avoid
+- `Your Traits` : Traits that describe the user themselves
 
-Once the user has selected the `Rank` and `Server` for the lobby recommendations that they want, they  can click `Continue` and will be directed to the `Lobby Preference (3 out of 3)` page.
 
-## Available Scripts
+Traits can be things such as rank, hobbies, game mode, or goals for the lobby. Example tags: Aggressive, Fast, Novice, etc. This way, the user can be recommended lobbies based on their desires.
+
+Once the user has filled out `Desired Traits`, `Undesired Traits`, and `Your Traits`, they can click the `Search` button on the bottom right. Then, the user will be presented the `Lobby` page that displays their recommended lobbies. 
+
+## Lobby - Create Lobby
+In order to create a lobby, the user can click on the `Create Lobby` button on the top right of the page. A pop-up will appear with the following fields:
+- `Game` : Enter the name of the game in which this new lobby will host
+- `Lobby Name` : Enter a custom lobby name
+- `Number of Players` : Set the maximum number of players that can join the lobby
+- `Desired Tags` : List of lobby traits the user is looking for (separated by a comma)
+- `Undesired Tags` : List of lobby traits the user wants to avoid (separated by a comma)
+- `Describe Yourself` : List of traits that describe the user themselves (separated by a comma)
+
+Once all the above fields are filled out, the user is able to create their own lobby by clicking the `Create Lobby` button on the bottom right of the pop-up. Then, user will be able to see their lobby on the list of lobbies as they scroll down the current page.
+
+Alternatevily, the user can cancel creating a new lobby by clicking the `Close` button next to the `Create Lobby` button or the `X` button at the top right of the pop-up page.
+
+## Lobby - Join Lobby
+
+
 
 In the project directory, you can run:
 
