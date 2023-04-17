@@ -30,9 +30,6 @@
 - [Team Members](#team-members)
 
 # Background
-This a full stack application that allows users interested in fly fishing to store their expeditions in various ways, such as logging every fish they catch, what fly they used, the weather conditions, etc. We are hoping that fly fishers are able to use this application to catch the fish that they want.\
-This project uses `React` as its frontend, and `NodeJS` with `ExpressJS` and `SQL` as the backend.
-
 The gaming industry, and in particular the multiplayer scene, has seen explosive growth in terms of users over the last few decades. The technologies behind modern games have advanced rapidly in terms of both graphics and popularity, however, they have failed to meet the demands of gamers in terms of addressing their needs to communicate and build social networks with one another. Current institutions, such as built-in chat functionality or Discord, fail to both remove bad actors who actively partake in toxic, annoying or weird behavior and to connect like minded individuals. 
 
 This is why we have introduced PlayerLink, to address the social needs of gamers and facilitate long-term friendships among them.
