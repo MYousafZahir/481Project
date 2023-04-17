@@ -18,7 +18,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <div>
           <div class="form-group">
             <label for="game">Game</label>
             <input type="text" class="form-control" id="game" placeholder="Enter game name" @bind="@Game" required minlength="1">
@@ -27,27 +27,70 @@
             <label for="lobby-name">Lobby Name</label>
             <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@LobbyName" required minlength="1">
           </div>
-          <div class="form-group">
+          <div class="form-group" style = "margin-bottom: 1rem;">
             <label for="lobby-name">Number of Players</label>
             <input type="number" class="form-control" id="player-count" placeholder="" @bind="@MaxPlayers" min="2" max="10">
           </div>
-          <div class="form-group">
-            <label for="desired-tags">Desired Tags</label>
-            <textarea class="form-control" id="desired-tags" rows="3" placeholder="tag1,tag2,tag3" @bind="@DesiredTagsInput"></textarea>
+          <div class="tag-container-desired">
+              <div class="tag-input-container">
+                  <span class="tag-input-label">Desired Traits</span>
+                  <div class="tag-input-box">
+                      <input type="text" @bind="desiredTagInput" @onkeyup="HandleDesiredKeyUp" placeholder="Enter desired trait(s)" />
+                      @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+                  </div>
+              </div>
+              <div class="tags">
+                  @foreach (var tag in desiredTags)
+                  {
+                      <div class="desired_tag">
+                          <span class="tag-value">@tag</span>
+                          <span class="tag-remove" @onclick="() => RemoveDesiredTag(tag)">x</span>
+                      </div>
+                  }
+              </div>
           </div>
-          <div class="form-group">
-            <label for="undesired-tags">Undesired Tags</label>
-            <textarea class="form-control" id="undesired-tags" rows="3" placeholder="tag1,tag2,tag3" @bind="@UndesiredTagsInput"></textarea>
+          <div class="tag-container-undesired">
+              <div class="tag-input-container">
+                  <span class="tag-input-label">Undesired Traits</span>
+                  <div class="tag-input-box">
+                      <input type="text" @bind="undesiredTagInput" @onkeyup="HandleUndesiredKeyUp" placeholder="Enter undesired trait(s)" />
+                      @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+                  </div>
+              </div>
+              <div class="tags">
+                  @foreach (var tag in undesiredTags)
+                  {
+                      <div class="undesired_tag">
+                          <span class="tag-value">@tag</span>
+                          <span class="tag-remove" @onclick="() => RemoveUndesiredTag(tag)">x</span>
+                      </div>
+                  }
+              </div>
           </div>
-          <div class="form-group">
-            <label for="describe-yourself">Describe Yourself</label>
-            <textarea class="form-control" id="describe-yourself" rows="3" placeholder="tag1,tag2,tag3" @bind="@DescribeYourselfInput"></textarea>
+
+          <div class="tag-container-your">
+              <div class="tag-input-container">
+                  <span class="tag-input-label">Your Traits</span>
+                  <div class="tag-input-box">
+                      <input type="text" @bind="yourTagInput" @onkeyup="HandleYourKeyUp" placeholder="Enter your desired trait(s)" />
+                      @* <button class="search-button" @onclick="HandleSearch">Search</button> *@
+                  </div>
+              </div>
+              <div class="tags">
+                  @foreach (var tag in yourTags)
+                  {
+                      <div class="your_tag">
+                          <span class="tag-value">@tag</span>
+                          <span class="tag-remove" @onclick="() => RemoveYourTag(tag)">x</span>
+                      </div>
+                  }
+              </div>
           </div>
-        </form>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" @onclick="CreateLobby">Create Lobby</button>
+          <button type="button" class="btn btn-primary" @onclick="CreateLobby">Create Lobby</button>
       </div>
     </div>
   </div>
@@ -56,16 +99,57 @@
 @code {
     private string Game { get; set; } = "";
     private string LobbyName { get; set; } = "";
-    private string DesiredTagsInput { get; set; } = "";
-    private string UndesiredTagsInput { get; set; } = "";
-    private string DescribeYourselfInput { get; set; } = "";
+    private List<string> desiredTags = new List<string>();
+    private List<string> undesiredTags = new List<string>();
+    private List<string> yourTags = new List<string>();
+    private string desiredTagInput = string.Empty;
+    private string undesiredTagInput = string.Empty;
+    private string yourTagInput = string.Empty;
     private int MaxPlayers;
+    private void HandleDesiredKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(desiredTagInput))
+        {
+            desiredTags.Add(desiredTagInput);
+            desiredTagInput = string.Empty;
+        }
+    }
+
+    private void HandleUndesiredKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(undesiredTagInput))
+        {
+            undesiredTags.Add(undesiredTagInput);
+            undesiredTagInput = string.Empty;
+        }
+    }
+
+    private void HandleYourKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(yourTagInput))
+        {
+            yourTags.Add(yourTagInput);
+            yourTagInput = string.Empty;
+        }
+    }
+    private void RemoveDesiredTag(string tag)
+    {
+        // Remove the tag from the list of saved tags
+        desiredTags.Remove(tag);
+    }
+
+    private void RemoveUndesiredTag(string tag)
+    {
+        undesiredTags.Remove(tag);
+    }
+
+    private void RemoveYourTag(string tag)
+    {
+        yourTags.Remove(tag);
+    }
 
     private async void CreateLobby()
     {
-        List<string> desiredTags = DesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
-        List<string> undesiredTags = UndesiredTagsInput.Split(',').Select(tag => tag.Trim()).ToList();
-        List<string> describeYourselfTags = DescribeYourselfInput.Split(',').Select(tag => tag.Trim()).ToList();
 
         // Get the current user (replace "currentUserUsername" with the actual username)
         User currentUser = UserDataService.GetUserByUsername("Alice");
@@ -78,7 +162,7 @@
             LobbyName = LobbyName,
             DesiredTags = desiredTags,
             UndesiredTags = undesiredTags,
-            DescribeYourselfTags = describeYourselfTags,
+            DescribeYourselfTags = yourTags,
             Users = new List<User> { currentUser } // Add the current user to the new lobby
         };
 
