@@ -4,21 +4,10 @@
   border: 4.06122px solid #000000;
   padding: 1em;
   margin: 1em;
-<<<<<<< HEAD
-=======
-  min-height: 18vh;
->>>>>>> parent of 8963d12 (Added matched tags to lobby + new transition)
 }
 #lobby-container:hover {
   /* give hyperlink border */
   border: 4.06122px solid #0000ff;
-<<<<<<< HEAD
-=======
-}
-#img img {
-  width: 6vw;
-  height: 6wh;
->>>>>>> parent of 8963d12 (Added matched tags to lobby + new transition)
 }
 
 .user-item {
