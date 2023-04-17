@@ -7,14 +7,15 @@
   - [Table of Contents](#table-of-contents)
 - [Background](#background)
 - [Tools and Technologies](#tools-and-technologies)
-- [Installation](#installation)
-  - [Step 1. Node.js](#step-1-nodejs)
-  - [Step 2. Clone GitHub Repository](#step-2-clone-github-repository)
-  - [Step 3. JSON File](#step-3-json-file)
-  - [Step 4: Install the Required Dependencies](#step-4-install-the-required-dependencies)
-  - [Step 5. Download External Libaries](#step-5-download-external-libaries)
-  - [Step 6: Running the Project](#step-6-running-the-project)
-- [Getting Started with Create React App](#getting-started-with-create-react-app)
+- [Walkthrough](#walkthrough)
+  - [Step 1. Login](#step-1-login)
+  - [Step 2. Make an Account](#step-2-make-an-account)
+  - [Step 3. Account Setup (1 out of 3)](#step-3-account-setup-1-out-of-3)
+  - [Step 4: Account Setup (2 out of 3)](#step-4-account-setup-2-out-of-3)
+  - [Step 5. Account Setup (3 out of 3)](#step-5-account-setup-3-out-of-3)
+  - [Step 6: Lobby Preference (1 out of 3)](#step-6-lobby-preference-1-out-of-3)
+  - [Step 7: Lobby Preference (2 out of 3)](#step-7-lobby-preference-2-out-of-3)
+  - [Step 8: Lobby Preference (3 out of 3)](#step-8-lobby-preference-3-out-of-3)
   - [Available Scripts](#available-scripts)
     - [`npm start`](#npm-start)
     - [`npm test`](#npm-test)
@@ -47,67 +48,72 @@ The following languages and tools were used to build our project:
 - [HTML](https://html.com/)
 
 
-# Installation
-## Step 1. Node.js
-Download Node.js – LTS (Long Term Support) version is recommended for most users
+# Walkthrough
+## Step 1. Login 
+The user is presented the PlayerLink login page. There are two text fields: 
+- Enter username
+- Enter password 
 
+which is meant for users with an existing PlayerLink account to login to their account. After the user has entered their correct username and password, they can click the "Login" button below to move on to the PlayerLink home page.
 
-Then, open up your terminal and check if `Node` is installed:
-```
-$ node -v
-v16.13.0
-```
-Also, check if `npm` is installed, which comes with `Node`
-```
-$ npm -v
-8.1.0
-```
+Users without an existing account need to follow the steps described below to register an account.
 
-## Step 2. Clone GitHub Repository
-Enter the following on the terminal of your device to download the project:
+There are additional four links below the page:
+- `Forgot Username?`
+- `Forgot Password?`
+- `New to Playerlink?`
+- `Register`
+
+In order to register an account, the user must click on `Register`. This will redirect to the `Make an Account` page.
+
+## Step 2. Make an Account
+The `Make an Account` page is for the user to register a PlayerLink account. There are four fields that the user is required to fill out:
+- `Email` : email must include an '@'  
+- `Username` : user can choose their own username
+- `Password` : can be of any length or consist of any symbol
+- `Date of Birth`
+  - ``Month`` : must be between 1-12
+  - `Day` : must be between 1-31
+  - `Year` : must be a number between 1900-2099 
 ```
 $ git clone https://github.com/gabrielawcislo/471_API_Project.git
 ```
+Once the user fills out all of the four fields correctly, a `Create Account` button will become visible. The user can click the button and will be directed to the `Account Setup (1 out of 3)` page. 
 
-## Step 3. JSON File
-Go to the ```package.json``` file and go to "script" to confirm that you have the following:
-```javascript
-"scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-```
+## Step 3. Account Setup (1 out of 3)
+The `Account Setup (1 out of 3)` is for the user to select a profile picture for their account. The user must click on the bordered square to select a profile picture. 
+Once the user has done that, their image will appear on the bordered square, and a `Continue` button will appear on the bottom left of the page. The user can click `Continue` and will be directed to the `Account Setup (2 out of 3)` page.
 
-## Step 4: Install the Required Dependencies
-Execute the following commands in your terminal to download all dependencies.
+## Step 4: Account Setup (2 out of 3)
+The `Account Setup (2 out of 3)` is for the user to select their top 3 favourite genres from the provided genres. This is an important step later on as it allows the system to provide the user with appropriate genre recommendations for gaming lobbies. 
 
-```
-$ npm install
-```
+Once the user has selected their top 3 favourite genres, a `Continue` button will appear on the bottom left of the page. The user can click `Continue` and will be directed to the `Account Setup (3 out of 3)` page.
 
-## Step 5. Download External Libaries
-Also, execcute the following external libraries in your terminal before starting the application:
-```
-$ npm install axios
-$ npm install @naterial-ui/core
-```
+## Step 5. Account Setup (3 out of 3)
+The `Account Setup (3 out of 3)` is for the user to select their top 3 favourite games. This is an important step later on as it allows the system to provide the user appropriate game recommendations for gaming lobbies. 
 
-## Step 6: Running the Project
-Go to the root directory of the project, start the frontend and backend:
+The user will do this by entering their games on the search bar on the bottom right of the page. Once a game is entered, it will appear in the middle of the screen. 
 
-```
-$ cd 471_API_Project
-$ npm start
-$ cd backend                    
-$ node main.js                  
-```
-You can now open http://localhost:3000 to view the application in your browser, the backend is running at http://localhost:5000
+Once the user has selected their top 3 favourite games, a `Continue` button will appear on the bottom left of the page. The user can click `Continue` and will be directed to the `Lobby Preference (1 out of 3)` page.
 
-# Getting Started with Create React App
+## Step 6: Lobby Preference (1 out of 3)
+The `Lobby Preference (1 out of 3)` is for the user to get recommended lobbies based on the game they selected. The user can only select one game out of the three that are presented by clicking on them. Once a game is selected, the user can click on the `Continue` button which will direct them to the `Lobby Preference (1 out of 3)` page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Step 7: Lobby Preference (2 out of 3)
+The `Lobby Preference (1 out of 3)` is for the user to set game preferences for the game that they had selected. 
+The page presents the following:
+- `Rank` : Level of skill associated with lobbies, user can click on one or more of the the ranks "Level 1", "Level 2", "Level 3".
+- `Server`: Geographical location associated with lobbies, user can click on any of the presented options
+
+Once the user has selected the `Rank` and `Server` for the lobby recommendations that they want, they  can click `Continue` and will be directed to the `Lobby Preference (3 out of 3)` page.
+
+## Step 8: Lobby Preference (3 out of 3)
+The `Lobby Preference (1 out of 3)` is for the user to set game preferences for the game that they had selected. 
+The page presents the following:
+- `Rank` : Level of skill associated with lobbies, user can click on one or more of the the ranks "Level 1", "Level 2", "Level 3".
+- `Server`: Geographical location associated with lobbies, user can click on any of the presented options
+
+Once the user has selected the `Rank` and `Server` for the lobby recommendations that they want, they  can click `Continue` and will be directed to the `Lobby Preference (3 out of 3)` page.
 
 ## Available Scripts
 
