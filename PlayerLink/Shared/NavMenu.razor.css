@@ -123,7 +123,7 @@ div span {
 }
 
 .modal {
-  z-index: 1050;
+  z-index: 999999;
 }
 
 .modal-content {
