@@ -21,11 +21,15 @@
         <form>
           <div class="form-group">
             <label for="game">Game</label>
-            <input type="text" class="form-control" id="game" placeholder="Enter game name" @bind="@Game">
+            <input type="text" class="form-control" id="game" placeholder="Enter game name" @bind="@Game" required minlength="1">
           </div>
           <div class="form-group">
             <label for="lobby-name">Lobby Name</label>
-            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@LobbyName">
+            <input type="text" class="form-control" id="lobby-name" placeholder="Enter lobby name" @bind="@LobbyName" required minlength="1">
+          </div>
+          <div class="form-group">
+            <label for="lobby-name">Number of Players</label>
+            <input type="number" class="form-control" id="player-count" placeholder="" @bind="@MaxPlayers" min="2" max="10">
           </div>
           <div class="form-group">
             <label for="desired-tags">Desired Tags</label>
@@ -55,6 +59,7 @@
     private string DesiredTagsInput { get; set; } = "";
     private string UndesiredTagsInput { get; set; } = "";
     private string DescribeYourselfInput { get; set; } = "";
+    private int MaxPlayers;
 
     private async void CreateLobby()
     {
@@ -69,6 +74,7 @@
         {
             LobbyID = LobbyDataService.Lobbies.Count + 1,
             Game = Game,
+            MaxUsers = MaxPlayers,
             LobbyName = LobbyName,
             DesiredTags = desiredTags,
             UndesiredTags = undesiredTags,
