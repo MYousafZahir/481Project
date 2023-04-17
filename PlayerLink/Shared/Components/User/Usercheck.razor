@@ -10,13 +10,55 @@
                 </div>
             </div>
             <div class="accept-reject-buttons">
-                <button class="btn btn-success btn-sm">Accept</button>
-                <button class="btn btn-danger btn-sm">Reject</button>
+                @if (!rejectButtonClicked && !acceptButtonClicked) 
+                {
+                    <button @onclick="HandleRejectButton" class="btn btn-danger btn-sm" >Reject</button>
+                    <button @onclick="HandleAcceptButton" class="btn btn-success btn-sm">Accept</button>
+                }
+                else if (acceptButtonClicked)
+                {
+                    <button class="btn btn-success btn-sm" >Accepted</button>
+
+                }
+                else if (rejectButtonClicked)
+                {
+                    <button class="btn btn-danger btn-sm" >Rejected</button>
+
+                }
             </div>
+            
         </div>
     </div>
 </div>
 
 @code {
+    @* private bool isRejectButtonClicked = false; *@
+
+    private bool acceptButtonClicked = false;
+    private bool rejectButtonClicked = false;
+    private bool newButtonClicked = false;
+
+
+    private void HandleAcceptButton()
+    {
+        // Logic for handling Button 1 click
+        acceptButtonClicked = true;
+        newButtonClicked = true;
+    }
+
+    private void HandleRejectButton()
+    {
+        // Logic for handling Button 2 click
+        rejectButtonClicked = true;
+        newButtonClicked = true;
+    }
+
+
     [Parameter] public UserModel user { get; set; } = new UserModel();
+
+    @* private void HandleRejectButton() {
+        isRejectButtonClicked = true;
+    } *@
 }
+
+
