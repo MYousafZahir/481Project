@@ -12,8 +12,8 @@
             <div class="accept-reject-buttons">
                 @if (!rejectButtonClicked && !acceptButtonClicked) 
                 {
-                    <button @onclick="HandleRejectButton" class="btn btn-danger btn-sm" >Reject</button>
                     <button @onclick="HandleAcceptButton" class="btn btn-success btn-sm">Accept</button>
+                    <button @onclick="HandleRejectButton" class="btn btn-danger btn-sm" >Reject</button>
                 }
                 else if (acceptButtonClicked)
                 {
