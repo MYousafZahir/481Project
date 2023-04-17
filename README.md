@@ -139,6 +139,9 @@ The `Lobby Chat` page is where the user can communicate with other members of th
 - `Leave` : Used for leaving the lobby. A pop-up error message will appear prompting the user to confirm the decision to leave a the lobby. A green `Yes` and a red `No` button is presented for the user to make a decision. Clicking the `Yes` button will redirect the user back to the main `Lobby` page. Clicking the `No` button allows the user to remain in the `Lobby Chat` page. 
 - `Muting microphone`: User is able to mute themselves during the voice call by clicking the 'microphone' symbol located on the left-hand side. The microphone symbol will have a red line crossed on it to indicate that the user is muted.
 - `Deafening`: User is able to mute their speaker during the voice call by clicking the 'headphone' symbol located on the left-hand side. The headphone symbol will have a red line crossed on it to indicate that the user is deafened (user will not be able to hear other members in the voice call).
+- `Demonstration of Functionality` : Pressing '~' in the text box will invoke a interactable pop up for a join request to appear, pressing  in the text box "alt" will invoke a message from user "Bob" 
+
+
 
 ## Lobby - Searching for Lobby Games
 On the main `Lobby` page, the user can click on the `Search Game` search bar to search for their lobby games. The user is presented with all the available lobbies if they click on the `Search Game`. They can click on any of the available lobbies in the search, and if the lobby exists the system will present display them to the user.
