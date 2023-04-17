@@ -2,13 +2,15 @@
   box-sizing: border-box;
   border-radius: 16.2449px;
   border: 4.06122px solid #000000;
-  padding: 1em;
+  padding: 1em 1em 1em 1em;
   margin: 1em;
   min-height: 18vh;
+  transition: transform 0.25s;
 }
 #lobby-container:hover {
   /* give hyperlink border */
-  border: 4.06122px solid #0000ff;
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 #img img {
   width: 6vw;

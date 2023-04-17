@@ -5,6 +5,7 @@
 @using PlayerLink.Components.Lobbybutton
 @using PlayerLink.Components.Lobbyfilter
 @using PlayerLink.Components.Lobbysearch
+@using PlayerLink.Models
 @inject PlayerLink.Services.UserDataService UserDataService
 @inject PlayerLink.Services.LobbyDataService LobbyDataService
 @inject PlayerLink.Services.FilterService FilterService
@@ -51,10 +52,16 @@
 
                         Console.WriteLine($"Displaying {filteredLobbies.Count} lobbies for {gameGroup.Key}");
                     }
+
+
                     @foreach (var lobby in filteredLobbies)
                     {
-                        <LobbyComponent LobbyData="lobby"/>
+                            <LobbyComponent LobbyData="@lobby" ShownTags="@GetMatchedTags(lobby)"/>
+
                     }
+                        
+
+
                 </div>
             </div>
         }
@@ -97,4 +104,32 @@
         LobbyDataService.OnLobbyAdded -= UpdateLobbies;
         FilterService.OnChange -= UpdateLobbies;
     }
+private List<string> GetMatchedTags(Lobby lobby)
+{
+    var matchedTags = new List<string>();
+
+    if (!string.IsNullOrEmpty(FilterService.YourTraits))
+    {
+        var yourTraits = FilterService.YourTraits.Split(' ');
+        matchedTags.AddRange(lobby.DescribeYourselfTags.Where(tag => yourTraits.Any(t => tag.Contains(t, StringComparison.InvariantCultureIgnoreCase))).ToList());
+    }
+
+    if (!string.IsNullOrEmpty(FilterService.DesiredTraits))
+    {
+        var desiredTraits = FilterService.DesiredTraits.Split(' ');
+        matchedTags.AddRange(lobby.DesiredTags.Where(tag => desiredTraits.Any(t => tag.Contains(t, StringComparison.InvariantCultureIgnoreCase))).ToList());
+    }
+
+    if (!string.IsNullOrEmpty(FilterService.UndesiredTraits))
+    {
+        var undesiredTraits = FilterService.UndesiredTraits.Split(' ');
+        matchedTags.AddRange(lobby.UndesiredTags.Where(tag => undesiredTraits.Any(t => tag.Contains(t, StringComparison.InvariantCultureIgnoreCase))).ToList());
+    }
+
+    Console.WriteLine($"Matched tags for lobby {lobby.LobbyName}: {string.Join(", ", matchedTags)}");
+    return matchedTags.Distinct().ToList();
+}
+
+
+
 }
