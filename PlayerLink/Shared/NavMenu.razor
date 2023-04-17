@@ -40,7 +40,7 @@
                     </ActivatorContent>
                     <ChildContent> 
                         <MudListItem>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#chat-@friend.Username" style = "border:none;" @onclick="ToggleNavMenu">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#chat-@friend.Username" style = "border:none; display:inline-block;" @onclick="ToggleNavMenu">
                                   Chat
                             </button>
                         </MudListItem>
@@ -65,7 +65,7 @@
                                             {
                                                 <div class="message-sender">
                                                     <div class = "username"> @message.sender</div>
-                                                    <div class="message-text">
+                                                    <div class="message-text" style = "background-color: rgb(147, 147, 237);">
                                                         @message.newMessage
                                                     </div>
                                                 </div>
@@ -74,7 +74,7 @@
                                             {
                                                 <div class="message-reciever">
                                                     <div class = "username"> @message.sender</div>
-                                                    <div class="message-text">
+                                                    <div class="message-text" style = "background-color: grey;">
                                                         @message.newMessage
                                                     </div>
                                                 </div>
