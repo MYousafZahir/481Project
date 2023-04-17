@@ -1,11 +1,11 @@
 <div id="top"></div>
 
-# CPSC 481 Winter 2023 Project: Player Link
+# CPSC 481 Winter 2023 Project: PlayerLink
 
 ## Table of Contents
-- [CPSC 481 Winter 2023 Project: Player Link](#cpsc-481-winter-2023-project-player-link)
+- [CPSC 481 Winter 2023 Project: PlayerLink](#cpsc-481-winter-2023-project-playerlink)
   - [Table of Contents](#table-of-contents)
-- [Description](#description)
+- [Background](#background)
 - [Tools and Technologies](#tools-and-technologies)
 - [Installation](#installation)
   - [Step 1. Node.js](#step-1-nodejs)
@@ -27,20 +27,24 @@
     - [Advanced Configuration](#advanced-configuration)
     - [Deployment](#deployment)
     - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
-- [Authors](#authors)
-- [Resources](#resources)
+- [Team Members](#team-members)
 
-# Description
+# Background
 This a full stack application that allows users interested in fly fishing to store their expeditions in various ways, such as logging every fish they catch, what fly they used, the weather conditions, etc. We are hoping that fly fishers are able to use this application to catch the fish that they want.\
-This project uses `React`as its frontend, and `NodeJS` with `ExpressJS` and `SQL` as the backend.
+This project uses `React` as its frontend, and `NodeJS` with `ExpressJS` and `SQL` as the backend.
+
+The gaming industry, and in particular the multiplayer scene, has seen explosive growth in terms of users over the last few decades. The technologies behind modern games have advanced rapidly in terms of both graphics and popularity, however, they have failed to meet the demands of gamers in terms of addressing their needs to communicate and build social networks with one another. Current institutions, such as built-in chat functionality or Discord, fail to both remove bad actors who actively partake in toxic, annoying or weird behavior and to connect like minded individuals. 
+
+This is why we have introduced PlayerLink, to address the social needs of gamers and facilitate long-term friendships among them.
+
+PlayerLink was created using the `Blazor` web framework.
 
 # Tools and Technologies
 The following languages and tools were used to build our project:
-- [React.js](https://reactjs.org/)
-- [JavaScript](https://www.javascript.com/)
-- [Node.js](https://nodejs.org/en/)
+- [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
+- [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [MySQL](https://www.mysql.com/)
+- [HTML](https://html.com/)
 
 
 # Installation
@@ -173,7 +177,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# Authors
+# Team Members
 This project was made by Computer Science Undergraduate students from the University of Calgary
 as a final project for the CPSC 481 Winter 2023 course. \
 Here is the list of authors:
@@ -184,14 +188,6 @@ Here is the list of authors:
 - [Runze Li]()
 - [Anish Pokhrel](https://github.com/apokhrel7)
 
-# Resources
-- https://fullstackopen.com/en/
-- https://www.w3schools.com/nodejs/nodejs_mysql.asp
-- https://www.mysqltutorial.org/mysql-nodejs/create-table/
-- https://www.youtube.com/c/PedroTechnologies/videos
-- https://www.youtube.com/channel/UC-Zcse8tC53G34Uo4kzLeAg
-- https://stackoverflow.com/questions/44946270/er-not-supported-auth-mode-mysql-server
-- https://www.educba.com/mysql-commands/
-- https://medium.com/fullstackwebdev/a-guide-to-mysql-with-node-js-fc4f6abce33b 
+ 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
