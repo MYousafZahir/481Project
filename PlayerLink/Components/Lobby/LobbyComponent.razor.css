@@ -4,10 +4,15 @@
   border: 4.06122px solid #000000;
   padding: 1em;
   margin: 1em;
+  min-height: 18vh;
 }
 #lobby-container:hover {
   /* give hyperlink border */
   border: 4.06122px solid #0000ff;
+}
+#img img {
+  width: 6vw;
+  height: 6wh;
 }
 
 .user-item {
