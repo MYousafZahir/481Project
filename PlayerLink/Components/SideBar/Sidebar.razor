@@ -17,6 +17,7 @@
             {
                 var user = UserDataService.GetUserByUsername(name);
                 <div style="display: flex; align-items: center;">
+                @if(!string.Equals(name, username)){
                     <MudMenu ActivationEvent="@MouseEvent.RightClick" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.CenterLeft">
                     <ActivatorContent>
                         <div style="display: inline-block; width: 10rem;">
@@ -29,11 +30,17 @@
                         } else {
                             <MudMenuItem @onclick="() => Mute(name)">Mute</MudMenuItem>
                         }
-                        <MudMenuItem @onclick="() => Kick(name)">Kick</MudMenuItem>
+                            <MudMenuItem @onclick="() => Kick(name)">Kick</MudMenuItem>
+                        <MudMenuItem>Send Friend Request</MudMenuItem>
                     </ChildContent>
                 </MudMenu>
+                } else {
+                    <div style="display: inline-block; width: 10rem;">
+                        <Userprofile user="@user" />
+                    </div>
+                }
                     <div style="display: inline-block;">
-                        <button style="width: 50px;" @onclick="ToggleTalk">
+                        <button style="width: 50px; height: 50px;" @onclick="ToggleTalk">
                             @if ((muted && string.Equals(name,username)) || p_muted.Contains(name))
                             {
                                 <img src="/img/Volume-off.svg" />
