@@ -34,7 +34,7 @@
         <div>
             <div class="d-flex flex-column align-items-center setup">
                 New to Playerlink? 
-                <a href="">Register</a>
+                <a href="" @onclick="gotoSetup">Register</a>
             </div>
         </div>
     </div>
@@ -44,5 +44,10 @@
     private void RedirectToAnotherPage()
     {
         NavigationManager.NavigateTo("/Lobby");
+    }
+
+    private void gotoSetup()
+    {
+        NavigationManager.NavigateTo("/setup");
     }
 }
