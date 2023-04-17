@@ -2,6 +2,7 @@
 @using Microsoft.JSInterop
 @using PlayerLink.Components.Tag
 @inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
 
 
 <div @onclick="ShowModal">
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center button-space">
-                    <button type="button" class="btn btn-primary">Join Lobby</button>
+                    <button type="button" class="btn btn-primary" @onclick="JoinLobby">Join Lobby</button>
                 </div>
             </div>
         </div>
@@ -115,5 +116,11 @@
     private async Task HideModal()
     {
         await JSRuntime.InvokeVoidAsync("HideModal", modalElement);
+    }
+
+    private async Task JoinLobby()
+    {
+        await HideModal();
+        NavigationManager.NavigateTo("/lobbychat");
     }
 }
