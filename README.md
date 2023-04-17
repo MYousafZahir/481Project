@@ -7,7 +7,11 @@
   - [Table of Contents](#table-of-contents)
 - [Background](#background)
 - [Tools and Technologies](#tools-and-technologies)
-- [Walkthrough](#walkthrough)
+- [Installation](#installation)
+  - [Step 1. Blazor](#step-1-blazor)
+  - [Step 2. Clone GitHub Repository](#step-2-clone-github-repository)
+  - [Step 3: Starting the PlayerLink Application](#step-3-starting-the-playerlink-application)
+- [PlayerLink System Walkthrough](#playerlink-system-walkthrough)
   - [Step 1. Login](#step-1-login)
   - [Step 2. Make an Account](#step-2-make-an-account)
   - [Step 3. Account Setup (1 out of 3)](#step-3-account-setup-1-out-of-3)
@@ -19,6 +23,7 @@
   - [Lobby - Create Lobby](#lobby---create-lobby)
   - [Lobby - Join Lobby](#lobby---join-lobby)
   - [Lobby - Lobby Chat](#lobby---lobby-chat)
+  - [Lobby - Side Bar](#lobby---side-bar)
   - [Lobby - Searching for Lobby Games](#lobby---searching-for-lobby-games)
   - [Lobby - Additional Filtering for Lobby Games](#lobby---additional-filtering-for-lobby-games)
   - [Lobby - Friend Requests](#lobby---friend-requests)
@@ -42,8 +47,35 @@ The following languages and tools were used to build our project:
 - [HTML](https://html.com/)
 
 
-# Walkthrough
+# Installation
+## Step 1. Blazor
+Install [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor).
+
+
+Then, open up your terminal and check if `Blazor` is installed:
+```
+$ dotnet ---version
+7.0.203
+```
+
+## Step 2. Clone GitHub Repository
+Enter the following on the terminal of your device to download the PlayerLink project:
+```
+$ git clone https://github.com/MYousafZahir/481Project/tree/Main-2
+```
+
+## Step 3: Starting the PlayerLink Application
+Go to the root directory of the project and then start the app:
+```
+$ cd PlayerLink                  // first, go to root directory of the project...
+$ ...\PlayerLink> dotnet watch   // then, start the application in the root directory
+```
+Open [http://localhost:5178](http://localhost:3000) to view the application in the browser.
+
+# PlayerLink System Walkthrough
 ## Step 1. Login 
+The following steps (Steps 1 - 8) is required for the user as an initial setup and registration for the PlayerLink system.
+
 The user is presented the PlayerLink login page. There are two text fields: 
 - Enter username
 - Enter password 
@@ -141,7 +173,8 @@ The `Lobby Chat` page is where the user can communicate with other members of th
 - `Deafening`: User is able to mute their speaker during the voice call by clicking the 'headphone' symbol located on the left-hand side. The headphone symbol will have a red line crossed on it to indicate that the user is deafened (user will not be able to hear other members in the voice call).
 - `Demonstration of Functionality` : Pressing '~' in the text box will invoke a interactable pop up for a join request to appear, pressing  in the text box "alt" will invoke a message from user "Bob" 
 
-
+## Lobby - Side Bar
+Right clicking on a friend will invoke a context menu that is interactable, clicking chat will bring a chat pop up window, clicking `Remove` will remove them from the friend list.
 
 ## Lobby - Searching for Lobby Games
 On the main `Lobby` page, the user can click on the `Search Game` search bar to search for their lobby games. The user is presented with all the available lobbies if they click on the `Search Game`. They can click on any of the available lobbies in the search, and if the lobby exists the system will present display them to the user.
