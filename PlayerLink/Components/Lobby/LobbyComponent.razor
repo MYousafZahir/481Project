@@ -8,9 +8,16 @@
     <div class="d-flex flex-row" id="lobby-container">
         @foreach (string user in Images)
         {
-            <div>
+            <div id="img">
                 <img src="@user" />
             </div>
+            <span>
+                @foreach (var tag in ShownTags)
+                {
+                    <Tag tagname="@tag"/>
+                }
+            </span>
+
         }
     </div>
 </div>
@@ -67,9 +74,6 @@
                 <div class="d-flex justify-content-center button-space">
                     <button type="button" class="btn btn-primary">Join Lobby</button>
                 </div>
-               
-
-
             </div>
         </div>
     </div>
@@ -77,6 +81,7 @@
 
 @code {
     [Parameter] public Lobby LobbyData { get; set; }
+    [Parameter] public List<string> ShownTags {get; set;} = new List<string>();
     private ElementReference modalElement;
 
     public List<string> Images { get; set; } = new List<string>();

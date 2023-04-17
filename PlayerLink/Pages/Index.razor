@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/Lobby"
 @using PlayerLink.Shared.Components.User
 @using PlayerLink.Shared.Components.Userprofile
 @using PlayerLink.Components.Lobby
@@ -53,7 +53,7 @@
                     }
                     @foreach (var lobby in filteredLobbies)
                     {
-                        <LobbyComponent LobbyData="lobby" />
+                        <LobbyComponent LobbyData="lobby"/>
                     }
                 </div>
             </div>
