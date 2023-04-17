@@ -18,17 +18,10 @@
   - [Step 8: Lobby Preference (3 out of 3)](#step-8-lobby-preference-3-out-of-3)
   - [Lobby - Create Lobby](#lobby---create-lobby)
   - [Lobby - Join Lobby](#lobby---join-lobby)
-    - [`npm start`](#npm-start)
-    - [`npm test`](#npm-test)
-    - [`npm run build`](#npm-run-build)
-    - [`npm run eject`](#npm-run-eject)
-  - [Learn More](#learn-more)
-    - [Code Splitting](#code-splitting)
-    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-    - [Making a Progressive Web App](#making-a-progressive-web-app)
-    - [Advanced Configuration](#advanced-configuration)
-    - [Deployment](#deployment)
-    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+  - [Lobby - Lobby Chat](#lobby---lobby-chat)
+  - [Lobby - Searching for Lobby Games](#lobby---searching-for-lobby-games)
+  - [Lobby - Additional Filtering for Lobby Games](#lobby---additional-filtering-for-lobby-games)
+  - [Lobby - Friend Requests](#lobby---friend-requests)
 - [Team Members](#team-members)
 
 # Background
@@ -119,6 +112,8 @@ Traits can be things such as rank, hobbies, game mode, or goals for the lobby. E
 
 Once the user has filled out `Desired Traits`, `Undesired Traits`, and `Your Traits`, they can click the `Search` button on the bottom right. Then, the user will be presented the `Lobby` page that displays their recommended lobbies. 
 
+This marks the end of the account creation process.
+
 ## Lobby - Create Lobby
 In order to create a lobby, the user can click on the `Create Lobby` button on the top right of the page. A pop-up will appear with the following fields:
 - `Game` : Enter the name of the game in which this new lobby will host
@@ -133,74 +128,40 @@ Once all the above fields are filled out, the user is able to create their own l
 Alternatevily, the user can cancel creating a new lobby by clicking the `Close` button next to the `Create Lobby` button or the `X` button at the top right of the pop-up page.
 
 ## Lobby - Join Lobby
+On the current `Lobby` page, the user can click on any of the lobbies presented. Once they click on a lobby, a pop-up will appear showing each of the members of the lobby and their traits. Also, the `Desired Traits`, `Undesired Traits`, and `Owner Tags` of the lobby is shown. 
+
+The user can join a lobby by clicking on the blue `Join Lobby` button on the bottom of the pop-up. This will direct the user to the `Lobby Chat` page.
+
+## Lobby - Lobby Chat
+The `Lobby Chat` page is where the user can communicate with other members of the lobby. Once the user is in a lobby chat, they are automatically placed on a voice call with other members. The user will be able to see and use the following functionalities:
+- `Enter a message` : Chat message field for text communication between lobby members. The user can input any text into the text field and hit 'Enter' or click on the `Send` button to send the message
+- `Invite` button : Used for inviting friends to the current lobby. A pop-up will appear in which the user can invite friends by clicking the `Invite` button. Once `Invite` button is clicked, it will turn green.
+- `Leave` : Used for leaving the lobby. A pop-up error message will appear prompting the user to confirm the decision to leave a the lobby. A green `Yes` and a red `No` button is presented for the user to make a decision. Clicking the `Yes` button will redirect the user back to the main `Lobby` page. Clicking the `No` button allows the user to remain in the `Lobby Chat` page. 
+- `Muting microphone`: User is able to mute themselves during the voice call by clicking the 'microphone' symbol located on the left-hand side. The microphone symbol will have a red line crossed on it to indicate that the user is muted.
+- `Deafening`: User is able to mute their speaker during the voice call by clicking the 'headphone' symbol located on the left-hand side. The headphone symbol will have a red line crossed on it to indicate that the user is deafened (user will not be able to hear other members in the voice call).
+
+## Lobby - Searching for Lobby Games
+On the main `Lobby` page, the user can click on the `Search Game` search bar to search for their lobby games. The user is presented with all the available lobbies if they click on the `Search Game`. They can click on any of the available lobbies in the search, and if the lobby exists the system will present display them to the user.
 
 
+## Lobby - Additional Filtering for Lobby Games
+On the main `Lobby` page, the user can click on the `Filter` button to filter lobbies based on traits (for a more advanced search). 
 
-In the project directory, you can run:
+Clicking on the `Filter` button presents the user with a pop-up with following:
+- `Desired Traits` : Lobby traits the user is looking for
+- `Undesired Traits`: Traits that the user wants to avoid
+- `Your Traits` : Traits that describe the user themselves
 
-### `npm start`
+Traits can be things such as rank, hobbies, game mode, or goals for the lobby. Example tags: Aggressive, Fast, Novice, etc. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once the user has filled out `Desired Traits`, `Undesired Traits`, and `Your Traits`, they can click the blue `Save Changes` button on the bottom right. Then, the user will be displayed the appropriate lobbies based on the filters (traits) that they had set. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Lobby - Friend Requests
+On the main `Lobby` page, the user can click on the `+` beside 'Friends' (located on the left-hand side of the page) to add, reject friend requests, or search for friends.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+Clicking on the `+` button presents the user with a pop-up with following:
+- `Requests` : Friend requests of the user. The user can accept or reject the friend request by either clicking the red `Reject` button or the green `Accept` button. The user will be indicated which option they have clicked.
+- `Search Friends` : Search bar in which the user can enter the username of a member who they want to send a friend. Alternatively, the user can just search for an existing friend.
 
 # Team Members
 This project was made by Computer Science Undergraduate students from the University of Calgary
