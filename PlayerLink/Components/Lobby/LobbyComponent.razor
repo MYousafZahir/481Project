@@ -8,9 +8,22 @@
     <div class="d-flex flex-row" id="lobby-container">
         @foreach (string user in Images)
         {
+<<<<<<< HEAD
             <div>
                 <img src="@user" />
             </div>
+=======
+            <div id="img">
+                <img src="@user" />
+            </div>
+            <span>
+                @foreach (var tag in ShownTags)
+                {
+                    <Tag tagname="@tag"/>
+                }
+            </span>
+
+>>>>>>> parent of 8963d12 (Added matched tags to lobby + new transition)
         }
     </div>
 </div>
