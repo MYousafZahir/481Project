@@ -1,6 +1,7 @@
 @using PlayerLink.Shared.Components.User
 @using PlayerLink.Shared.Components.Userprofile
 @using Microsoft.AspNetCore.Components
+@inject NavigationManager NavigationManager
 @inject PlayerLink.Services.UserDataService UserDataService
 @using MudBlazor
 <div class="Sidebar">
@@ -112,7 +113,7 @@
             Leaving the lobby means you will no longer have access to the voice chat unless you rejoin the lobby </p>
       </div>
        <div class = "mx-auto">
-        <button type="button" class="btn btn-secondary" style = "background-color: green; margin-bottom: 2rem;">YES</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style = "background-color: green; margin-bottom: 2rem;" @onclick="JoinLobby">YES</button>
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style = "background-color: red; margin-left: 4rem; margin-bottom: 2rem;">NO</button>
       </div> 
     </div>
@@ -166,5 +167,10 @@
     private void ToggleDeafen()
     {
         deafened = !deafened;
+    }
+
+    private async Task JoinLobby()
+    {
+        NavigationManager.NavigateTo("/Lobby");
     }
 }
